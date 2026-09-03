@@ -1,0 +1,302 @@
+{
+  "paola": {
+    "origin": "Latino",
+    "lang": "Latin",
+    "meaning": "Es una forma italiana y española de Paula, derivada de Paulus: 'pequeña' o 'humilde'. Simboliza la grandeza discreta, la fuerza de quien actúa con sencillez y encuentra valor en lo esencial.",
+    "element": "Tierra",
+    "planet": "Saturno",
+    "archetype": "La Humilde Firme",
+    "gem": "Ónix",
+    "color": "Negro mate"
+  },
+  "patricia": {
+    "origin": "Latino",
+    "lang": "Latin",
+    "meaning": "Deriva de patricius, 'perteneciente a los patricios', la clase noble de la antigua Roma. Representa dignidad, sentido de responsabilidad y la vocación de transformar la herencia recibida en servicio generoso.",
+    "element": "Luz",
+    "planet": "Sol",
+    "archetype": "La Noble Heredera",
+    "gem": "Diamante",
+    "color": "Dorado imperial"
+  },
+  "paula": {
+    "origin": "Latino",
+    "lang": "Latin",
+    "meaning": "Es la forma femenina de Paulus, 'pequeño' o 'humilde'. Simboliza una fuerza serena que no busca imponerse, sino crecer a través de la sencillez, el aprendizaje y la constancia.",
+    "element": "Tierra",
+    "planet": "Saturno",
+    "archetype": "La Sencilla Sabia",
+    "gem": "Hematita",
+    "color": "Gris piedra"
+  },
+  "pilar": {
+    "origin": "Latino",
+    "lang": "Latin",
+    "meaning": "Procede del latín pila, 'columna' o 'pilar', y se difundió ampliamente por la advocación de Nuestra Señora del Pilar. Representa estabilidad, apoyo confiable y la capacidad de sostener a otros sin perder la propia fortaleza.",
+    "element": "Tierra",
+    "planet": "Saturno",
+    "archetype": "La Columna Firme",
+    "gem": "Granate",
+    "color": "Rojo terracota"
+  },
+  "raquel": {
+    "origin": "Hebreo",
+    "lang": "Hebreo antiguo",
+    "meaning": "Deriva de Rachel, 'oveja' o 'cordera'. Simboliza ternura, cuidado y sensibilidad, cualidades que se vuelven fortaleza cuando se acompañan de límites claros y lealtad.",
+    "element": "Agua",
+    "planet": "Luna",
+    "archetype": "La Pastora Tierna",
+    "gem": "Perla",
+    "color": "Blanco crema"
+  },
+  "rebeca": {
+    "origin": "Hebreo",
+    "lang": "Hebreo antiguo",
+    "meaning": "Procede de Rivqah, nombre cuya etimología se asocia habitualmente con 'atar', 'unir' o 'enlazar'. Representa el arte de crear lazos sólidos, cuidar relaciones y sostener acuerdos con fidelidad.",
+    "element": "Agua",
+    "planet": "Venus",
+    "archetype": "La Tejedora de Vínculos",
+    "gem": "Cuarzo rosa",
+    "color": "Rosa cuarzo"
+  },
+  "renata": {
+    "origin": "Latino",
+    "lang": "Latin",
+    "meaning": "Deriva de Renata, forma femenina de Renatus: 'renacida' o 'nacida de nuevo'. Simboliza transformación, recuperación de la esperanza y valentía para comenzar una etapa distinta con conciencia.",
+    "element": "Aire",
+    "planet": "Urano",
+    "archetype": "La Renacida",
+    "gem": "Turquesa",
+    "color": "Turquesa vibrante"
+  },
+  "rosa": {
+    "origin": "Latino",
+    "lang": "Latin",
+    "meaning": "Procede de rosa, el nombre latino de la flor. Simboliza belleza, sensibilidad y la capacidad de florecer sin ocultar que toda delicadeza requiere también cuidado y protección.",
+    "element": "Agua",
+    "planet": "Venus",
+    "archetype": "La Flor Sensible",
+    "gem": "Rodocrosita",
+    "color": "Rosa carmín"
+  },
+  "sabrina": {
+    "origin": "Celta",
+    "lang": "Britonico antiguo",
+    "meaning": "Se vincula con Sabrina, antiguo nombre latino del río Severn en Gran Bretaña, probablemente de raíz britónica. Simboliza fluidez, memoria de la naturaleza y adaptación: la fuerza que encuentra su cauce aun ante obstáculos.",
+    "element": "Agua",
+    "planet": "Luna",
+    "archetype": "La Guardiana del Rio",
+    "gem": "Aguamarina",
+    "color": "Azul río"
+  },
+  "sandra": {
+    "origin": "Griego",
+    "lang": "Griego clasico",
+    "meaning": "Es una forma abreviada de Alejandra o Casandra; en su uso más extendido se relaciona con Alejandro, 'defensor de los hombres'. Representa determinación protectora y una voz capaz de defender aquello que considera justo.",
+    "element": "Fuego",
+    "planet": "Marte",
+    "archetype": "La Defensora",
+    "gem": "Cornalina",
+    "color": "Naranja rojizo"
+  },
+  "sara": {
+    "origin": "Hebreo",
+    "lang": "Hebreo antiguo",
+    "meaning": "Deriva de Sarah, 'princesa' o 'señora'. Simboliza dignidad interior, liderazgo afectivo y la capacidad de tratar a las personas con respeto sin renunciar a la propia voz.",
+    "element": "Luz",
+    "planet": "Jupiter",
+    "archetype": "La Princesa Sabia",
+    "gem": "Zafiro azul",
+    "color": "Azul real"
+  },
+  "silvia": {
+    "origin": "Latino",
+    "lang": "Latin",
+    "meaning": "Deriva de silva, 'bosque'. Representa conexión con la naturaleza, crecimiento silencioso y la habilidad de encontrar refugio, renovación y equilibrio en los ritmos profundos de la vida.",
+    "element": "Tierra",
+    "planet": "Venus",
+    "archetype": "La Guardiana del Bosque",
+    "gem": "Esmeralda",
+    "color": "Verde bosque"
+  },
+  "sofia": {
+    "origin": "Griego",
+    "lang": "Griego clasico",
+    "meaning": "Deriva de sophia, 'sabiduría'. Simboliza la búsqueda de comprensión profunda, el discernimiento ante lo complejo y la capacidad de usar el conocimiento para orientar con humanidad.",
+    "element": "Aire",
+    "planet": "Mercurio",
+    "archetype": "La Sabia",
+    "gem": "Amatista",
+    "color": "Violeta profundo"
+  },
+  "soledad": {
+    "origin": "Latino",
+    "lang": "Latin",
+    "meaning": "Procede del español soledad, derivado de solitas: 'estado de estar sola', y se difundió por una advocación mariana. Simboliza introspección, autonomía emocional y la capacidad de convertir el silencio en fuente de claridad.",
+    "element": "Aire",
+    "planet": "Saturno",
+    "archetype": "La Contemplativa",
+    "gem": "Labradorita",
+    "color": "Azul grisáceo"
+  },
+  "susana": {
+    "origin": "Hebreo",
+    "lang": "Hebreo antiguo",
+    "meaning": "Deriva de Shoshannah, 'lirio' o 'azucena'. Representa pureza de intención, belleza serena y la capacidad de florecer incluso cuando las circunstancias demandan paciencia.",
+    "element": "Agua",
+    "planet": "Venus",
+    "archetype": "La Azucena",
+    "gem": "Perla",
+    "color": "Blanco lirio"
+  },
+  "tamara": {
+    "origin": "Hebreo",
+    "lang": "Hebreo antiguo",
+    "meaning": "Deriva de Tamar, 'palmera datilera'. Simboliza resiliencia, fertilidad y la capacidad de elevarse hacia la luz mientras conserva raíces profundas que la sostienen.",
+    "element": "Tierra",
+    "planet": "Venus",
+    "archetype": "La Palmera Resiliente",
+    "gem": "Jade",
+    "color": "Verde palmera"
+  },
+  "teresa": {
+    "origin": "Griego",
+    "lang": "Griego clasico",
+    "meaning": "Su etimología es discutida; se ha relacionado con Therasia, isla griega, y con therizein, 'cosechar' o 'verano'. Simboliza madurez, paciencia y la capacidad de recoger frutos de una labor sostenida.",
+    "element": "Tierra",
+    "planet": "Saturno",
+    "archetype": "La Cosechadora",
+    "gem": "Ojo de tigre",
+    "color": "Dorado trigo"
+  },
+  "valentina": {
+    "origin": "Latino",
+    "lang": "Latin",
+    "meaning": "Deriva de Valentinus, formado sobre valens: 'fuerte', 'vigorosa' o 'saludable'. Representa valentía afectiva, energía vital y la capacidad de sostener aquello que ama con decisión.",
+    "element": "Fuego",
+    "planet": "Marte",
+    "archetype": "La Valiente",
+    "gem": "Granate",
+    "color": "Rojo intenso"
+  },
+  "valeria": {
+    "origin": "Latino",
+    "lang": "Latin",
+    "meaning": "Deriva de Valeria, forma femenina de Valerius, relacionado con valere: 'ser fuerte', 'tener salud' o 'estar vigoroso'. Simboliza resistencia, recuperación y confianza para perseverar ante las exigencias del camino.",
+    "element": "Fuego",
+    "planet": "Marte",
+    "archetype": "La Resiliente",
+    "gem": "Rubíí",
+    "color": "Rojo carmesi"
+  },
+  "vanessa": {
+    "origin": "Literario angloirlandes",
+    "lang": "Ingles moderno",
+    "meaning": "Fue creado por Jonathan Swift a partir de elementos del nombre Esther Vanhomrigh. Simboliza originalidad, creatividad y la libertad de construir una identidad propia más allá de las raíces etimológicas tradicionales.",
+    "element": "Aire",
+    "planet": "Urano",
+    "archetype": "La Creadora Original",
+    "gem": "Labradorita",
+    "color": "Azul iridiscente"
+  },
+  "veronica": {
+    "origin": "Griego",
+    "lang": "Griego/Latin",
+    "meaning": "Se relaciona con Berenike, 'la que trae la victoria'; la forma fue influida en latín medieval por vera icon, 'imagen verdadera'. Simboliza autenticidad, triunfo interior y la valentía de mostrar el propio rostro sin máscaras.",
+    "element": "Luz",
+    "planet": "Sol",
+    "archetype": "La Imagen Verdadera",
+    "gem": "Diamante",
+    "color": "Blanco brillante"
+  },
+  "victoria": {
+    "origin": "Latino",
+    "lang": "Latin",
+    "meaning": "Deriva de victoria, 'triunfo' o 'vencimiento', y era el nombre de la diosa romana de la victoria. Representa perseverancia, confianza ante los retos y la capacidad de convertir cada avance en aprendizaje.",
+    "element": "Fuego",
+    "planet": "Marte",
+    "archetype": "La Vencedora",
+    "gem": "Rubíí",
+    "color": "Rojo victoria"
+  },
+  "violeta": {
+    "origin": "Latino",
+    "lang": "Latin",
+    "meaning": "Deriva de viola, nombre latino de la flor violeta y del color asociado. Simboliza sensibilidad creativa, modestia y la belleza singular de crecer con suavidad sin renunciar a la propia expresión.",
+    "element": "Agua",
+    "planet": "Venus",
+    "archetype": "La Flor Creativa",
+    "gem": "Amatista",
+    "color": "Violeta intenso"
+  },
+  "virginia": {
+    "origin": "Latino",
+    "lang": "Latin",
+    "meaning": "Deriva de Virginia, forma femenina de Virginius, posiblemente relacionada con virgo: 'doncella' o 'virgen'. Simboliza independencia, integridad y la voluntad de conservar una mirada renovada y genuina sobre la vida.",
+    "element": "Aire",
+    "planet": "Mercurio",
+    "archetype": "La Integra",
+    "gem": "Cuarzo transparente",
+    "color": "Blanco cristalino"
+  },
+  "viviana": {
+    "origin": "Latino",
+    "lang": "Latin",
+    "meaning": "Deriva de Vivianus, relacionado con vivus: 'vivo' o 'lleno de vida'. Representa entusiasmo, renovación y la capacidad de contagiar energía creadora en los espacios que habita.",
+    "element": "Fuego",
+    "planet": "Sol",
+    "archetype": "La Vital",
+    "gem": "Citrino",
+    "color": "Amarillo vibrante"
+  },
+  "wendy": {
+    "origin": "Ingles",
+    "lang": "Ingles moderno",
+    "meaning": "El uso moderno del nombre fue popularizado por J. M. Barrie; probablemente se relaciona con el apodo británico Fwendy o con Gwendolen, aunque su procedencia exacta es discutida. Simboliza imaginación, juventud de espíritu y la capacidad de abrir mundos mediante la creatividad.",
+    "element": "Aire",
+    "planet": "Mercurio",
+    "archetype": "La Narradora Imaginativa",
+    "gem": "Fluorita",
+    "color": "Verde agua"
+  },
+  "ximena": {
+    "origin": "Hispanico medieval",
+    "lang": "Castellano medieval",
+    "meaning": "Es una variante gráfica de Jimena; su etimología es incierta y se vincula con el antiguo Ximeno. Simboliza autonomía, intuición y la fortaleza de crear una identidad propia mientras se honra la complejidad de las raíces.",
+    "element": "Aire",
+    "planet": "Mercurio",
+    "archetype": "La Independiente",
+    "gem": "Fluorita",
+    "color": "Verde menta"
+  },
+  "yolanda": {
+    "origin": "Griego",
+    "lang": "Griego/Provenzal medieval",
+    "meaning": "Se considera una forma medieval relacionada con Iolanthe, nombre interpretado como 'flor violeta'; algunas propuestas alternativas señalan otros orígenes. Simboliza belleza discreta, creatividad y la capacidad de florecer con elegancia en cualquier estación.",
+    "element": "Agua",
+    "planet": "Venus",
+    "archetype": "La Violeta Elegante",
+    "gem": "Amatista",
+    "color": "Violeta floral"
+  },
+  "zaira": {
+    "origin": "Arabe",
+    "lang": "Arabe clasico",
+    "meaning": "Se asocia con Zahra, 'flor', 'brillante' o 'resplandeciente', aunque presenta variantes y adaptaciones en diversas lenguas. Simboliza luminosidad, crecimiento y la capacidad de convertir la sensibilidad en una presencia inspiradora.",
+    "element": "Luz",
+    "planet": "Venus",
+    "archetype": "La Flor Radiante",
+    "gem": "Cuarzo citrino",
+    "color": "Dorado suave"
+  },
+  "zoe": {
+    "origin": "Griego",
+    "lang": "Griego clasico",
+    "meaning": "Deriva de zoe, 'vida'. Representa vitalidad, impulso de renovación y la capacidad de celebrar la existencia mediante decisiones que nutren el crecimiento personal y colectivo.",
+    "element": "Fuego",
+    "planet": "Sol",
+    "archetype": "La Fuerza Vital",
+    "gem": "Citrino",
+    "color": "Amarillo solar"
+  }
+}

@@ -1,0 +1,342 @@
+{
+  "gabriel": {
+    "origin": "Hebreo",
+    "lang": "Hebreo antiguo",
+    "meaning": "Deriva de Gavri'el, interpretado como 'Dios es mi fuerza' o 'fuerza de Dios'. Su significado evoca una fortaleza que no necesita imponerse: nace de la confianza interior y del servicio a un propósito elevado.",
+    "element": "Luz",
+    "planet": "Sol",
+    "archetype": "El Mensajero Divino",
+    "gem": "Citrino",
+    "color": "Amarillo solar"
+  },
+  "gaston": {
+    "origin": "Germanico",
+    "lang": "Germanico occidental",
+    "meaning": "Probablemente procede de una raíz germánica relacionada con 'extranjero' o 'huésped', aunque su etimología admite debate. Simboliza a quien sabe abrir camino en lo desconocido y convertir la experiencia del viaje en aprendizaje.",
+    "element": "Aire",
+    "planet": "Mercurio",
+    "archetype": "El Viajero",
+    "gem": "Aguamarina",
+    "color": "Azul cielo"
+  },
+  "gerardo": {
+    "origin": "Germanico",
+    "lang": "Alto aleman antiguo",
+    "meaning": "Se forma con ger, 'lanza', y hard, 'fuerte' o 'valiente'. Representa la determinación que protege los propios principios y la capacidad de dirigir la fuerza hacia metas justas.",
+    "element": "Fuego",
+    "planet": "Marte",
+    "archetype": "El Guerrero Firme",
+    "gem": "Granate",
+    "color": "Rojo vino"
+  },
+  "gilberto": {
+    "origin": "Germanico",
+    "lang": "Alto aleman antiguo",
+    "meaning": "Deriva de gisil, 'promesa' o 'rehén', y beraht, 'brillante'. Sugiere una palabra luminosa y comprometida, la persona que convierte sus promesas en hechos dignos de confianza.",
+    "element": "Luz",
+    "planet": "Sol",
+    "archetype": "El Guardián del Pacto",
+    "gem": "Diamante",
+    "color": "Blanco cristalino"
+  },
+  "gonzalo": {
+    "origin": "Germanico",
+    "lang": "Visigodo",
+    "meaning": "Procede de Gundisalvus, vinculado a la batalla y, posiblemente, a la idea de salvación o protección. Simboliza la valentía disciplinada: la de quien enfrenta obstáculos sin perder lealtad hacia su comunidad.",
+    "element": "Fuego",
+    "planet": "Marte",
+    "archetype": "El Defensor Leal",
+    "gem": "Jaspe rojo",
+    "color": "Rojo escarlata"
+  },
+  "guillermo": {
+    "origin": "Germanico",
+    "lang": "Alto aleman antiguo",
+    "meaning": "Deriva de Wilhelm, formado por wil, 'voluntad', y helm, 'yelmo' o 'protección'. Expresa una voluntad protectora, capaz de sostener responsabilidades con firmeza, criterio y cuidado por los demás.",
+    "element": "Tierra",
+    "planet": "Saturno",
+    "archetype": "El Protector Resuelto",
+    "gem": "Ónix",
+    "color": "Negro obsidiana"
+  },
+  "gustavo": {
+    "origin": "Nordico",
+    "lang": "Nordico antiguo",
+    "meaning": "Su origen se asocia con Gautr, nombre ligado a los godos, y stavr, 'bastón' o 'apoyo'; otras interpretaciones son posibles. Representa el apoyo firme y la vocación de orientar sin sustituir el camino de otros.",
+    "element": "Tierra",
+    "planet": "Jupiter",
+    "archetype": "El Sostén Noble",
+    "gem": "Topacio azul",
+    "color": "Azul cobalto"
+  },
+  "hector": {
+    "origin": "Griego",
+    "lang": "Griego clasico",
+    "meaning": "Procede de Hektor, relacionado con el verbo 'sostener', 'retener' o 'defender'. Evoca la firmeza de quien permanece presente ante la adversidad y protege aquello que considera valioso.",
+    "element": "Fuego",
+    "planet": "Marte",
+    "archetype": "El Defensor Leal",
+    "gem": "Cornalina",
+    "color": "Naranja cobrizo"
+  },
+  "hernando": {
+    "origin": "Germanico",
+    "lang": "Germanico antiguo",
+    "meaning": "Es una forma hispánica de Fernando, vinculada a las raíces de 'viaje', 'paz' y 'audacia', según la reconstrucción etimológica adoptada. Simboliza al explorador que transforma la incertidumbre en dirección y conquista interior.",
+    "element": "Aire",
+    "planet": "Jupiter",
+    "archetype": "El Explorador Valiente",
+    "gem": "Lapislazuli",
+    "color": "Azul ultramar"
+  },
+  "hugo": {
+    "origin": "Germanico",
+    "lang": "Germanico antiguo",
+    "meaning": "Deriva de hug, 'mente', 'espíritu' o 'pensamiento'. Representa el poder de la reflexión y la inteligencia que convierte las ideas en decisiones conscientes.",
+    "element": "Aire",
+    "planet": "Mercurio",
+    "archetype": "El Pensador",
+    "gem": "Fluorita",
+    "color": "Verde menta"
+  },
+  "ignacio": {
+    "origin": "Latino",
+    "lang": "Latin",
+    "meaning": "Proviene del nombre romano Ignatius; por asociación popular se relacionó con ignis, 'fuego', aunque su origen exacto es incierto. Su lectura simbólica remite a la chispa de convicción que impulsa a transformar ideales en acción.",
+    "element": "Fuego",
+    "planet": "Marte",
+    "archetype": "El Encendedor de Caminos",
+    "gem": "Rubíí",
+    "color": "Rojo fuego"
+  },
+  "ivan": {
+    "origin": "Eslavo",
+    "lang": "Eslavo eclesiastico antiguo",
+    "meaning": "Es una forma eslava de Juan, procedente en última instancia del hebreo Yohanan: 'Dios ha sido misericordioso'. Expresa la gratitud y la capacidad de reconocer oportunidades de renovación incluso en circunstancias difíciles.",
+    "element": "Agua",
+    "planet": "Jupiter",
+    "archetype": "El Renovador Compasivo",
+    "gem": "Aguamarina",
+    "color": "Azul turquesa"
+  },
+  "javier": {
+    "origin": "Vasco",
+    "lang": "Euskera medieval",
+    "meaning": "Procede de Etxeberri, 'casa nueva'. Representa la capacidad de inaugurar etapas, construir refugios de confianza y renovar la vida sin olvidar las raíces.",
+    "element": "Tierra",
+    "planet": "Saturno",
+    "archetype": "El Constructor de Hogar",
+    "gem": "Cuarzo ahumado",
+    "color": "Marron tierra"
+  },
+  "jesus": {
+    "origin": "Hebreo",
+    "lang": "Hebreo antiguo",
+    "meaning": "Es la forma castellana de Iesus, procedente de Yeshua, 'Yahvé salva' o 'Dios salva'. Simboliza la esperanza activa, la compasión y la confianza en que toda persona puede participar en procesos de restauración.",
+    "element": "Luz",
+    "planet": "Sol",
+    "archetype": "El Sanador Compasivo",
+    "gem": "Cuarzo transparente",
+    "color": "Blanco dorado"
+  },
+  "joel": {
+    "origin": "Hebreo",
+    "lang": "Hebreo antiguo",
+    "meaning": "Deriva de Yo'el, 'Yahvé es Dios'. Evoca coherencia espiritual y la búsqueda de un centro interior desde el cual actuar con humildad, fidelidad y propósito.",
+    "element": "Luz",
+    "planet": "Jupiter",
+    "archetype": "El Devoto Fiel",
+    "gem": "Amatista",
+    "color": "Violeta amatista"
+  },
+  "jorge": {
+    "origin": "Griego",
+    "lang": "Griego clasico",
+    "meaning": "Procede de Georgios, de georgos: 'agricultor' o 'quien trabaja la tierra'. Representa la paciencia de cultivar procesos, cuidar lo que crece y comprender que los resultados requieren tiempo y constancia.",
+    "element": "Tierra",
+    "planet": "Venus",
+    "archetype": "El Cultivador",
+    "gem": "Esmeralda",
+    "color": "Verde bosque"
+  },
+  "jose": {
+    "origin": "Hebreo",
+    "lang": "Hebreo antiguo",
+    "meaning": "Proviene de Yosef, relacionado con la expresión 'que Dios añada' o 'él añadirá'. Simboliza la abundancia entendida como crecimiento gradual, capacidad de aportar y confianza en los ciclos de la vida.",
+    "element": "Agua",
+    "planet": "Jupiter",
+    "archetype": "El Proveedor Prudente",
+    "gem": "Zafiro azul",
+    "color": "Azul profundo"
+  },
+  "juan": {
+    "origin": "Hebreo",
+    "lang": "Hebreo antiguo",
+    "meaning": "Deriva de Yohanan, 'Dios es misericordioso' o 'Dios ha mostrado gracia'. Su sentido inspira apertura al perdón, gratitud por las segundas oportunidades y una presencia que alienta a otros.",
+    "element": "Agua",
+    "planet": "Jupiter",
+    "archetype": "El Portador de Gracia",
+    "gem": "Aguamarina",
+    "color": "Azul celeste"
+  },
+  "julian": {
+    "origin": "Latino",
+    "lang": "Latin",
+    "meaning": "Procede de Iulianus, 'perteneciente a Julio' o a la familia Julia; tradicionalmente se vincula con Iuppiter. Representa una identidad que se fortalece al reconocer su herencia y convertirla en impulso creativo.",
+    "element": "Luz",
+    "planet": "Sol",
+    "archetype": "El Heredero Luminoso",
+    "gem": "Piedra sol",
+    "color": "Naranja dorado"
+  },
+  "julio": {
+    "origin": "Latino",
+    "lang": "Latin",
+    "meaning": "Deriva de Iulius, antiguo nombre de familia romano asociado tradicionalmente con Júpiter o con la juventud. Simboliza vitalidad, renovación y la disposición de liderar desde una energía generadora.",
+    "element": "Luz",
+    "planet": "Sol",
+    "archetype": "El Renovador Solar",
+    "gem": "Topacio dorado",
+    "color": "Dorado radiante"
+  },
+  "kevin": {
+    "origin": "Celta",
+    "lang": "Irlandes antiguo",
+    "meaning": "Proviene de Caoimhin, formado por caomh, 'amable' o 'bello', y gein, 'nacimiento'. Representa la bondad que se expresa en actos concretos y la capacidad de traer armonía a los entornos cercanos.",
+    "element": "Agua",
+    "planet": "Venus",
+    "archetype": "El Amable Mediador",
+    "gem": "Cuarzo rosa",
+    "color": "Rosa cuarzo"
+  },
+  "leonardo": {
+    "origin": "Germanico",
+    "lang": "Alto aleman antiguo",
+    "meaning": "Se relaciona con las raíces de 'león' y 'fuerte' o 'valiente'. Evoca una fuerza noble que protege, inspira confianza y aprende a liderar sin perder sensibilidad.",
+    "element": "Fuego",
+    "planet": "Sol",
+    "archetype": "El León Noble",
+    "gem": "Ojo de tigre",
+    "color": "Dorado leonino"
+  },
+  "leandro": {
+    "origin": "Griego",
+    "lang": "Griego clasico",
+    "meaning": "Procede de Leandros, compuesto por león, 'león', y aner, 'hombre'. Simboliza un valor afectivo y perseverante: la fuerza que se sostiene cuando el corazón encuentra una causa digna.",
+    "element": "Fuego",
+    "planet": "Sol",
+    "archetype": "El Corazón Valiente",
+    "gem": "Cornalina",
+    "color": "Naranja dorado"
+  },
+  "lorenzo": {
+    "origin": "Latino",
+    "lang": "Latin",
+    "meaning": "Deriva de Laurentius, 'natural de Laurentum', y se asocia tradicionalmente con laurel. Representa la perseverancia orientada al mérito y la humildad de quien honra cada logro como fruto de un proceso.",
+    "element": "Aire",
+    "planet": "Mercurio",
+    "archetype": "El Laureado",
+    "gem": "Peridoto",
+    "color": "Verde laurel"
+  },
+  "lucas": {
+    "origin": "Griego",
+    "lang": "Griego clasico",
+    "meaning": "Es una forma procedente de Loukas, 'natural de Lucania'; su cercanía con lux, 'luz', favoreció una lectura luminosa posterior. Simboliza la claridad que surge del aprendizaje y la capacidad de orientar con mirada serena.",
+    "element": "Luz",
+    "planet": "Sol",
+    "archetype": "El Portador de Luz",
+    "gem": "Citrino",
+    "color": "Amarillo dorado"
+  },
+  "luis": {
+    "origin": "Germanico",
+    "lang": "Germanico antiguo",
+    "meaning": "Deriva de Hludwig, formado por hlud, 'famoso' o 'ilustre', y wig, 'combate'. Representa el liderazgo que gana reconocimiento no por la confrontación, sino por defender valores con honor.",
+    "element": "Fuego",
+    "planet": "Marte",
+    "archetype": "El Líder Honorable",
+    "gem": "Rubíí",
+    "color": "Rojo real"
+  },
+  "manuel": {
+    "origin": "Hebreo",
+    "lang": "Hebreo antiguo",
+    "meaning": "Es una forma de Emanuel, Immanu'el, 'Dios está con nosotros'. Evoca compañía, presencia protectora y la capacidad de acompañar a otros con lealtad en sus momentos decisivos.",
+    "element": "Agua",
+    "planet": "Luna",
+    "archetype": "El Acompañante Fiel",
+    "gem": "Piedra luna",
+    "color": "Blanco plateado"
+  },
+  "marcos": {
+    "origin": "Latino",
+    "lang": "Latin",
+    "meaning": "Deriva de Marcus, nombre romano probablemente relacionado con Marte. Simboliza iniciativa, decisión y la facultad de canalizar la energía de la acción hacia objetivos constructivos.",
+    "element": "Fuego",
+    "planet": "Marte",
+    "archetype": "El Iniciador",
+    "gem": "Hematita",
+    "color": "Rojo hierro"
+  },
+  "mario": {
+    "origin": "Latino",
+    "lang": "Latin",
+    "meaning": "Procede de Marius, nombre romano de origen incierto, a menudo relacionado con Marte o con el mar. Simboliza una energía dinámica que aprende a navegar cambios y a encontrar dirección en medio de lo profundo.",
+    "element": "Agua",
+    "planet": "Marte",
+    "archetype": "El Navegante Valiente",
+    "gem": "Aguamarina",
+    "color": "Azul marino"
+  },
+  "martin": {
+    "origin": "Latino",
+    "lang": "Latin",
+    "meaning": "Deriva de Martinus, 'consagrado a Marte' o 'perteneciente a Marte'. Representa la valentía puesta al servicio de una causa, así como la habilidad de defender con disciplina y generosidad.",
+    "element": "Fuego",
+    "planet": "Marte",
+    "archetype": "El Guerrero Generoso",
+    "gem": "Granate",
+    "color": "Rojo profundo"
+  },
+  "mateo": {
+    "origin": "Hebreo",
+    "lang": "Hebreo antiguo",
+    "meaning": "Procede de Mattityahu, 'don de Yahvé' o 'regalo de Dios'. Invita a reconocer los talentos propios como responsabilidades valiosas y a compartirlos con gratitud y generosidad.",
+    "element": "Luz",
+    "planet": "Jupiter",
+    "archetype": "El Portador de Dones",
+    "gem": "Amatista",
+    "color": "Violeta claro"
+  },
+  "mauricio": {
+    "origin": "Latino",
+    "lang": "Latin",
+    "meaning": "Deriva de Mauricius, 'procedente de Mauritania' o 'moro', voz históricamente vinculada al norte de África. Simboliza adaptación, profundidad cultural y la capacidad de encontrar identidad en el encuentro entre caminos diversos.",
+    "element": "Tierra",
+    "planet": "Saturno",
+    "archetype": "El Viajero de Raices",
+    "gem": "Obsidiana",
+    "color": "Negro ébano"
+  },
+  "maximiliano": {
+    "origin": "Latino",
+    "lang": "Latin",
+    "meaning": "Deriva de Maximilianus, formado sobre maximus, 'el más grande'. Representa la aspiración a la excelencia entendida como superación personal, responsabilidad y uso noble de las capacidades.",
+    "element": "Luz",
+    "planet": "Sol",
+    "archetype": "El Aspirante Noble",
+    "gem": "Diamante",
+    "color": "Dorado imperial"
+  },
+  "miguel": {
+    "origin": "Hebreo",
+    "lang": "Hebreo antiguo",
+    "meaning": "Procede de Mikha'el, una pregunta retórica que significa '¿quién como Dios?'. Simboliza humildad ante lo trascendente y valentía para enfrentar la soberbia, defendiendo la verdad con conciencia.",
+    "element": "Fuego",
+    "planet": "Marte",
+    "archetype": "El Protector Celestial",
+    "gem": "Lapislazuli",
+    "color": "Azul electrico"
+  }
+}

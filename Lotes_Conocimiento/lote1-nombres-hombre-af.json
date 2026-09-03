@@ -1,0 +1,232 @@
+{
+  "aaron": {
+    "origin": "Hebreo",
+    "lang": "Hebreo antiguo",
+    "meaning": "Su etimología es discutida; una tradición lo vincula con 'monte' o 'exaltado', mientras otras sugieren un origen egipcio. Simbólicamente representa la elevación espiritual y la fortaleza interior que surge de la fe y la constancia.",
+    "element": "Fuego",
+    "planet": "Sol",
+    "archetype": "El Sumo Sacerdote",
+    "gem": "Rubííºº",
+    "color": "Dorado intenso"
+  },
+  "abel": {
+    "origin": "Hebreo",
+    "lang": "Hebreo antiguo",
+    "meaning": "Procede de 'hebel', que significa 'soplo', 'vapor' o 'fugacidad'. Invita a reconocer la belleza efimera de la vida y a vivir con autenticidad, sabiendo que cada respiro es un don sagrado.",
+    "element": "Aire",
+    "planet": "Luna",
+    "archetype": "El Inocente",
+    "gem": "Perla",
+    "color": "Blanco nacarado"
+  },
+  "abner": {
+    "origin": "Hebreo",
+    "lang": "Hebreo antiguo",
+    "meaning": "Significa 'padre de la luz' o 'padre luminoso'. Simboliza la capacidad de guiar a otros con claridad interior, encendiendo la sabiduría que ilumina el camino en tiempos de incertidumbre.",
+    "element": "Luz",
+    "planet": "Sol",
+    "archetype": "El Guia Iluminado",
+    "gem": "Citrino",
+    "color": "Amarillo solar"
+  },
+  "abraham": {
+    "origin": "Hebreo",
+    "lang": "Hebreo antiguo",
+    "meaning": "Deriva de 'av hamon', 'padre de multitudes'. Representa la promesa cumplida, la fe que se expande y la responsabilidad de ser raíz de un legado que trasciende generaciones.",
+    "element": "Tierra",
+    "planet": "Jupiter",
+    "archetype": "El Patriarca",
+    "gem": "Zafiro azul",
+    "color": "Azul real"
+  },
+  "adan": {
+    "origin": "Hebreo",
+    "lang": "Hebreo antiguo",
+    "meaning": "Proviene de 'adam', 'hombre', vinculado a 'adamah', 'tierra' o 'rojo'. Evoca el origen terrenal y la dignidad humana, recordando que somos barro divino modelado con propósito.",
+    "element": "Tierra",
+    "planet": "Saturno",
+    "archetype": "El Primer Hombre",
+    "gem": "Granate",
+    "color": "Rojo terracota"
+  },
+  "agustin": {
+    "origin": "Latino",
+    "lang": "Latin",
+    "meaning": "Deriva de 'augustus', 'venerable', 'consagrado' o 'grande'. Simboliza la dignidad interior y la busqueda de una grandeza que no se mide por el poder, sino por la integridad y la sabiduría.",
+    "element": "Luz",
+    "planet": "Sol",
+    "archetype": "El Sabio Venerable",
+    "gem": "Amatista",
+    "color": "Violeta profundo"
+  },
+  "alberto": {
+    "origin": "Germanico",
+    "lang": "Alto aleman antiguo",
+    "meaning": "Procede de 'adalbert', 'noble y brillante'. Representa la nobleza del caracter que se manifiesta en acciones luminosas, uniendo honor y claridad en un propósito elevado.",
+    "element": "Luz",
+    "planet": "Sol",
+    "archetype": "El Noble Iluminado",
+    "gem": "Diamante",
+    "color": "Dorado blanco"
+  },
+  "aldo": {
+    "origin": "Germanico",
+    "lang": "Germanico antiguo",
+    "meaning": "Deriva de 'ald', 'viejo' o 'experimentado'. Simboliza la sabiduría que viene con la madurez, la prudencia del que ha caminado y aprendido de cada huella dejada en el sendero.",
+    "element": "Tierra",
+    "planet": "Saturno",
+    "archetype": "El Anciano Sabio",
+    "gem": "Ojo de tigre",
+    "color": "Marron dorado"
+  },
+  "alejandro": {
+    "origin": "Griego",
+    "lang": "Griego clasico",
+    "meaning": "Procede de 'alexein' (defender) y 'aner/andros' (hombre): 'defensor de la humanidad'. Encarna el coraje protector y la voluntad de luchar por ideales que elevan a la comunidad.",
+    "element": "Fuego",
+    "planet": "Marte",
+    "archetype": "El Guerrero Protector",
+    "gem": "Rubííºº",
+    "color": "Rojo carmesi"
+  },
+  "alfredo": {
+    "origin": "Germanico",
+    "lang": "Anglosajon",
+    "meaning": "Deriva de 'aelfraed', 'consejo de los elfos' o 'aconsejado por seres luminosos'. Simboliza la intuición aguda y la sabiduría inspirada que guía decisiones con gracia y claridad.",
+    "element": "Aire",
+    "planet": "Mercurio",
+    "archetype": "El Consejero Místico",
+    "gem": "Esmeralda",
+    "color": "Verde esmeralda"
+  },
+  "alvaro": {
+    "origin": "Germanico",
+    "lang": "Visigodo",
+    "meaning": "Procede de 'all-waraz' o 'al-wars', 'guardian de todos' o 'defensor total'. Representa la vigilancia amorosa y la fortaleza serena de quien protege sin imponer, cuidando con integridad.",
+    "element": "Tierra",
+    "planet": "Saturno",
+    "archetype": "El Guardian Fiel",
+    "gem": "Obsidiana",
+    "color": "Negro profundo"
+  },
+  "amado": {
+    "origin": "Latino",
+    "lang": "Latin",
+    "meaning": "Deriva del participio 'amatus', 'amado'. Evoca la certeza de ser digno de amor y la capacidad de amar con plenitud, recordando que el amor es fuerza creadora y sanadora.",
+    "element": "Agua",
+    "planet": "Venus",
+    "archetype": "El Amante Sagrado",
+    "gem": "Cuarzo rosa",
+    "color": "Rosa suave"
+  },
+  "amin": {
+    "origin": "Arabe",
+    "lang": "Arabe clasico",
+    "meaning": "Significa 'fiel', 'confiable' o 'honesto'. Simboliza la integridad inquebrantable y la palabra dada como pacto sagrado, construyendo confianza con cada acción coherente.",
+    "element": "Tierra",
+    "planet": "Saturno",
+    "archetype": "El Fiel Custodio",
+    "gem": "Hematita",
+    "color": "Gris acero"
+  },
+  "amos": {
+    "origin": "Hebreo",
+    "lang": "Hebreo antiguo",
+    "meaning": "Procede de 'amas', 'cargar' o 'llevar una carga'. Representa la fortaleza para asumir responsabilidades y la compasión del que sostiene a otros con firmeza y ternura.",
+    "element": "Tierra",
+    "planet": "Saturno",
+    "archetype": "El Portador de Cargas",
+    "gem": "Jaspe rojo",
+    "color": "Rojo ocre"
+  },
+  "andres": {
+    "origin": "Griego",
+    "lang": "Griego clasico",
+    "meaning": "Deriva de 'andreios', 'valiente' o 'viril'. Simboliza el coraje auténtico que no teme mostrar vulnerabilidad, uniendo fuerza y humanidad en un equilibrio poderoso.",
+    "element": "Fuego",
+    "planet": "Marte",
+    "archetype": "El Valiente",
+    "gem": "Cornalina",
+    "color": "Naranja rojizo"
+  },
+  "ángel": {
+    "origin": "Griego",
+    "lang": "Griego clasico",
+    "meaning": "Procede de 'angelos', 'mensajero'. Representa la funcion de puente entre lo divino y lo humano, la capacidad de transmitir verdades con claridad y compasión.",
+    "element": "Aire",
+    "planet": "Mercurio",
+    "archetype": "El Mensajero Celestial",
+    "gem": "Selenita",
+    "color": "Blanco luminoso"
+  },
+  "antonio": {
+    "origin": "Latino",
+    "lang": "Latin",
+    "meaning": "Su etimología es discutida; podria derivar de la gens romana Antonia o de 'anthos' (flor). Simboliza la nobleza heredada y la floracion del caracter a través de la disciplina y la constancia.",
+    "element": "Tierra",
+    "planet": "Saturno",
+    "archetype": "El Noble Heredero",
+    "gem": "Ónix",
+    "color": "Negro brillante"
+  },
+  "armando": {
+    "origin": "Germanico",
+    "lang": "Germanico antiguo",
+    "meaning": "Deriva de 'heri-man', 'hombre de ejercito' o 'guerrero'. Representa la disciplina marcial interior, la capacidad de luchar por principios con estrategia y autocontrol.",
+    "element": "Fuego",
+    "planet": "Marte",
+    "archetype": "El Estratega",
+    "gem": "Granate",
+    "color": "Rojo vino"
+  },
+  "arnaldo": {
+    "origin": "Germanico",
+    "lang": "Germanico antiguo",
+    "meaning": "Procede de 'arn-wald', 'aguila-gobernante' o 'gobernante con fuerza de aguila'. Simboliza la visión elevada y el liderazgo que observa desde la altura para guiar con claridad.",
+    "element": "Aire",
+    "planet": "Jupiter",
+    "archetype": "El Líder Visionario",
+    "gem": "Lapislazuli",
+    "color": "Azul ultramar"
+  },
+  "arturo": {
+    "origin": "Celta",
+    "lang": "Celta/Breton",
+    "meaning": "Posiblemente de 'arth' (oso) o del latin 'arturus'. Evoca la fuerza protectora del oso y el ideal del rey justo, uniendo poder y nobleza en servicio del bien común.",
+    "element": "Tierra",
+    "planet": "Sol",
+    "archetype": "El Rey Justo",
+    "gem": "Cuarzo citrino",
+    "color": "Dorado ambarino"
+  },
+  "augusto": {
+    "origin": "Latino",
+    "lang": "Latin",
+    "meaning": "Deriva de 'augustus', 'venerable', 'consagrado' o 'magnifico'. Representa la autoridad sagrada y la dignidad que inspira respeto, no por imposicion, sino por presencia integra.",
+    "element": "Luz",
+    "planet": "Sol",
+    "archetype": "El Emperador Sagrado",
+    "gem": "Topacio dorado",
+    "color": "Dorado imperial"
+  },
+  "axel": {
+    "origin": "Hebreo",
+    "lang": "Hebreo/Aleman",
+    "meaning": "Forma escandinava de 'Absalon', 'padre de paz'. Simboliza la busqueda de armonía interior y la capacidad de mediar conflictos con sabiduría y equilibrio emocional.",
+    "element": "Aire",
+    "planet": "Venus",
+    "archetype": "El Pacificador",
+    "gem": "Turquesa",
+    "color": "Turquesa claro"
+  },
+  "azar": {
+    "origin": "Persa",
+    "lang": "Persa medio",
+    "meaning": "Procede de 'azar', 'fuego' en persa. Representa la chispa vital que transforma, la energía purificadora que consume lo viejo para dar paso a un renacer luminoso.",
+    "element": "Fuego",
+    "planet": "Marte",
+    "archetype": "El Transformador",
+    "gem": "Rubííºº",
+    "color": "Rojo fuego"
+  }
+}

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es" data-unit="months">
+<head>
+  <meta charset="UTF-8">
+  <title>Tu vida en meses | Mapa de Vida</title>
+  <meta name="description" content="Visualiza tu vida en meses, metas y recuerdos.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="your-life.css">
+</head>
+<body class="cosmic-mode">
+  <header class="cosmic-topbar">
+    <a href="index.html" class="brand-link">✦ MAPA DE VIDA ✦</a>
+    <a href="fecha.html" class="back-portal-btn">← Tu Oráculo / Portal</a>
+    <button type="button" id="cosmic-nav-toggle" class="cosmic-menu-btn" aria-label="Abrir menú de navegación">
+      <span class="menu-icon">☰</span> <span class="menu-text">Explorar</span>
+    </button>
+  </header>
+
+  <main class="app-shell">
+    <header class="title-box">
+      <p class="eyebrow">✦ DIMENSIÓN DEL TIEMPO ✦</p>
+      <h1 class="screen-title">Tu vida en <select id="unitbox" class="unitbox" aria-label="Unidad de tiempo"><option value="years">años</option><option value="months" selected>meses</option><option value="weeks">semanas</option></select></h1>
+      <h1 class="print-title" id="print-user-title">Tu Vida en 960 Meses</h1>
+      <p class="subtitle">Una perspectiva panorámica de tu existencia de un solo vistazo: 960 meses de vida en el cosmos.</p>
+    </header>
+
+    <!-- Contenedor técnico de inputs (oculto para preservar compatibilidad con scripts) -->
+    <section class="panel setup-panel" style="display: none;" aria-hidden="true">
+      <form class="dob">
+        <label>Fecha de nacimiento 
+          <span>
+            <select id="month" aria-label="Mes">
+              <option value="">Mes</option>
+              <option value="0">Enero</option>
+              <option value="1">Febrero</option>
+              <option value="2">Marzo</option>
+              <option value="3">Abril</option>
+              <option value="4">Mayo</option>
+              <option value="5">Junio</option>
+              <option value="6">Julio</option>
+              <option value="7">Agosto</option>
+              <option value="8">Septiembre</option>
+              <option value="9">Octubre</option>
+              <option value="10">Noviembre</option>
+              <option value="11">Diciembre</option>
+            </select>
+            <input id="day" type="number" min="1" max="31">
+            <input id="year" type="number" min="1900" max="2026">
+          </span>
+        </label>
+      </form>
+    </section>
+
+    <!-- Batería Vital (Progreso Vivido vs Restante) -->
+    <section class="stats" aria-live="polite"></section>
+
+    <!-- Barra de Impresión de Lámina Artística & Configuración de Expectativa -->
+    <div class="print-action-bar">
+      <button type="button" class="print-poster-btn" onclick="window.triggerPrintPoster ? window.triggerPrintPoster() : window.print()">
+        <span class="btn-icon">🖨️</span> Guardar Lámina de Meses / Imprimir PDF
+      </button>
+      <div class="expectancy-pill">
+        <span class="pill-icon">🎯</span>
+        <label for="quick-expectancy">Expectativa:</label>
+        <select id="quick-expectancy" class="expectancy-select" aria-label="Expectativa de vida en años">
+          <option value="70">70 años</option>
+          <option value="75">75 años</option>
+          <option value="80" selected>80 años (Estándar)</option>
+          <option value="85">85 años</option>
+          <option value="90">90 años</option>
+          <option value="95">95 años</option>
+          <option value="100">100 años (1 Siglo)</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Cuadrícula Panorámica (Fit to screen) -->
+    <section class="chart-wrap">
+      <div class="chart-heading">
+        <div>
+          <p class="section-kicker">PANORAMA GENERAL</p>
+          <h2>Cada casilla es un mes</h2>
+        </div>
+        <p class="legend"><span class="legend-item"><span class="legend-lived"></span> Vivido</span> <span class="legend-item"><span class="legend-remaining"></span> Restante</span> <span class="legend-item"><span class="legend-event"></span> Evento</span> <span class="legend-item"><span class="legend-goal"></span> Meta</span></p>
+      </div>
+      <ol class="chart months" data-item-count="960" aria-label="Mapa de vida"></ol>
+    </section>
+
+    <!-- Ajustes discretos de expectativa -->
+    <section class="toolbar panel">
+      <label class="switch"><input type="checkbox" id="remaining-mode"><span class="switch-ui"></span>Enfocar tiempo restante</label>
+      <label>Expectativa <input id="life-expectancy" class="small-input" type="number" min="1" max="130" value="80"> años</label>
+      <select id="theme" style="display:none;"><option value="dark" selected>Oscuro</option></select>
+    </section>
+
+    <!-- Reflexiones y Momentos -->
+    <section class="workspace-grid">
+      <aside class="panel period-detail">
+        <p class="muted">Toca o selecciona una casilla del mapa para añadir una reflexión o recuerdo.</p>
+      </aside>
+      <div class="panel lists-panel">
+        <div>
+          <p class="section-kicker">LO QUE TRASCIENDE</p>
+          <h2>Momentos y Dirección</h2>
+        </div>
+        <div class="entry-columns">
+          <div>
+            <h3>Eventos</h3>
+            <form class="event-form inline-form">
+              <input name="title" placeholder="Ej. Primer viaje" required>
+              <input name="index" type="number" min="1" max="960" placeholder="Mes" required>
+              <button type="submit">Añadir</button>
+            </form>
+            <ul class="event-list item-list"></ul>
+          </div>
+          <div>
+            <h3>Metas</h3>
+            <form class="goal-form inline-form">
+              <input name="title" placeholder="Ej. Aprender un idioma" required>
+              <input name="index" type="number" min="1" max="960" placeholder="Mes" required>
+              <button type="submit">Añadir</button>
+            </form>
+            <ul class="goal-list item-list"></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="print-watermark" aria-hidden="true">
+      <p class="print-quote">«Cada casilla es un fragmento irrepetible de tu existencia. Vive con propósito y plenitud.»</p>
+      <p class="print-credits">
+        Desarrollado por <a href="https://juan.cabellosalirrosas.com" target="_blank" rel="noopener noreferrer" class="print-credits-link">Xavier Cabello</a>
+      </p>
+    </div>
+
+    <footer class="cosmic-footer">
+      <div class="footer-actions">
+        <button type="button" class="cosmic-menu-btn footer-explore-btn">
+          <span class="btn-icon">☰</span> Explorar Todas las Dimensiones
+        </button>
+        <a href="fecha.html" class="footer-back-btn">
+          <span>🔮</span> Ver Tu Oráculo & Identidad
+        </a>
+      </div>
+      <div class="footer-divider"></div>
+      <p class="footer-privacy">🔒 Privado por diseño · Tus datos se procesan únicamente en tu navegador</p>
+      <p class="footer-author">
+        Desarrollado con dedicación por <a href="https://juan.cabellosalirrosas.com" target="_blank" rel="noopener noreferrer">Xavier Cabello</a>
+      </p>
+    </footer>
+  </main>
+
+  <script src="your-life.js"></script>
+  <script src="site-nav.js"></script>
+  <script src="stars.js"></script>
+</body>
+</html>

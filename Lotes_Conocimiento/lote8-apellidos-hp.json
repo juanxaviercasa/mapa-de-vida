@@ -1,0 +1,302 @@
+{
+  "heredia": {
+    "origin": "Toponimico hispanico",
+    "meaning": "Se asocia con el señorío o localidad de Heredia, en Álava, y se ha relacionado con la idea de heredad o propiedad heredada; su etimología exacta admite debate. Simboliza un linaje de continuidad, responsabilidad patrimonial y cuidado de lo recibido de los antepasados.",
+    "lineage": "Los Guardianes de la Heredad",
+    "territory": "Alava, Pais Vasco, Espana"
+  },
+  "herrera": {
+    "origin": "Latino-hispanico",
+    "meaning": "Deriva de herrera o herrería, oficio vinculado al trabajo del hierro, procedente en última instancia del latín ferraria. Representa un linaje de artesanía, resistencia y poder transformador: convertir materia dura en herramientas útiles.",
+    "lineage": "Los Forjadores del Hierro",
+    "territory": "Asturias y Castilla, Espana"
+  },
+  "hidalgo": {
+    "origin": "Hispanico medieval",
+    "meaning": "Proviene de hijo de algo, expresión medieval que designaba a una persona de condición noble. Simboliza un linaje que asocia el honor no solo con el origen, sino con la responsabilidad de obrar con dignidad y justicia.",
+    "lineage": "Los Hijos del Honor",
+    "territory": "Galicia y Castilla, Espana"
+  },
+  "hurtado": {
+    "origin": "Latino-hispanico",
+    "meaning": "Deriva de hurtado, participio de hurtar, voz procedente del latín furtum; pudo usarse como sobrenombre o estar ligado a relatos familiares medievales. Simboliza un linaje de supervivencia, discreción y capacidad de superar circunstancias complejas.",
+    "lineage": "Los del Camino Oculto",
+    "territory": "León y Castilla, Espana"
+  },
+  "ibarra": {
+    "origin": "Vasco",
+    "meaning": "Deriva del euskera ibar, 'vega', 'valle' o 'ribera'. Representa un linaje arraigado en tierras fértiles y espacios de encuentro, asociado simbólicamente con la capacidad de nutrir, reunir y hacer crecer a la comunidad.",
+    "lineage": "Los del Valle Fértil",
+    "territory": "Pais Vasco y Navarra, Espana"
+  },
+  "iglesias": {
+    "origin": "Griego-latino",
+    "meaning": "Deriva de iglesias, plural de iglesia, del griego ekklesia a través del latín ecclesia. Como apellido toponímico, alude a familias vinculadas a un lugar cercano a iglesias y simboliza comunidad, reunión y memoria espiritual compartida.",
+    "lineage": "Los Custodios del Santuario",
+    "territory": "Galicia y norte de Espana"
+  },
+  "jimenez": {
+    "origin": "Hispanico medieval",
+    "meaning": "Es un apellido patronímico que significa 'hijo de Jimeno' o Ximeno; el nombre de origen presenta varias hipótesis etimológicas. Simboliza continuidad familiar, memoria de los antepasados y la fuerza de prolongar un legado con identidad propia.",
+    "lineage": "Los Hijos de Jimeno",
+    "territory": "Navarra, Castilla y León, Espana"
+  },
+  "juarez": {
+    "origin": "Hispanico medieval",
+    "meaning": "Es una variante patronímica de Suárez o de formas medievales relacionadas con Suero, cuya raíz se discute. Representa un linaje de descendencia, lealtad familiar y capacidad de preservar la identidad a través de las generaciones.",
+    "lineage": "Los Herederos Leales",
+    "territory": "León y Castilla, Espana"
+  },
+  "laguna": {
+    "origin": "Latino-hispanico",
+    "meaning": "Deriva de laguna, del latín lacuna, 'depósito natural de agua', 'hueco' o 'espacio'. Simboliza un linaje de quietud profunda, reflexión y capacidad de conservar recursos vitales aun en tiempos de cambio.",
+    "lineage": "Los Guardianes de la Laguna",
+    "territory": "Castilla y Aragon, Espana"
+  },
+  "lara": {
+    "origin": "Toponimico hispanico",
+    "meaning": "Procede de localidades llamadas Lara, especialmente en Burgos; se han propuesto raíces prerromanas y latinas, sin consenso absoluto. Simboliza un linaje de tierra antigua, arraigo territorial y conexión con una memoria histórica profunda.",
+    "lineage": "Los de la Tierra Antigua",
+    "territory": "Burgos, Castilla y León, Espana"
+  },
+  "leiva": {
+    "origin": "Vasco-toponimico",
+    "meaning": "Es variante de Leyva, apellido toponímico ligado a Leiva, en La Rioja; se han propuesto raíces vascas relacionadas con un lugar de barro o arcilla. Representa un linaje de adaptabilidad, trabajo con la tierra y capacidad de dar forma al propio destino.",
+    "lineage": "Los Modeladores de la Tierra",
+    "territory": "La Rioja y Navarra, Espana"
+  },
+  "lemus": {
+    "origin": "Frances-hispanico",
+    "meaning": "Se asocia con Limousin, región histórica de Francia, desde donde se difundieron formas como Lemus en la Península Ibérica. Simboliza un linaje de desplazamiento, intercambio cultural y habilidad para conservar las raíces aun al cruzar fronteras.",
+    "lineage": "Los Viajeros del Lemosin",
+    "territory": "Limousin, Francia; Galicia, Espana"
+  },
+  "leyva": {
+    "origin": "Vasco-toponimico",
+    "meaning": "Procede de Leiva, topónimo de La Rioja vinculado en algunas interpretaciones a raíces vascas relacionadas con barro o arcilla. Simboliza una herencia de adaptación, paciencia y fuerza para moldear la vida desde condiciones concretas.",
+    "lineage": "Los del Lugar de Arcilla",
+    "territory": "La Rioja y Navarra, Espana"
+  },
+  "lozano": {
+    "origin": "Hispanico medieval",
+    "meaning": "Deriva de lozano, adjetivo que puede significar exuberante, vigoroso, agraciado o gallardo. Como sobrenombre, representa un linaje de vitalidad, presencia luminosa y capacidad de florecer con confianza.",
+    "lineage": "Los del Vigor Florido",
+    "territory": "Castilla y Andalucia, Espana"
+  },
+  "luna": {
+    "origin": "Latino-hispanico",
+    "meaning": "Deriva de luna, del latín luna, y puede ser toponímico o descriptivo. Evoca un linaje de ciclos, intuición y adaptación: la sabiduría de renovar la propia luz incluso en las fases de oscuridad.",
+    "lineage": "Los Hijos de la Luna",
+    "territory": "Aragon y Castilla, Espana"
+  },
+  "maldonado": {
+    "origin": "Hispanico medieval",
+    "meaning": "Se ha interpretado como un sobrenombre formado por mal y donado, 'mal favorecido' o 'mal dotado', aunque también se vincula con topónimos y linajes históricos. Simboliza la capacidad de transformar etiquetas adversas en fuerza, perseverancia y reconocimiento propio.",
+    "lineage": "Los que Vencen la Sombra",
+    "territory": "Galicia y Extremadura, Espana"
+  },
+  "mancilla": {
+    "origin": "Latino-hispanico",
+    "meaning": "Deriva de mancilla, 'mancha' o 'señal', palabra vinculada al latín macula. Como sobrenombre, recuerda que toda historia familiar posee marcas; simbólicamente expresa resiliencia y la facultad de convertir experiencias difíciles en aprendizaje.",
+    "lineage": "Los de la Marca Superada",
+    "territory": "León, Espana"
+  },
+  "marin": {
+    "origin": "Latino",
+    "meaning": "Deriva de Marinus, 'del mar' o 'marino', relacionado con mare. Representa un linaje de movimiento, profundidad y apertura al horizonte, capaz de adaptarse a las mareas de la historia sin perder dirección.",
+    "lineage": "Los Navegantes del Mar",
+    "territory": "Cataluna, Valencia y Castilla, Espana"
+  },
+  "marquez": {
+    "origin": "Hispanico medieval",
+    "meaning": "Es un apellido patronímico que significa 'hijo de Marco' o Marcos; el sufijo -ez indica descendencia. Simboliza un linaje de iniciativa y continuidad, en el que la memoria del antepasado se convierte en impulso para nuevas generaciones.",
+    "lineage": "Los Hijos de Marcos",
+    "territory": "Castilla y León, Espana"
+  },
+  "medina": {
+    "origin": "Arabe-espanol",
+    "meaning": "Deriva del árabe madina, 'ciudad'. Como apellido toponímico, señala procedencia de lugares llamados Medina y expresa un linaje ligado a la vida urbana, el intercambio y la capacidad de prosperar en comunidad.",
+    "lineage": "Los Hijos de la Ciudad",
+    "territory": "Andalucia y Castilla, Espana"
+  },
+  "mejia": {
+    "origin": "Hispanico medieval",
+    "meaning": "Es una variante gráfica de Mexía o Messía, apellido de origen discutido que ha sido relacionado con raíces hebreas, latinas o toponímicas según distintas propuestas. Simboliza un linaje de identidad compleja, adaptación histórica y riqueza de múltiples raíces.",
+    "lineage": "Los de la Raiz Diversa",
+    "territory": "Galicia y Castilla, Espana"
+  },
+  "mendez": {
+    "origin": "Hispanico medieval",
+    "meaning": "Es un apellido patronímico que significa 'hijo de Mendo' o Menendo, antiguo nombre personal de probable raíz germánica. Representa continuidad, respeto por la herencia y capacidad de proyectar la historia familiar hacia el futuro.",
+    "lineage": "Los Hijos de Mendo",
+    "territory": "Galicia, León y Asturias, Espana"
+  },
+  "mendoza": {
+    "origin": "Vasco",
+    "meaning": "Deriva del euskera mendi, 'monte', y hotz u otz, 'frío': 'monte frío'. Simboliza un linaje de altura, resistencia y claridad para mantenerse firme frente a las condiciones más exigentes.",
+    "lineage": "Los del Monte Frio",
+    "territory": "Alava, Pais Vasco, Espana"
+  },
+  "molina": {
+    "origin": "Latino-hispanico",
+    "meaning": "Deriva de molino o molina, relacionado con el latín molinum, y pudo ser ocupacional o toponímico. Representa un linaje de trabajo constante, transformación de recursos y habilidad para convertir el esfuerzo en sustento.",
+    "lineage": "Los Molineros del Destino",
+    "territory": "Castilla y Aragon, Espana"
+  },
+  "monroy": {
+    "origin": "Toponimico hispanico",
+    "meaning": "Procede de Monroy, topónimo de Cáceres formado por monte y un segundo elemento de interpretación discutida, posiblemente relacionado con rojo o real. Simboliza un linaje de altura, vigilancia y conexión con paisajes de frontera.",
+    "lineage": "Los del Monte Real",
+    "territory": "Caceres, Extremadura, Espana"
+  },
+  "montoya": {
+    "origin": "Vasco-toponimico",
+    "meaning": "Se vincula con un topónimo vasco relacionado con monte y con un segundo elemento interpretado como hueco, valle o lugar de agua. Representa un linaje de montaña y refugio, capaz de hallar recursos aun en terrenos complejos.",
+    "lineage": "Los del Monte y Valle",
+    "territory": "Alava y Navarra, Espana"
+  },
+  "mora": {
+    "origin": "Latino-hispanico",
+    "meaning": "Puede derivar de mora, fruto de la morera, o funcionar como sobrenombre asociado históricamente a personas moras; por ello tiene posibles orígenes distintos. Simboliza fecundidad, diversidad y la riqueza que surge del encuentro de tradiciones.",
+    "lineage": "Los del Fruto Oscuro",
+    "territory": "Aragon, Valencia y Andalucia, Espana"
+  },
+  "morales": {
+    "origin": "Latino-hispanico",
+    "meaning": "Deriva de moral, 'morera', árbol procedente del latín morus, o de lugares llamados Morales. Simboliza un linaje de arraigo, paciencia y fecundidad, como el árbol que sostiene vida con sombra y fruto.",
+    "lineage": "Los Hijos de la Morera",
+    "territory": "Castilla y León, Espana"
+  },
+  "moreno": {
+    "origin": "Latino-hispanico",
+    "meaning": "Deriva de moreno, sobrenombre descriptivo referido tradicionalmente al color oscuro del cabello o de la piel, con usos históricos diversos. Simboliza un linaje de identidad visible, fortaleza sobria y aceptación digna de los propios rasgos.",
+    "lineage": "Los de la Tierra Oscura",
+    "territory": "Andalucia y Castilla, Espana"
+  },
+  "muñoz": {
+    "origin": "Hispanico medieval",
+    "meaning": "Es un apellido patronímico que significa 'hijo de Muño' o Munio, antiguo nombre personal de interpretación discutida, posiblemente relacionado con protección o colina. Representa continuidad familiar, cuidado y la fuerza de un legado transmitido.",
+    "lineage": "Los Hijos de Munio",
+    "territory": "Castilla y León, Espana"
+  },
+  "navarrete": {
+    "origin": "Toponimico hispanico",
+    "meaning": "Procede de Navarrete, localidad riojana cuyo nombre se relaciona con Navarra o con población de navarros. Simboliza un linaje de camino, frontera y capacidad de preservar identidad en el tránsito entre territorios.",
+    "lineage": "Los del Camino Navarro",
+    "territory": "La Rioja, Espana"
+  },
+  "navarro": {
+    "origin": "Toponimico hispanico",
+    "meaning": "Significa 'natural de Navarra' y surgió como gentilicio convertido en apellido. Representa un linaje de pertenencia territorial, memoria pirenaica y fortaleza para sostener la identidad en contextos cambiantes.",
+    "lineage": "Los Hijos de Navarra",
+    "territory": "Navarra, Espana"
+  },
+  "nieto": {
+    "origin": "Latino-hispanico",
+    "meaning": "Deriva de nieto, voz relacionada con el latín neptis y usada para designar descendencia. Como apellido, simboliza la continuidad entre generaciones, el cuidado de la memoria y la responsabilidad de prolongar un legado familiar.",
+    "lineage": "Los Herederos del Linaje",
+    "territory": "Castilla y León, Espana"
+  },
+  "nuñez": {
+    "origin": "Hispanico medieval",
+    "meaning": "Es un apellido patronímico que significa 'hijo de Nuño', antiguo nombre personal de etimología discutida. Representa la memoria de un antepasado fundador y la capacidad de mantener unida a la familia a través del tiempo.",
+    "lineage": "Los Hijos de Nuño",
+    "territory": "Castilla, León y Galicia, Espana"
+  },
+  "ochoa": {
+    "origin": "Vasco",
+    "meaning": "Deriva del euskera otsoa, 'lobo'. Simboliza un linaje de instinto, lealtad y protección del grupo, con la inteligencia necesaria para reconocer el momento de avanzar o resguardar a los suyos.",
+    "lineage": "Los Hijos del Lobo",
+    "territory": "Pais Vasco y Navarra, Espana"
+  },
+  "ojeda": {
+    "origin": "Toponimico hispanico",
+    "meaning": "Procede de lugares llamados Ojeda, especialmente en Palencia, y se ha relacionado con el término ojo o con un hidrónimo local; la raíz precisa no es segura. Simboliza visión, observación y memoria de un territorio atravesado por caminos y agua.",
+    "lineage": "Los del Valle Vigilante",
+    "territory": "Palencia, Castilla y León, Espana"
+  },
+  "olivares": {
+    "origin": "Latino-hispanico",
+    "meaning": "Deriva de olivares, 'conjunto de olivos', del latín oliva. Es un apellido toponímico que simboliza paz, paciencia y prosperidad: el legado de cultivar lentamente aquello que dará fruto a largo plazo.",
+    "lineage": "Los Cultivadores del Olivo",
+    "territory": "Andalucia y Castilla, Espana"
+  },
+  "orozco": {
+    "origin": "Vasco",
+    "meaning": "Procede del valle de Orozko, en Bizkaia; se han propuesto distintas segmentaciones vascas para el topónimo, sin acuerdo definitivo. Simboliza un linaje de valle, comunidad y arraigo en una geografía que protege y reúne.",
+    "lineage": "Los del Valle Guardado",
+    "territory": "Bizkaia, Pais Vasco, Espana"
+  },
+  "ortega": {
+    "origin": "Latino-hispanico",
+    "meaning": "Deriva de ortega, nombre de una planta aromática, posiblemente relacionado con urtica, 'ortiga', o con voces romances semejantes. Simboliza un linaje de resistencia natural, capacidad de protección y fuerza para prosperar en condiciones difíciles.",
+    "lineage": "Los de la Planta Fuerte",
+    "territory": "Castilla y León, Espana"
+  },
+  "ortiz": {
+    "origin": "Hispanico medieval",
+    "meaning": "Es un apellido patronímico que significa 'hijo de Orti' o Fortún, nombre personal de raíz latina asociado con la fortuna. Representa un linaje de continuidad, oportunidad y compromiso de convertir las posibilidades heredadas en obras concretas.",
+    "lineage": "Los Hijos de la Fortuna",
+    "territory": "Navarra y Castilla, Espana"
+  },
+  "osorio": {
+    "origin": "Germanico-hispanico",
+    "meaning": "Procede de un antiguo nombre personal, Osorio, posiblemente relacionado con la raíz germánica que alude a una divinidad o a un oso; las interpretaciones varían. Simboliza protección, fuerza ancestral y liderazgo prudente ante los desafíos.",
+    "lineage": "Los Guardianes del Oso",
+    "territory": "León y Asturias, Espana"
+  },
+  "pacheco": {
+    "origin": "Hispanico medieval",
+    "meaning": "Su origen es discutido; se ha relacionado con un antiguo nombre personal y con posibles raíces mozárabes o portuguesas. Simboliza un linaje de adaptación cultural, ingenio y capacidad de conservar identidad en zonas de encuentro histórico.",
+    "lineage": "Los de la Raiz Mestiza",
+    "territory": "Extremadura y Portugal"
+  },
+  "padilla": {
+    "origin": "Latino-hispanico",
+    "meaning": "Es un apellido toponímico procedente de lugares llamados Padilla, relacionado con un diminutivo de pado o con tierras húmedas y pequeñas lagunas, según diversas propuestas. Simboliza fertilidad, resguardo y la capacidad de prosperar desde territorios modestos.",
+    "lineage": "Los del Humedal Fértil",
+    "territory": "Burgos, Castilla y León, Espana"
+  },
+  "palacio": {
+    "origin": "Latino",
+    "meaning": "Deriva de palatium, 'palacio', y pudo designar a quien vivía cerca de una residencia señorial o trabajaba en ella. Representa un linaje de responsabilidad, orden y conciencia sobre el peso simbólico de la autoridad.",
+    "lineage": "Los Guardianes del Palacio",
+    "territory": "Asturias y Castilla, Espana"
+  },
+  "paredes": {
+    "origin": "Latino-hispanico",
+    "meaning": "Deriva de paredes, plural de pared, del latín paries. Como apellido toponímico, simboliza protección, delimitación y la capacidad de construir estructuras firmes que resguarden a la familia y a la comunidad.",
+    "lineage": "Los Constructores de Murallas",
+    "territory": "Galicia y Castilla, Espana"
+  },
+  "patiño": {
+    "origin": "Gallego-portugues",
+    "meaning": "Es un apellido de origen debatido, documentado en Galicia y Portugal; se han propuesto vínculos con apodos o topónimos antiguos. Simboliza un linaje de raíces atlánticas, persistencia y capacidad de conservar memoria a través de la migración.",
+    "lineage": "Los de la Costa Antigua",
+    "territory": "Galicia, Espana y norte de Portugal"
+  },
+  "paz": {
+    "origin": "Latino-hispanico",
+    "meaning": "Deriva de paz, del latín pax, y pudo surgir como nombre devocional o sobrenombre. Representa un linaje orientado simbólicamente a la conciliación, el equilibrio y la construcción de acuerdos duraderos.",
+    "lineage": "Los Guardianes de la Paz",
+    "territory": "Castilla y Andalucia, Espana"
+  },
+  "peña": {
+    "origin": "Latino-hispanico",
+    "meaning": "Deriva de peña, voz relacionada con el latín pinna, 'roca', 'cima' o 'peñasco'. Es un apellido toponímico que simboliza firmeza, refugio y resistencia ante los cambios del tiempo.",
+    "lineage": "Los de la Roca Firme",
+    "territory": "Castilla y León, Espana"
+  },
+  "peralta": {
+    "origin": "Latino-hispanico",
+    "meaning": "Procede de Peralta, topónimo formado por piedra y alta, o asociado con una peña elevada. Representa un linaje de perspectiva, fortaleza y capacidad de sostenerse con dignidad en lugares de exigencia.",
+    "lineage": "Los de la Piedra Alta",
+    "territory": "Navarra y Aragon, Espana"
+  },
+  "perez": {
+    "origin": "Hispanico medieval",
+    "meaning": "Es un apellido patronímico que significa 'hijo de Pedro'; Pedro procede del griego Petros, 'piedra' o 'roca'. Simboliza un linaje de firmeza, continuidad y confianza en la capacidad de construir sobre bases sólidas.",
+    "lineage": "Los Hijos de la Roca",
+    "territory": "Castilla y León, Espana"
+  }
+}

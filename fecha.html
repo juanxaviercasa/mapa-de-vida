@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es" data-page="fecha">
+<head>
+  <meta charset="UTF-8">
+  <title>Mapa de Vida — El Oráculo de tu Existencia</title>
+  <meta name="description" content="Explora tu fecha de nacimiento en distintas culturas, calendarios y tradiciones ancestrales.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="your-life.css">
+</head>
+<body class="cosmic-theme">
+  <!-- ═══ NAVEGACIÓN GLOBAL CÓSMICA ═══ -->
+  <header class="cosmic-topbar">
+    <a href="index.html" class="brand-link">✦ MAPA DE VIDA ✦</a>
+    <div class="topbar-center">
+      <a href="index.html" class="back-portal-btn">← Volver al Portal / Nueva Consulta</a>
+    </div>
+    <button type="button" id="cosmic-nav-toggle" class="cosmic-menu-btn" aria-label="Abrir menú de navegación">
+      <span class="menu-icon">☰</span> <span class="menu-text">Explorar</span>
+    </button>
+  </header>
+
+  <main class="app-shell cultural-page">
+    
+    <!-- ═══ HEADER & HERO (DOSSIER CÓSMICO) ═══ -->
+    <header class="title-box">
+      <p class="eyebrow">✦ EL ORÁCULO DE TU EXISTENCIA ✦</p>
+      <h1 class="cosmic-title">Mapa de Vida</h1>
+      <p class="cosmic-tagline">Cada fecha es una puerta. Cada número, un mensaje del cosmos.</p>
+      <p class="subtitle">Calendarios, hitos y tradiciones ancestrales calculados a partir de tu fecha de nacimiento.</p>
+    </header>
+
+    <!-- Contenedor técnico de datos (Oculto para preservar compatibilidad y mantener la pantalla 100% limpia) -->
+    <form class="dob" style="display: none;" aria-hidden="true">
+      <select id="month" aria-label="Mes">
+        <option value="">Mes</option>
+        <option value="0">Enero</option>
+        <option value="1">Febrero</option>
+        <option value="2">Marzo</option>
+        <option value="3">Abril</option>
+        <option value="4">Mayo</option>
+        <option value="5">Junio</option>
+        <option value="6">Julio</option>
+        <option value="7">Agosto</option>
+        <option value="8">Septiembre</option>
+        <option value="9">Octubre</option>
+        <option value="10">Noviembre</option>
+        <option value="11">Diciembre</option>
+      </select>
+      <input id="day" type="number" min="1" max="31">
+      <input id="year" type="number" min="1900" max="2026">
+    </form>
+
+    <!-- ═══ RESUMEN EJECUTIVO (BENTO IDENTIDAD) ═══ -->
+    <section id="identity-output" class="identity-grid" aria-live="polite"></section>
+
+    <!-- ═══ NAVEGACIÓN POR PESTAÑAS SAGRADAS (SEGMENTED TABS) ═══ -->
+    <nav class="cosmic-tabs-nav" aria-label="Secciones del Mapa de Vida">
+      <button type="button" class="cosmic-tab-btn active" data-target="tab-esencia">
+        <span class="tab-icon">✦</span> Tu Esencia
+      </button>
+      <button type="button" class="cosmic-tab-btn" data-target="tab-culturas">
+        <span class="tab-icon">🌍</span> Culturas del Mundo
+      </button>
+      <button type="button" class="cosmic-tab-btn" data-target="tab-simbolos">
+        <span class="tab-icon">🔮</span> Cielo & Símbolos
+      </button>
+      <button type="button" class="cosmic-tab-btn" data-target="tab-oraculo">
+        <span class="tab-icon">👁️</span> Oráculo & Tiempo
+      </button>
+    </nav>
+
+    <!-- ═══ TAB 1: TU ESENCIA & NOMBRE ═══ -->
+    <div id="tab-esencia" class="cosmic-tab-panel active">
+      <div id="dash-content"></div>
+    </div>
+
+    <!-- ═══ TAB 2: CULTURAS DEL MUNDO ═══ -->
+    <div id="tab-culturas" class="cosmic-tab-panel">
+      <section class="panel">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">02 / CALENDARIOS ANCESTRALES</p>
+            <h2>Tu fecha en otras culturas</h2>
+          </div>
+          <p class="muted">Sistemas cronológicos ancestrales sincronizados con tu llegada al mundo.</p>
+        </div>
+        <div id="calendar-output" class="cards-grid"></div>
+      </section>
+    </div>
+
+    <!-- ═══ TAB 3: CIELO Y SÍMBOLOS ═══ -->
+    <div id="tab-simbolos" class="cosmic-tab-panel">
+      <section class="panel">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">03 / ARQUETIPOS Y CIELO</p>
+            <h2>Cosmovisiones ancestrales</h2>
+          </div>
+          <p class="muted">Lecturas simbólicas de Egipto, los celtas, mayas y la astrología védica sideral.</p>
+        </div>
+        <div id="symbol-output" class="cards-grid"></div>
+      </section>
+    </div>
+
+    <!-- ═══ TAB 4: EL ORÁCULO & TIEMPO ═══ -->
+    <div id="tab-oraculo" class="cosmic-tab-panel">
+      <!-- Oráculo -->
+      <section class="panel" style="margin-bottom: 24px;">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">04 / EL ORÁCULO ASTRAL</p>
+            <h2>El Mensaje del Universo</h2>
+          </div>
+          <p class="muted">Lecturas místicas sincrónicas e Inteligencia Artificial Astral (Gemini).</p>
+        </div>
+        <div id="oracle-container" class="oracle-container">
+          <div class="oracle-tabs">
+            <button id="tab-algo" class="active">Oráculo del Día</button>
+            <button id="tab-ai">Consultar Oráculo (IA)</button>
+          </div>
+          <div id="oracle-algo-content" class="oracle-content active">
+            <div id="oracle-algo-output" class="oracle-message-box"></div>
+          </div>
+          <div id="oracle-ai-content" class="oracle-content" style="display:none;">
+            <div id="api-key-setup" class="api-setup-box">
+              <h3>Conectar al Oráculo Astral</h3>
+              <p>Para interactuar, necesitas una clave gratuita de Inteligencia Artificial (Gemini). Tu navegador se conectará directamente a la IA sin servidores intermedios.</p>
+              <ol>
+                <li>Entra a <a href="https://aistudio.google.com/app/apikey" target="_blank" rel="noopener">Google AI Studio</a> e inicia sesión con Google.</li>
+                <li>Haz clic en "Create API key".</li>
+                <li>Copia la clave y pégala aquí abajo:</li>
+              </ol>
+              <input type="password" id="gemini-api-key" placeholder="Pega tu API Key aquí...">
+              <button id="save-api-key" class="button">Conectar y Guardar</button>
+              <p class="privacy-note">Tu clave se guarda en tu propio navegador de forma 100% segura.</p>
+            </div>
+            <div id="ai-chat-interface" class="chat-interface" style="display:none;">
+              <div id="chat-history" class="chat-history"></div>
+              <div class="chat-input-box">
+                <input type="text" id="ai-question" placeholder="Escribe tu pregunta al Oráculo...">
+                <button id="ask-ai-btn" class="button">Preguntar</button>
+              </div>
+              <button id="remove-api-key" class="text-btn">Desconectar API</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Hitos temporales -->
+      <section class="panel" style="margin-bottom: 24px;">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">05 / HITOS TEMPORALES</p>
+            <h2>Fechas que puedes marcar</h2>
+          </div>
+          <p class="muted">Pequeños números que hacen tangible el paso sagrado del tiempo.</p>
+        </div>
+        <div id="milestone-output" class="milestone-grid"></div>
+      </section>
+
+      <!-- Contexto histórico -->
+      <section class="panel" style="margin-bottom: 24px;">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">06 / EL MUNDO CUANDO NACISTE</p>
+            <h2>Cápsula del tiempo</h2>
+          </div>
+          <p class="muted">Acontecimientos globales y tecnología del año de tu llegada.</p>
+        </div>
+        <div id="history-output" class="history-grid"></div>
+      </section>
+
+      <!-- Línea de vida -->
+      <section class="panel">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">07 / LÍNEA DE VIDA</p>
+            <h2>Lo que ya elegiste recordar</h2>
+          </div>
+          <p class="muted">Se alimenta de tus eventos y metas guardados en el mapa.</p>
+        </div>
+        <ol id="timeline-output" class="timeline"></ol>
+      </section>
+    </div>
+
+    <!-- ═══ PRIVACIDAD Y FOOTER ═══ -->
+    <section class="panel privacy-panel" style="margin-top: 32px;">
+      <p class="section-kicker">NOTA DE CONTEXTO</p>
+      <p>Los calendarios y símbolos pertenecen a tradiciones distintas y no tienen el mismo significado histórico. La numerología, astrología y fase lunar aquí mostradas son interpretaciones culturales y recreativas.</p>
+    </section>
+    <footer class="cosmic-footer">
+      <div class="footer-actions">
+        <button type="button" class="cosmic-menu-btn footer-explore-btn">
+          <span class="btn-icon">☰</span> Explorar Todas las Dimensiones
+        </button>
+        <a href="index.html" class="footer-back-btn">
+          <span>←</span> Realizar Nueva Consulta
+        </a>
+      </div>
+      <div class="footer-divider"></div>
+      <p class="footer-privacy">🔒 Privado por diseño · Tus datos se procesan únicamente en tu navegador</p>
+      <p class="footer-author">
+        Desarrollado con dedicación por <a href="https://juan.cabellosalirrosas.com" target="_blank" rel="noopener noreferrer">Xavier Cabello</a>
+      </p>
+    </footer>
+  </main>
+  
+  <script src="portal.js"></script>
+  <script src="fecha.js"></script>
+  <script src="site-nav.js"></script>
+  <script>
+    // Conmutador interactivo de Pestañas Cósmicas (Segmented Control)
+    document.addEventListener('DOMContentLoaded', function() {
+      const tabBtns = document.querySelectorAll('.cosmic-tab-btn');
+      const tabPanels = document.querySelectorAll('.cosmic-tab-panel');
+      tabBtns.forEach(btn => {
+        btn.addEventListener('click', function() {
+          const targetId = this.getAttribute('data-target');
+          tabBtns.forEach(b => b.classList.remove('active'));
+          tabPanels.forEach(p => p.classList.remove('active'));
+          this.classList.add('active');
+          const panel = document.getElementById(targetId);
+          if (panel) panel.classList.add('active');
+        });
+      });
+    });
+  </script>
+</body>
+</html>

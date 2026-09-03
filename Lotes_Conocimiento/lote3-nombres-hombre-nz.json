@@ -1,0 +1,312 @@
+{
+  "nicolas": {
+    "origin": "Griego",
+    "lang": "Griego clasico",
+    "meaning": "Deriva de Nikolaos, formado por nike, 'victoria', y laos, 'pueblo'. Simboliza la capacidad de inspirar y guiar a la comunidad hacia metas compartidas, uniendo liderazgo y sentido de pertenencia.",
+    "element": "Aire",
+    "planet": "Jupiter",
+    "archetype": "El Líder del Pueblo",
+    "gem": "Lapislazuli",
+    "color": "Azul real"
+  },
+  "noah": {
+    "origin": "Hebreo",
+    "lang": "Hebreo antiguo",
+    "meaning": "Procede de Noaj, interpretado como 'descanso', 'consuelo' o 'paz'. Representa la calma interior que emerge tras la tormenta y la sabiduría de saber esperar los ciclos de renovacion.",
+    "element": "Agua",
+    "planet": "Luna",
+    "archetype": "El Constructor de Paz",
+    "gem": "Piedra luna",
+    "color": "Blanco nacarado"
+  },
+  "noel": {
+    "origin": "Latino",
+    "lang": "Latin medieval",
+    "meaning": "Deriva de natalis, 'nacimiento', asociado tradicionalmente a la Navidad. Simboliza el renacer, la esperanza y la disposicion de comenzar de nuevo con gratitud y apertura.",
+    "element": "Luz",
+    "planet": "Sol",
+    "archetype": "El Renacido",
+    "gem": "Cuarzo transparente",
+    "color": "Blanco dorado"
+  },
+  "omar": {
+    "origin": "Arabe",
+    "lang": "Arabe clasico",
+    "meaning": "Procede de Umar, relacionado con 'vida', 'longevo' o 'floreciente'. Evoca la vitalidad que se cultiva con disciplina y la capacidad de prosperar incluso en entornos exigentes.",
+    "element": "Fuego",
+    "planet": "Sol",
+    "archetype": "El Floreciente",
+    "gem": "Citrino",
+    "color": "Amarillo dorado"
+  },
+  "oscar": {
+    "origin": "Celta",
+    "lang": "Irlandes antiguo",
+    "meaning": "Deriva de Oiscar, compuesto por ois, 'ciervo', y car, 'amante' o 'amigo'. Representa la sensibilidad unida a la nobleza, la capacidad de proteger con ternura y discernimiento.",
+    "element": "Tierra",
+    "planet": "Venus",
+    "archetype": "El Protector Sensible",
+    "gem": "Cuarzo rosa",
+    "color": "Rosa suave"
+  },
+  "pablo": {
+    "origin": "Latino",
+    "lang": "Latin",
+    "meaning": "Procede de Paulus, 'pequeo' o 'humilde'. Simboliza la grandeza que nace de la humildad, la fuerza discreta que construye con paciencia y coherencia.",
+    "element": "Tierra",
+    "planet": "Saturno",
+    "archetype": "El Humilde Constructor",
+    "gem": "Ónix",
+    "color": "Negro mate"
+  },
+  "patricio": {
+    "origin": "Latino",
+    "lang": "Latin",
+    "meaning": "Deriva de patricius, 'perteneciente a los patricios', la clase noble romana. Representa la dignidad heredada y la responsabilidad de honrarla con integridad y servicio.",
+    "element": "Luz",
+    "planet": "Sol",
+    "archetype": "El Noble Heredero",
+    "gem": "Diamante",
+    "color": "Dorado imperial"
+  },
+  "pedro": {
+    "origin": "Griego",
+    "lang": "Griego/Latin",
+    "meaning": "Procede de Petros, 'piedra' o 'roca'. Simboliza firmeza, estabilidad y la capacidad de ser fundamento confiable para proyectos y relaciones duraderas.",
+    "element": "Tierra",
+    "planet": "Saturno",
+    "archetype": "El Cimiento Firme",
+    "gem": "Granate",
+    "color": "Gris petreo"
+  },
+  "rafael": {
+    "origin": "Hebreo",
+    "lang": "Hebreo antiguo",
+    "meaning": "Deriva de Rafa'el, 'Dios ha sanado'. Representa la vocacion sanadora, la capacidad de aliviar con presencia, palabra y acción, recordando que curar es también restaurar la esperanza.",
+    "element": "Luz",
+    "planet": "Sol",
+    "archetype": "El Sanador",
+    "gem": "Aguamarina",
+    "color": "Azul celeste"
+  },
+  "ramon": {
+    "origin": "Germanico",
+    "lang": "Germanico antiguo",
+    "meaning": "Procede de Raginmund, formado por ragin, 'consejo', y mund, 'protección'. Simboliza la sabiduría protectora y la capacidad de guiar con prudencia y lealtad.",
+    "element": "Tierra",
+    "planet": "Saturno",
+    "archetype": "El Consejero Protector",
+    "gem": "Ojo de tigre",
+    "color": "Marron dorado"
+  },
+  "raul": {
+    "origin": "Germanico",
+    "lang": "Germanico antiguo",
+    "meaning": "Deriva de Radulf, formado por rat, 'consejo', y wulf, 'lobo'. Representa la astucia noble y la capacidad de aconsejar con firmeza, protegiendo a los suyos con inteligencia.",
+    "element": "Fuego",
+    "planet": "Marte",
+    "archetype": "El Lobo Consejero",
+    "gem": "Obsidiana",
+    "color": "Negro profundo"
+  },
+  "renato": {
+    "origin": "Latino",
+    "lang": "Latin",
+    "meaning": "Procede de Renatus, 'renacido' o 'nacido de nuevo'. Simboliza la capacidad de transformación, el valor de soltar lo viejo y abrazar nuevas etapas con conciencia.",
+    "element": "Aire",
+    "planet": "Urano",
+    "archetype": "El Transformador",
+    "gem": "Turquesa",
+    "color": "Turquesa vibrante"
+  },
+  "ricardo": {
+    "origin": "Germanico",
+    "lang": "Alto aleman antiguo",
+    "meaning": "Deriva de Richard, formado por ric, 'poder' o 'gobernante', y hard, 'fuerte'. Representa el liderazgo firme, la capacidad de dirigir con autoridad y responsabilidad.",
+    "element": "Fuego",
+    "planet": "Marte",
+    "archetype": "El Gobernante Fuerte",
+    "gem": "Rubííºº",
+    "color": "Rojo carmesi"
+  },
+  "roberto": {
+    "origin": "Germanico",
+    "lang": "Alto aleman antiguo",
+    "meaning": "Procede de Hrodebert, formado por hrod, 'fama', y beraht, 'brillante'. Simboliza el reconocimiento que surge de acciones luminosas y la reputacion construida con integridad.",
+    "element": "Luz",
+    "planet": "Sol",
+    "archetype": "El Famoso Luminoso",
+    "gem": "Topacio dorado",
+    "color": "Dorado brillante"
+  },
+  "rodrigo": {
+    "origin": "Germanico",
+    "lang": "Visigodo",
+    "meaning": "Deriva de Hrodric, formado por hrod, 'fama', y ric, 'poder' o 'gobernante'. Representa el liderazgo reconocido, la capacidad de influir con ejemplo y autoridad moral.",
+    "element": "Fuego",
+    "planet": "Sol",
+    "archetype": "El Rey Famoso",
+    "gem": "Diamante",
+    "color": "Dorado real"
+  },
+  "roman": {
+    "origin": "Latino",
+    "lang": "Latin",
+    "meaning": "Procede de Romanus, 'natural de Roma' o 'ciudadano romano'. Simboliza la identidad vinculada a la civilizacion, el orden y la capacidad de construir comunidad con sentido de pertenencia.",
+    "element": "Tierra",
+    "planet": "Saturno",
+    "archetype": "El Ciudadano",
+    "gem": "Jaspe rojo",
+    "color": "Rojo terracota"
+  },
+  "ruben": {
+    "origin": "Hebreo",
+    "lang": "Hebreo antiguo",
+    "meaning": "Deriva de Reuven, interpretado como 'he aquí un hijo' o 'Dios ha visto mi afliccion'. Representa la conciencia de ser visto y la capacidad de reconocer el valor de cada vida.",
+    "element": "Agua",
+    "planet": "Luna",
+    "archetype": "El Hijo Visto",
+    "gem": "Piedra luna",
+    "color": "Blanco plateado"
+  },
+  "samuel": {
+    "origin": "Hebreo",
+    "lang": "Hebreo antiguo",
+    "meaning": "Procede de Shemu'el, 'Dios ha oido' o 'pedido a Dios'. Simboliza la escucha profunda, la capacidad de responder a un llamado interior y actuar con fidelidad.",
+    "element": "Agua",
+    "planet": "Luna",
+    "archetype": "El Oyente Fiel",
+    "gem": "Perla",
+    "color": "Blanco perla"
+  },
+  "santiago": {
+    "origin": "Latino",
+    "lang": "Latin/Hebreo",
+    "meaning": "Deriva de Sancti Iacobi, 'Santiago', forma de Jacobo, 'suplantador' o 'Dios protege'. Representa la protección divina y la capacidad de perseverar en el camino con fe activa.",
+    "element": "Fuego",
+    "planet": "Marte",
+    "archetype": "El Peregrino",
+    "gem": "Cornalina",
+    "color": "Naranja rojizo"
+  },
+  "sebastian": {
+    "origin": "Griego",
+    "lang": "Griego clasico",
+    "meaning": "Procede de Sebastos, 'venerable' o 'augusto'. Simboliza la dignidad interior, el respeto que se gana con coherencia y la presencia serena que inspira confianza.",
+    "element": "Luz",
+    "planet": "Sol",
+    "archetype": "El Venerable",
+    "gem": "Amatista",
+    "color": "Violeta profundo"
+  },
+  "sergio": {
+    "origin": "Latino",
+    "lang": "Latin",
+    "meaning": "Deriva de Sergius, nombre de una antigua gens romana, posiblemente vinculado a 'servir' o 'proteger'. Representa el servicio leal y la capacidad de cuidar con disciplina y constancia.",
+    "element": "Tierra",
+    "planet": "Saturno",
+    "archetype": "El Servidor Leal",
+    "gem": "Hematita",
+    "color": "Gris acero"
+  },
+  "simon": {
+    "origin": "Hebreo",
+    "lang": "Hebreo antiguo",
+    "meaning": "Procede de Shimon, 'el que escucha' o 'Dios ha oido'. Simboliza la escucha atenta, la empatia y la capacidad de comprender antes de actuar, construyendo puentes entre personas.",
+    "element": "Agua",
+    "planet": "Luna",
+    "archetype": "El Oyente Sabio",
+    "gem": "Perla",
+    "color": "Blanco nacarado"
+  },
+  "tomas": {
+    "origin": "Griego",
+    "lang": "Griego/Arameo",
+    "meaning": "Deriva de Thomas, procedente del arameo Te'oma, 'gemelo'. Representa la busqueda de certeza, la necesidad de verificar y la capacidad de llegar a la fe a través de la experiencia.",
+    "element": "Aire",
+    "planet": "Mercurio",
+    "archetype": "El Buscador de Verdad",
+    "gem": "Fluorita",
+    "color": "Violeta claro"
+  },
+  "valentin": {
+    "origin": "Latino",
+    "lang": "Latin",
+    "meaning": "Procede de Valentinus, derivado de valens, 'fuerte', 'vigoroso' o 'saludable'. Simboliza la vitalidad emocional y la capacidad de amar con coraje y ternura.",
+    "element": "Fuego",
+    "planet": "Venus",
+    "archetype": "El Amante Valiente",
+    "gem": "Cuarzo rosa",
+    "color": "Rosa intenso"
+  },
+  "victor": {
+    "origin": "Latino",
+    "lang": "Latin",
+    "meaning": "Deriva de Victor, 'vencedor' o 'triunfador'. Representa la voluntad de superar obstaculos, la resiliencia y la capacidad de celebrar logros con humildad.",
+    "element": "Fuego",
+    "planet": "Marte",
+    "archetype": "El Vencedor",
+    "gem": "Rubííºº",
+    "color": "Rojo victoria"
+  },
+  "virgilio": {
+    "origin": "Latino",
+    "lang": "Latin",
+    "meaning": "Procede de Vergilius, nombre de familia romana, posiblemente vinculado a virga, 'vara' o 'brote'. Simboliza el crecimiento guiado, la capacidad de orientar con sabiduría poetica y visión.",
+    "element": "Aire",
+    "planet": "Mercurio",
+    "archetype": "El Poeta Guia",
+    "gem": "Esmeralda",
+    "color": "Verde esmeralda"
+  },
+  "walter": {
+    "origin": "Germanico",
+    "lang": "Alto aleman antiguo",
+    "meaning": "Deriva de Waldhar, formado por wald, 'gobernar', y hari, 'ejercito'. Representa el liderazgo estrategico, la capacidad de dirigir con criterio y proteger al grupo con firmeza.",
+    "element": "Fuego",
+    "planet": "Marte",
+    "archetype": "El General",
+    "gem": "Granate",
+    "color": "Rojo militar"
+  },
+  "xavier": {
+    "origin": "Vasco",
+    "lang": "Euskera medieval",
+    "meaning": "Procede de Etxeberri, 'casa nueva'. Simboliza la apertura a nuevos comienzos, la capacidad de construir espacios de confianza y renovar la vida sin perder las raices.",
+    "element": "Tierra",
+    "planet": "Saturno",
+    "archetype": "El Constructor de Hogar",
+    "gem": "Cuarzo ahumado",
+    "color": "Marron tierra"
+  },
+  "yahir": {
+    "origin": "Hebreo",
+    "lang": "Hebreo moderno",
+    "meaning": "Deriva de Yahir, interpretado como 'Dios iluminara' o 'el que ilumina'. Representa la luz interior que guía decisiones y la capacidad de inspirar claridad en otros.",
+    "element": "Luz",
+    "planet": "Sol",
+    "archetype": "El Iluminador",
+    "gem": "Citrino",
+    "color": "Amarillo luminoso"
+  },
+  "yesid": {
+    "origin": "Arabe",
+    "lang": "Arabe/Espanol",
+    "meaning": "Variante de Yazid o Yesid, relacionada con 'aumentar' o 'crecer'. Simboliza el crecimiento continuo, la expansión de capacidades y la disposicion de evolucionar constantemente.",
+    "element": "Fuego",
+    "planet": "Jupiter",
+    "archetype": "El Creciente",
+    "gem": "Topacio azul",
+    "color": "Azul cobalto"
+  },
+  "zacarias": {
+    "origin": "Hebreo",
+    "lang": "Hebreo antiguo",
+    "meaning": "Procede de Zekaryah, 'Dios ha recordado' o 'Yahveh recuerda'. Representa la memoria sagrada, la capacidad de honrar el pasado y construir futuro con sentido de continuidad.",
+    "element": "Luz",
+    "planet": "Jupiter",
+    "archetype": "El Recordador",
+    "gem": "Amatista",
+    "color": "Violeta amatista"
+  }
+}

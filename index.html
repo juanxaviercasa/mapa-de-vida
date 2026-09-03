@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Portal de Nacimiento - Mapa de Vida</title>
+  <meta name="description" content="Inicia tu viaje por el tiempo y el espacio a partir de tu fecha de nacimiento.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="your-life.css">
+  <link rel="stylesheet" href="cosmic.css">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body { width: 100%; height: 100%; overflow: hidden; background: #030508; color: #eee8d5; font-family: 'Space Grotesk', sans-serif; }
+
+    #star-canvas { position: fixed; inset: 0; z-index: 0; pointer-events: none; }
+
+    /* ── MAIN LAYOUT (3 COLUMNAS FLEX) ── */
+    .page {
+      position: relative; z-index: 1;
+      width: 100%; height: 100vh;
+      display: flex; justify-content: center; align-items: center;
+      max-width: 1400px; margin: 0 auto; padding: 0 3vw; gap: 2vw;
+    }
+    
+    .col-left { flex: 1; max-width: 350px; display: flex; flex-direction: column; justify-content: center; position: relative; z-index: 2; }
+    .col-center { flex: 0 0 420px; display: flex; align-items: center; justify-content: center; position: relative; z-index: 1; }
+    .col-right { flex: 1; max-width: 520px; display: flex; flex-direction: column; justify-content: center; position: relative; z-index: 3; }
+
+    /* TRANSICIONES */
+    .fade-out { opacity: 0; pointer-events: none; transition: opacity 0.5s ease; }
+    
+    /* ── HERO & FORMULARIO (Inicio) ── */
+    .hero { display: flex; flex-direction: column; text-align: left; transition: opacity 0.5s ease; width: 100%; }
+    .brand { font-family: 'DM Mono', monospace; font-size: 0.65rem; letter-spacing: 0.35em; color: rgba(212,168,67,0.6); text-transform: uppercase; margin-bottom: 24px; }
+    .hero h1 {
+      font-family: 'Cinzel', serif; font-size: clamp(2.8rem, 4.5vw, 4.2rem); font-weight: 700; line-height: 1.05; letter-spacing: 0.02em; margin-bottom: 20px;
+      background: linear-gradient(160deg, #FF1744 0%, #FF6D00 18%, #FFD600 34%, #00E676 50%, #00B0FF 66%, #7C4DFF 82%, #EA80FC 100%);
+      background-size: 200% auto; -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; animation: shift 9s linear infinite;
+    }
+    @keyframes shift { 0%{background-position:0%} 100%{background-position:200%} }
+    .tagline { font-family: 'EB Garamond', serif; font-style: italic; font-size: clamp(1.05rem, 1.5vw, 1.25rem); color: rgba(238,232,213,0.7); line-height: 1.6; margin-bottom: 30px; }
+    #freq-label { cursor: pointer; border: 1px solid rgba(212,168,67,0.3); border-radius: 20px; padding: 6px 12px; display: inline-block; font-family: 'DM Mono', monospace; font-size: 0.6rem; letter-spacing: 0.15em; color: rgba(212,168,67,0.5); transition: color 1.4s ease; min-height: 1.2em; }
+    #freq-label:hover { color: rgba(212,168,67,1); border-color: rgba(212,168,67,0.8); background: rgba(212,168,67,0.1); }
+    #freq-label.active { color: rgba(212,168,67,1); border-color: rgba(212,168,67,0.8); box-shadow: 0 0 15px rgba(212,168,67,0.3); }
+
+    .portal-wrap { width: 100%; transition: opacity 0.5s ease; }
+    .portal { width: 100%; background: rgba(5, 7, 18, 0.65); border: 1px solid rgba(212,168,67,0.2); border-radius: 16px; padding: clamp(24px, 3vw, 36px) clamp(22px, 3vw, 32px); backdrop-filter: blur(24px); box-shadow: 0 0 60px rgba(212,168,67,0.05), 0 20px 40px rgba(0,0,0,0.6); }
+    .portal-title { font-family: 'DM Mono', monospace; font-size: 0.65rem; letter-spacing: 0.25em; color: rgba(212,168,67,0.7); text-transform: uppercase; text-align: center; margin-bottom: 24px; }
+    .form { display: flex; flex-direction: column; gap: 16px; }
+    .row2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .fld { display: flex; flex-direction: column; gap: 6px; }
+    .fld label { font-size: 0.6rem; font-family: 'DM Mono', monospace; letter-spacing: 0.15em; color: rgba(212,168,67,0.8); text-transform: uppercase; }
+    .fld input, .fld select { width: 100%; padding: 10px 12px; background: rgba(255,255,255,0.03); border: 1px solid rgba(212,168,67,0.2); border-radius: 8px; color: #eee8d5; font-family: 'Space Grotesk', sans-serif; font-size: 0.88rem; transition: all 0.3s ease; -webkit-appearance: none; appearance: none; }
+    .fld input::placeholder { color: rgba(238,232,213,0.3); }
+    .fld input:focus, .fld select:focus { outline: none; border-color: rgba(212,168,67,0.8); background: rgba(255,255,255,0.06); box-shadow: 0 0 15px rgba(212,168,67,0.2); }
+    .fld select option { background: #090c1e; color: #eee8d5; }
+    .date3 { display: grid; grid-template-columns: 1fr 2fr 1.4fr; gap: 8px; }
+    .cta { margin-top: 8px; width: 100%; padding: 14px; background: linear-gradient(135deg, #d4a843, #8a5c00, #d4a843); background-size: 200% auto; border: none; border-radius: 8px; color: #050810; font-family: 'Cinzel', serif; font-size: 0.9rem; font-weight: 700; letter-spacing: 0.15em; cursor: pointer; transition: background-position .5s, box-shadow .3s, transform .2s; }
+    .cta:hover { background-position: right center; transform: translateY(-2px); box-shadow: 0 0 35px rgba(212,168,67,0.4), 0 10px 20px rgba(0,0,0,0.5); }
+    .form-note { text-align: center; font-size: 0.6rem; color: rgba(238,232,213,0.3); font-family: 'DM Mono', monospace; margin-top: 4px; }
+    .form-error { color: #ff8a65; font-size: 0.75rem; text-align: center; min-height: 1em; }
+
+    /* ── DASHBOARD (Menú y Panel Inmersivos) ── */
+    .dash-left { display: none; flex-direction: column; gap: 12px; opacity: 0; transition: opacity 0.8s ease; width: 100%; }
+    .dash-right { display: none; flex-direction: column; opacity: 0; transition: opacity 0.8s ease; width: 100%; }
+
+    .dash-menu button {
+      width: 100%; text-align: right; padding: 16px 24px; background: transparent; border: none; border-right: 2px solid rgba(212,168,67,0.1); color: rgba(238,232,213,0.5); font-family: 'Cinzel', serif; font-size: clamp(1rem, 1.2vw, 1.1rem); font-weight: 600; cursor: pointer; transition: all 0.3s ease; position: relative;
+    }
+    .dash-menu button:hover { color: rgba(212,168,67,0.8); border-color: rgba(212,168,67,0.4); background: linear-gradient(90deg, transparent, rgba(212,168,67,0.05)); }
+    .dash-menu button.active { color: #d4a843; border-color: #d4a843; text-shadow: 0 0 15px rgba(212,168,67,0.4); background: linear-gradient(90deg, transparent, rgba(212,168,67,0.1)); }
+    .dash-menu button.active::after { content: '✦'; position: absolute; right: -8px; top: 50%; transform: translateY(-50%); color: #d4a843; font-size: 0.8rem; text-shadow: 0 0 10px #d4a843; }
+
+    .dash-panel {
+      width: 100%; background: rgba(5, 7, 18, 0.75); border: 1px solid rgba(212,168,67,0.3); border-radius: 16px; padding: clamp(24px, 3vw, 36px) clamp(24px, 3vw, 32px); backdrop-filter: blur(24px); box-shadow: 0 0 60px rgba(212,168,67,0.05), 0 20px 40px rgba(0,0,0,0.6); min-height: 420px;
+      display: flex; flex-direction: column; justify-content: center;
+    }
+    
+    .card-title { font-family: 'Cinzel', serif; font-size: clamp(1.15rem, 2vw, 1.4rem); font-weight: 700; color: #d4a843; margin-bottom: 8px; text-shadow: 0 0 15px rgba(212,168,67,0.3); border-bottom: 1px solid rgba(212,168,67,0.15); padding-bottom: 12px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .dash-subtitle { font-family: 'DM Mono', monospace; font-size: 0.75rem; color: rgba(238,232,213,0.6); text-transform: uppercase; letter-spacing: 0.15em; margin-bottom: 20px; }
+    .dash-text { font-family: 'Space Grotesk', sans-serif; font-size: 0.95rem; line-height: 1.6; color: rgba(238,232,213,0.9); font-weight: 300; transition: opacity 0.3s ease; }
+    .dash-text b { color: #d4a843; font-weight: 500; }
+    
+    .zodiac-grid { display: flex; gap: 20px; margin-top: 24px; }
+    .z-item { flex: 1; text-align: center; background: rgba(0,0,0,0.3); border: 1px solid rgba(212,168,67,0.15); border-radius: 12px; padding: 16px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; transition: transform 0.3s ease; }
+    .z-item:hover { transform: translateY(-5px); border-color: rgba(212,168,67,0.4); box-shadow: 0 10px 20px rgba(0,0,0,0.5); }
+    .z-item img { width: 64px; height: 64px; border-radius: 50%; border: 2px solid rgba(212,168,67,0.4); object-fit: cover; }
+    .z-item span { font-family: 'DM Mono', monospace; font-size: 0.65rem; color: rgba(238,232,213,0.7); text-transform: uppercase; letter-spacing: 0.1em; }
+    
+    .mantra-box { margin-top: 24px; padding: 16px; background: rgba(212,168,67,0.05); border-left: 3px solid #d4a843; font-family: 'EB Garamond', serif; font-style: italic; font-size: 1.2rem; color: #fff; text-shadow: 0 0 10px rgba(212,168,67,0.3); }
+
+    /* ── EL YOGI CENTRAL Y CHAKRAS ── */
+    .body-svg { width: 100%; height: auto; max-height: 95vh; overflow: visible; filter: drop-shadow(0 0 50px rgba(212, 168, 67, 0.15)); }
+    .yogi-image { mix-blend-mode: screen; opacity: 0.95; transform-origin: center; transition: opacity 1s ease; }
+    
+    .c-node { cursor: crosshair; transition: all 0.4s ease; }
+    .c-node:hover .glow { opacity: 0.8 !important; transform: scale(1.1); transform-origin: center; }
+    .c-node:hover .yantra { transform: scale(1.15) rotate(5deg); transform-origin: center; opacity: 1 !important; }
+
+    /* Tooltip */
+    .chakra-tooltip { position: fixed; top: 0; left: 0; background: rgba(5, 7, 12, 0.92); border: 1px solid rgba(212,168,67,0.3); border-top-color: var(--c-color, #fff); padding: 14px 18px; border-radius: 12px; pointer-events: none; opacity: 0; transform: translate(-50%, -120%) scale(0.95); transition: opacity 0.25s ease, transform 0.25s ease; backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); box-shadow: 0 15px 35px rgba(0,0,0,0.85), 0 0 30px rgba(0,0,0,0.6) inset; z-index: 10000; width: max-content; max-width: 270px; text-align: center; }
+    .chakra-tooltip::after { content: ''; position: absolute; bottom: -6px; left: 50%; transform: translateX(-50%) rotate(45deg); width: 12px; height: 12px; background: rgba(5, 7, 12, 0.95); border-right: 1px solid rgba(212,168,67,0.2); border-bottom: 1px solid rgba(212,168,67,0.2); }
+    .chakra-tooltip.visible { opacity: 1; transform: translate(-50%, -100%) scale(1); }
+    .chakra-tooltip.visible.pos-bottom { transform: translate(-50%, 0) scale(1); }
+    .chakra-tooltip.pos-bottom::after { bottom: auto; top: -6px; border-right: none; border-bottom: none; border-left: 1px solid rgba(212,168,67,0.2); border-top: 1px solid rgba(212,168,67,0.2); }
+    .chakra-tooltip h4 { font-family: 'Cinzel', serif; font-size: 1.15rem; font-weight: 700; margin-bottom: 2px; color: var(--c-color, #fff); text-shadow: 0 0 10px var(--c-color); }
+    .chakra-tooltip h5 { font-family: 'DM Mono', monospace; font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.15em; color: rgba(238,232,213,0.5); margin-bottom: 10px; }
+    .chakra-tooltip p { font-family: 'Space Grotesk', sans-serif; font-size: 0.82rem; line-height: 1.5; color: rgba(238,232,213,0.85); font-weight: 300; }
+    
+    .foot { position: fixed; bottom: 16px; left: 50%; transform: translateX(-50%); font-family: 'Space Grotesk', sans-serif; font-size: 0.78rem; letter-spacing: 0.05em; color: rgba(238,232,213,0.6); z-index: 10; white-space: nowrap; text-align: center; line-height: 1.8; pointer-events: auto; }
+    .foot a { color: #f5c358; text-decoration: none; transition: all 0.3s ease; font-weight: 600; }
+    .foot a:hover { color: #ffd700; text-shadow: 0 0 10px rgba(212,168,67,0.8); text-decoration: underline; }
+
+    /* ── ESTILOS RESPONSIVOS (TABLETS Y MÓVILES) ── */
+    @media (max-width: 1024px) {
+      .page { padding: 40px 24px; flex-direction: column; height: auto; overflow-y: auto; }
+      
+      /* Reordenamiento Inteligente de Columnas para UX Táctil */
+      .col-left { order: 1; max-width: 100%; width: 100%; flex: none; margin-bottom: 16px; }
+      .col-right { order: 2; max-width: 100%; width: 100%; flex: none; margin-bottom: 40px; }
+      .col-center { order: 3; max-width: 100%; width: 100%; flex: none; min-height: 350px; margin-bottom: 20px; }
+      
+      .hero { align-items: center; text-align: center; }
+      
+      /* Menú tipo Botonera de App */
+      .dash-menu { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; flex-direction: row; }
+      .dash-menu button { text-align: center; border: 1px solid rgba(212,168,67,0.2) !important; border-radius: 8px; padding: 12px; font-size: 0.85rem; }
+      .dash-menu button.active { background: rgba(212,168,67,0.15); border-color: #d4a843 !important; }
+      .dash-menu button.active::after { display: none; }
+      
+      .body-svg { max-height: 45vh; }
+      .foot { position: relative; bottom: auto; padding-top: 20px; padding-bottom: 20px; }
+    }
+
+    /* ── ADAPTACIÓN EXTREMA (CELULARES PEQUEÑOS) ── */
+    @media (max-width: 480px) {
+      .page { padding: 30px 16px; }
+      .hero h1 { font-size: 2.2rem; }
+      .portal { padding: 24px 20px; }
+      .dash-panel { padding: 24px 20px; min-height: auto; }
+      .row2 { grid-template-columns: 1fr; } /* Apilar Nombre y Apellido */
+      .date3 { grid-template-columns: 1fr; gap: 10px; } /* Apilar selects de fecha */
+      .zodiac-grid { flex-direction: column; gap: 16px; } /* Apilar imágenes del zodiaco */
+    }
+  
+    /* MODO CÓSMICO HOMEPAGE */
+    html { background: #0a0d1a !important; }
+    html:has(body.cosmic-mode) { background: #0a0d1a !important; }
+    body.cosmic-mode { background: transparent !important; color: #eee8d5 !important; }
+
+    .glowing-btn {
+      position: fixed;
+      bottom: 40px;
+      left: 40px;
+      z-index: 1000;
+      background: rgba(10, 13, 26, 0.8);
+      border: 1px solid rgba(212,168,67,0.5);
+      border-radius: 30px;
+      padding: 12px 24px;
+      color: rgba(238,232,213,0.9);
+      font-family: 'DM Mono', monospace;
+      font-size: 0.85rem;
+      letter-spacing: 0.1em;
+      cursor: pointer;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 0 20px rgba(212,168,67,0.2);
+      transition: all 0.3s ease;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .glowing-btn:hover {
+      box-shadow: 0 0 30px rgba(212,168,67,0.6);
+      border-color: rgba(212,168,67,1);
+      transform: translateY(-2px);
+    }
+    .glowing-btn.active {
+      background: rgba(212,168,67,0.15);
+      box-shadow: 0 0 40px rgba(212,168,67,0.8);
+      border-color: rgba(212,168,67,1);
+      color: #fff;
+    }
+
+</style>
+</head>
+<body class="cosmic-mode">
+  <canvas id="star-canvas"></canvas>
+
+  <div class="page">
+    
+    <!-- ═══ COLUMNA IZQUIERDA ═══ -->
+    <div class="col-left">
+      <!-- Pantalla de Inicio -->
+      <div class="hero">
+        <p class="brand">✦ Mapa de Vida · 2026 ✦</p>
+        <h1>Tu vida<br>es el<br>cosmos</h1>
+        <p class="tagline">Tu nombre, tu fecha<br>y las estrellas hablan<br>un mismo lenguaje.<br>El Oráculo lo descifra.</p>
+        
+      </div>
+      <!-- Menú del Dashboard -->
+        <div class="dash-left" style="display:none; opacity:0; flex:1; padding-right: 20px;">
+          <ul class="dash-menu">
+            <li><button id="btn-nombre" class="menu-item active" data-target="nombre">El Poder del Nombre</button></li>
+            <li><button id="btn-astros" class="menu-item" data-target="astros">Astros y Lunas</button></li>
+            <li><button id="btn-num" class="menu-item" data-target="num">Tu Vibración</button></li>
+            <li><button id="btn-oraculo" class="menu-item" data-target="oraculo">Oráculo y Compatibilidad</button></li>
+          </ul>
+        </div>
+    </div>
+
+    <!-- ═══ COLUMNA CENTRAL (Yogi persitente) ═══ -->
+    <div class="col-center figure-col" id="figure-container">
+      <div id="chakra-tooltip" class="chakra-tooltip">
+        <h4 id="tt-name">Sahasrara</h4>
+        <h5 id="tt-title">Chakra Corona</h5>
+        <p id="tt-desc">Conexión espiritual, sabiduría cósmica y la glándula pineal.</p>
+      </div>
+
+      <svg class="body-svg" viewBox="0 0 400 420" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <filter id="g1"><feGaussianBlur stdDeviation="6"/></filter>
+          <filter id="g2"><feGaussianBlur stdDeviation="6"/></filter>
+          <filter id="g3"><feGaussianBlur stdDeviation="6"/></filter>
+          <filter id="g4"><feGaussianBlur stdDeviation="6"/></filter>
+          <filter id="g5"><feGaussianBlur stdDeviation="6"/></filter>
+          <filter id="g6"><feGaussianBlur stdDeviation="6"/></filter>
+          <filter id="g7"><feGaussianBlur stdDeviation="6"/></filter>
+        </defs>
+
+        <image class="yogi-image" href="images/yogi-meditation.jpg" x="-14.5" y="0" width="420" height="420" preserveAspectRatio="xMidYMid slice" />
+
+        <text x="50" y="70" font-family="'EB Garamond', serif" font-style="italic" font-size="9" fill="rgba(212,168,67,0.4)" transform="rotate(-15 50 70)">Proportione Divina...</text>
+        <text x="290" y="340" font-family="'EB Garamond', serif" font-style="italic" font-size="8" fill="rgba(212,168,67,0.4)" transform="rotate(12 290 340)">Geometria sacra dell'anima</text>
+        <text x="260" y="50" font-family="'EB Garamond', serif" font-style="italic" font-size="7" fill="rgba(212,168,67,0.3)" transform="rotate(5 260 50)">Naturae et cosmos</text>
+
+        <g stroke="rgba(212,168,67,0.5)" fill="none" stroke-width="1.2" class="vitruvian-grid">
+          <rect x="30" y="30" width="340" height="340" />
+          <circle cx="200" cy="230" r="170" />
+          <line x1="200" y1="10" x2="200" y2="400" stroke-dasharray="3 6"/>
+          <line x1="10" y1="230" x2="390" y2="230" stroke-dasharray="3 6"/>
+          <line x1="30" y1="30" x2="370" y2="370" stroke-width="0.8"/>
+          <line x1="370" y1="30" x2="30" y2="370" stroke-width="0.8"/>
+        </g>
+
+        <line x1="200" y1="365" x2="200" y2="15" stroke="rgba(255,255,255,0.4)" stroke-width="2" stroke-dasharray="3 4"/>
+
+        <!-- YANTRAS (CHAKRAS) -->
+        <g id="chakras-container">
+          <g id="node-7" class="c-node" data-id="7" data-color="#EA80FC">
+            <circle cx="200" cy="30" r="30" fill="#EA80FC" opacity="0.15" class="glow" filter="url(#g7)"/>
+            <g class="yantra" opacity="0.6" transform="translate(200,30)">
+              <circle cx="0" cy="0" r="14" fill="none" stroke="#EA80FC" stroke-width="0.8"/>
+              <circle cx="0" cy="0" r="18" fill="none" stroke="#EA80FC" stroke-width="0.5" stroke-dasharray="2 1"/>
+              <circle cx="0" cy="0" r="22" fill="none" stroke="#EA80FC" stroke-width="0.4" stroke-dasharray="1 1"/>
+              <circle cx="0" cy="0" r="6" fill="#EA80FC" opacity="0.8"/>
+              <circle cx="0" cy="0" r="2" fill="#fff"/>
+            </g>
+          </g>
+          <g id="node-6" class="c-node" data-id="6" data-color="#7C4DFF">
+            <circle cx="200" cy="70" r="26" fill="#7C4DFF" opacity="0.15" class="glow" filter="url(#g6)"/>
+            <g class="yantra" opacity="0.6" transform="translate(200,70)">
+              <path d="M -22 0 Q 0 -12 22 0 Q 0 12 -22 0 Z" fill="rgba(124,77,255,0.4)" stroke="#7C4DFF" stroke-width="1.2"/>
+              <circle cx="0" cy="0" r="7" fill="none" stroke="#7C4DFF" stroke-width="1.2"/>
+              <polygon points="0,4 4,-3 -4,-3" fill="#7C4DFF" opacity="0.9"/>
+            </g>
+          </g>
+          <g id="node-5" class="c-node" data-id="5" data-color="#00B0FF">
+            <circle cx="200" cy="130" r="24" fill="#00B0FF" opacity="0.15" class="glow" filter="url(#g5)"/>
+            <g class="yantra" opacity="0.6" transform="translate(200,130)">
+              <ellipse cx="0" cy="0" rx="3" ry="16" fill="none" stroke="#00B0FF" stroke-width="0.8"/>
+              <ellipse cx="0" cy="0" rx="3" ry="16" fill="none" stroke="#00B0FF" stroke-width="0.8" transform="rotate(22.5)"/>
+              <ellipse cx="0" cy="0" rx="3" ry="16" fill="none" stroke="#00B0FF" stroke-width="0.8" transform="rotate(45)"/>
+              <ellipse cx="0" cy="0" rx="3" ry="16" fill="none" stroke="#00B0FF" stroke-width="0.8" transform="rotate(67.5)"/>
+              <ellipse cx="0" cy="0" rx="3" ry="16" fill="none" stroke="#00B0FF" stroke-width="0.8" transform="rotate(90)"/>
+              <ellipse cx="0" cy="0" rx="3" ry="16" fill="none" stroke="#00B0FF" stroke-width="0.8" transform="rotate(112.5)"/>
+              <ellipse cx="0" cy="0" rx="3" ry="16" fill="none" stroke="#00B0FF" stroke-width="0.8" transform="rotate(135)"/>
+              <ellipse cx="0" cy="0" rx="3" ry="16" fill="none" stroke="#00B0FF" stroke-width="0.8" transform="rotate(157.5)"/>
+              <circle cx="0" cy="0" r="9" fill="#030508" stroke="#00B0FF" stroke-width="1.5"/>
+              <polygon points="0,5 5,-3 -5,-3" fill="#00B0FF" opacity="0.9"/>
+            </g>
+          </g>
+          <g id="node-4" class="c-node" data-id="4" data-color="#00E676">
+            <circle cx="200" cy="180" r="28" fill="#00E676" opacity="0.15" class="glow" filter="url(#g4)"/>
+            <g class="yantra" opacity="0.6" transform="translate(200,180)">
+              <ellipse cx="0" cy="0" rx="4.5" ry="18" fill="none" stroke="#00E676" stroke-width="1"/>
+              <ellipse cx="0" cy="0" transform="rotate(30)" rx="4.5" ry="18" fill="none" stroke="#00E676" stroke-width="1"/>
+              <ellipse cx="0" cy="0" transform="rotate(60)" rx="4.5" ry="18" fill="none" stroke="#00E676" stroke-width="1"/>
+              <ellipse cx="0" cy="0" transform="rotate(90)" rx="4.5" ry="18" fill="none" stroke="#00E676" stroke-width="1"/>
+              <ellipse cx="0" cy="0" transform="rotate(120)" rx="4.5" ry="18" fill="none" stroke="#00E676" stroke-width="1"/>
+              <ellipse cx="0" cy="0" transform="rotate(150)" rx="4.5" ry="18" fill="none" stroke="#00E676" stroke-width="1"/>
+              <circle cx="0" cy="0" r="10" fill="#030508" stroke="#00E676" stroke-width="1.2"/>
+              <polygon points="0,-7 6,4 -6,4" fill="none" stroke="#00E676" stroke-width="1.2"/>
+              <polygon points="0,7 6,-4 -6,-4" fill="none" stroke="#00E676" stroke-width="1.2"/>
+              <circle cx="0" cy="0" r="2" fill="#00E676"/>
+            </g>
+          </g>
+          <g id="node-3" class="c-node" data-id="3" data-color="#FFD600">
+            <circle cx="200" cy="225" r="26" fill="#FFD600" opacity="0.15" class="glow" filter="url(#g3)"/>
+            <g class="yantra" opacity="0.6" transform="translate(200,225)">
+              <ellipse cx="0" cy="0" rx="5" ry="17" fill="none" stroke="#FFD600" stroke-width="1"/>
+              <ellipse cx="0" cy="0" transform="rotate(36)" rx="5" ry="17" fill="none" stroke="#FFD600" stroke-width="1"/>
+              <ellipse cx="0" cy="0" transform="rotate(72)" rx="5" ry="17" fill="none" stroke="#FFD600" stroke-width="1"/>
+              <ellipse cx="0" cy="0" transform="rotate(108)" rx="5" ry="17" fill="none" stroke="#FFD600" stroke-width="1"/>
+              <ellipse cx="0" cy="0" transform="rotate(144)" rx="5" ry="17" fill="none" stroke="#FFD600" stroke-width="1"/>
+              <circle cx="0" cy="0" r="9" fill="#030508" stroke="#FFD600" stroke-width="1.5"/>
+              <polygon points="0,5 6,-4 -6,-4" fill="#FFD600" opacity="1"/>
+            </g>
+          </g>
+          <g id="node-2" class="c-node" data-id="2" data-color="#FF6D00">
+            <circle cx="200" cy="265" r="24" fill="#FF6D00" opacity="0.15" class="glow" filter="url(#g2)"/>
+            <g class="yantra" opacity="0.6" transform="translate(200,265)">
+              <ellipse cx="0" cy="0" rx="6" ry="15" fill="none" stroke="#FF6D00" stroke-width="1.2"/>
+              <ellipse cx="0" cy="0" transform="rotate(60)" rx="6" ry="15" fill="none" stroke="#FF6D00" stroke-width="1.2"/>
+              <ellipse cx="0" cy="0" transform="rotate(120)" rx="6" ry="15" fill="none" stroke="#FF6D00" stroke-width="1.2"/>
+              <circle cx="0" cy="0" r="8" fill="#030508" stroke="#FF6D00" stroke-width="1.5"/>
+              <path d="M -4 2 A 5 5 0 1 0 4 2 A 4 4 0 1 1 -4 2" fill="#FF6D00"/>
+            </g>
+          </g>
+          <g id="node-1" class="c-node" data-id="1" data-color="#FF1744">
+            <circle cx="200" cy="320" r="22" fill="#FF1744" opacity="0.15" class="glow" filter="url(#g1)"/>
+            <g class="yantra" opacity="0.6" transform="translate(200,320)">
+              <ellipse cx="0" cy="0" rx="7" ry="14" fill="none" stroke="#FF1744" stroke-width="1.2"/>
+              <ellipse cx="0" cy="0" transform="rotate(90)" rx="7" ry="14" fill="none" stroke="#FF1744" stroke-width="1.2"/>
+              <rect x="-6" y="-6" width="12" height="12" fill="#030508" stroke="#FF1744" stroke-width="1.5"/>
+              <polygon points="0,4 4,-2 -4,-2" fill="#FF1744"/>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </div>
+
+    <!-- ═══ COLUMNA DERECHA ═══ -->
+    <div class="col-right">
+      <!-- Formulario de Inicio -->
+      <div class="portal-wrap">
+        <div class="portal">
+          <p class="portal-title">✦ Abre el Portal ✦</p>
+          <form id="start-form" class="form" autocomplete="off">
+            <div class="row2">
+              <div class="fld">
+                <label for="start-name">Nombres</label>
+                <input id="start-name" type="text" placeholder="Ej. Juan Xavier" required>
+              </div>
+              <div class="fld">
+                <label for="start-surname">Apellidos</label>
+                <input id="start-surname" type="text" placeholder="Ej. Cabello Salirrosas" required>
+              </div>
+            </div>
+            <div class="fld">
+              <label>Fecha de nacimiento</label>
+              <div class="date3">
+                <div class="fld" style="gap:0">
+                  <input id="day" type="number" min="1" max="31" placeholder="Día" required>
+                </div>
+                <div class="fld" style="gap:0">
+                  <select id="month" required>
+                    <option value="">Mes</option>
+                    <option value="0">Enero</option><option value="1">Febrero</option>
+                    <option value="2">Marzo</option><option value="3">Abril</option>
+                    <option value="4">Mayo</option><option value="5">Junio</option>
+                    <option value="6">Julio</option><option value="7">Agosto</option>
+                    <option value="8">Septiembre</option><option value="9">Octubre</option>
+                    <option value="10">Noviembre</option><option value="11">Diciembre</option>
+                  </select>
+                </div>
+                <div class="fld" style="gap:0">
+                  <input id="year" type="number" min="1900" max="2026" placeholder="Año" required>
+                </div>
+              </div>
+            </div>
+            <button type="submit" class="cta">Revelar mi Mapa →</button>
+            <p id="start-error" class="form-error" role="alert"></p>
+            <p class="form-note">🔒 Solo en tu navegador · Sin servidores</p>
+          </form>
+        </div>
+      </div>
+      <!-- Panel de Contenido -->
+      
+      </div>
+    </div>
+
+    
+  <button id="audio-btn" class="glowing-btn">
+    &#128266; Sintonizar Audio
+  </button>
+  <script src="ambient-audio.js?v=2"></script>
+  <script src="stars.js"></script>
+  <script src="portal.js"></script>
+  <script src="site-nav.js"></script>
+  <script>
+    var CHAKRA_INFO = {
+      7: { name:'Sahasrara', title:'Chakra Corona', desc:'Conexión espiritual pura, sabiduría cósmica, trascendencia y la glándula pineal.' },
+      6: { name:'Ajna', title:'Tercer Ojo', desc:'Intuición, claridad mental, percepción más allá del mundo físico.' },
+      5: { name:'Vishuddha', title:'Chakra Garganta', desc:'Comunicación, verdad, autoexpresión, autenticidad.' },
+      4: { name:'Anahata', title:'Chakra Corazón', desc:'Amor incondicional, compasión, sanación, paz interior.' },
+      3: { name:'Manipura', title:'Plexo Solar', desc:'Poder personal, voluntad, confianza, fuego transformador.' },
+      2: { name:'Svadhisthana', title:'Chakra Sacro', desc:'Creatividad, emociones, sexualidad, fluidez.' },
+      1: { name:'Muladhara', title:'Chakra Raíz', desc:'Supervivencia, estabilidad, seguridad, conexión con la tierra.' }
+    };
+
+    document.querySelectorAll('.c-node').forEach(node => {
+      node.addEventListener('mouseenter', () => {
+        const id = (node.dataset && node.dataset.id) || node.getAttribute('data-id');
+        const color = (node.dataset && node.dataset.color) || node.getAttribute('data-color') || '#fff';
+        const info = CHAKRA_INFO[id];
+        if (!info) return;
+        document.getElementById('tt-name').textContent = info.name;
+        document.getElementById('tt-title').textContent = info.title;
+        document.getElementById('tt-desc').textContent = info.desc;
+        const tt = document.getElementById('chakra-tooltip');
+        if (tt) {
+          tt.style.setProperty('--c-color', color);
+          const rect = node.getBoundingClientRect();
+          tt.style.left = (rect.left + rect.width / 2) + 'px';
+          if (rect.top < 170) {
+            tt.style.top = (rect.bottom + 14) + 'px';
+            tt.classList.add('pos-bottom');
+          } else {
+            tt.style.top = (rect.top - 12) + 'px';
+            tt.classList.remove('pos-bottom');
+          }
+          tt.classList.add('visible');
+        }
+      });
+      node.addEventListener('mouseleave', () => {
+        const tt = document.getElementById('chakra-tooltip');
+        if (tt) tt.classList.remove('visible');
+      });
+    });
+
+    const freq = document.getElementById('audio-btn');
+    if (freq) {
+      freq.addEventListener('click', () => {
+        if (window.AmbientAudio) {
+          if (window.AmbientAudio.isPlaying()) {
+            window.AmbientAudio.stop();
+            freq.innerHTML = '&#128266; Sintonizar Audio';
+            freq.classList.remove('active');
+          } else {
+            freq.innerHTML = '&#128263; Silenciar Audio <span id="chakra-indicator" style="margin-left:8px; font-weight:600;"></span>';
+            freq.classList.add('active');
+            window.AmbientAudio.start();
+          }
+        }
+      });
+    }
+  </script>
+
+  <footer class="foot">
+    Desarrollado por <a href="https://juan.cabellosalirrosas.com" target="_blank" rel="noopener noreferrer">Xavier Cabello</a>
+  </footer>
+</body>
+</html>
+
+
+
+
+
+
+
+

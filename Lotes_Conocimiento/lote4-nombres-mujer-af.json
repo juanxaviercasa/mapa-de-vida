@@ -1,0 +1,412 @@
+{
+  "ada": {
+    "origin": "Germanico",
+    "lang": "Alto aleman antiguo",
+    "meaning": "Se relaciona con formas germánicas como Adela, vinculadas a la idea de nobleza; también existen tradiciones que la conectan con el hebreo. Simboliza una elegancia interior que se expresa mediante actos sencillos, firmes y dignos.",
+    "element": "Tierra",
+    "planet": "Venus",
+    "archetype": "La Noble Serena",
+    "gem": "Perla",
+    "color": "Blanco marfil"
+  },
+  "adriana": {
+    "origin": "Latino",
+    "lang": "Latin",
+    "meaning": "Deriva de Hadrianus o Hadriana, 'procedente de Hadria', localidad asociada al mar Adriático. Evoca profundidad, capacidad de adaptación y la calma de quien aprende a navegar los cambios de la vida.",
+    "element": "Agua",
+    "planet": "Luna",
+    "archetype": "La Navegante Serena",
+    "gem": "Aguamarina",
+    "color": "Azul marino"
+  },
+  "agustina": {
+    "origin": "Latino",
+    "lang": "Latin",
+    "meaning": "Proviene de Augusta, derivado de augustus: 'venerable', 'consagrada' o 'majestuosa'. Representa una dignidad que nace de la coherencia, de reconocer el propio valor y ponerlo al servicio de causas nobles.",
+    "element": "Luz",
+    "planet": "Sol",
+    "archetype": "La Venerable",
+    "gem": "Amatista",
+    "color": "Violeta imperial"
+  },
+  "alba": {
+    "origin": "Latino",
+    "lang": "Latin",
+    "meaning": "Deriva de albus, 'blanco', y se asocia con el amanecer y la primera luz del día. Simboliza renovación, claridad y la esperanza de que todo ciclo puede comenzar nuevamente.",
+    "element": "Luz",
+    "planet": "Sol",
+    "archetype": "La Portadora del Alba",
+    "gem": "Cuarzo transparente",
+    "color": "Blanco dorado"
+  },
+  "alejandra": {
+    "origin": "Griego",
+    "lang": "Griego clasico",
+    "meaning": "Es la forma femenina de Alejandro, procedente de alexein, 'defender', y aner, 'hombre'. Representa la fuerza protectora, el liderazgo valiente y la disposición de defender lo valioso con inteligencia.",
+    "element": "Fuego",
+    "planet": "Marte",
+    "archetype": "La Guerrera Protectora",
+    "gem": "Rubíí",
+    "color": "Rojo carmesi"
+  },
+  "alicia": {
+    "origin": "Germanico",
+    "lang": "Alto aleman antiguo",
+    "meaning": "Es una forma de Alicia, vinculada a Adalheidis y a las raíces adal, 'noble', y heid, 'tipo' o 'clase'. Simboliza una nobleza de carácter que se demuestra al actuar con sinceridad, respeto y claridad.",
+    "element": "Aire",
+    "planet": "Mercurio",
+    "archetype": "La Noble Clara",
+    "gem": "Esmeralda",
+    "color": "Verde esmeralda"
+  },
+  "alina": {
+    "origin": "Germanico",
+    "lang": "Alto aleman antiguo",
+    "meaning": "Puede ser diminutivo de nombres germánicos relacionados con la nobleza, como Adela o Adelina; también tiene asociaciones eslavas y griegas. Simboliza delicadeza, luminosidad y la capacidad de conservar la propia identidad con suavidad.",
+    "element": "Aire",
+    "planet": "Venus",
+    "archetype": "La Luz Delicada",
+    "gem": "Cuarzo rosa",
+    "color": "Rosa palo"
+  },
+  "alma": {
+    "origin": "Latino",
+    "lang": "Latin",
+    "meaning": "Se vincula con almus, 'nutritivo', 'bondadoso' o 'que alimenta'; en español coincide con la palabra alma, de anima. Representa la capacidad de nutrir vínculos, irradiar calidez y recordar lo esencial en cada encuentro.",
+    "element": "Agua",
+    "planet": "Luna",
+    "archetype": "La Nutridora Espiritual",
+    "gem": "Piedra luna",
+    "color": "Blanco perla"
+  },
+  "amalia": {
+    "origin": "Germanico",
+    "lang": "Germanico antiguo",
+    "meaning": "Deriva de amal, raíz vinculada con el trabajo, el esfuerzo y la energía activa. Simboliza la perseverancia serena: la facultad de convertir constancia y dedicación en obras con sentido.",
+    "element": "Tierra",
+    "planet": "Saturno",
+    "archetype": "La Trabajadora Noble",
+    "gem": "Ojo de tigre",
+    "color": "Marron dorado"
+  },
+  "amanda": {
+    "origin": "Latino",
+    "lang": "Latin",
+    "meaning": "Procede de amanda, forma femenina de amandus: 'digna de ser amada' o 'la que debe ser amada'. Evoca autoestima, afecto recíproco y la capacidad de reconocer que amar y dejarse amar son actos de fortaleza.",
+    "element": "Agua",
+    "planet": "Venus",
+    "archetype": "La Amada",
+    "gem": "Cuarzo rosa",
+    "color": "Rosa suave"
+  },
+  "amparo": {
+    "origin": "Latino",
+    "lang": "Latin",
+    "meaning": "Procede del español amparo, 'protección', 'refugio' o 'defensa', relacionado con el latín amparare. Representa la presencia que cobija, protege y ofrece seguridad sin limitar la libertad de quienes acompaña.",
+    "element": "Tierra",
+    "planet": "Saturno",
+    "archetype": "La Guardiana del Refugio",
+    "gem": "Ónix",
+    "color": "Negro protector"
+  },
+  "ana": {
+    "origin": "Hebreo",
+    "lang": "Hebreo antiguo",
+    "meaning": "Deriva de Hannah, 'gracia', 'favor' o 'benevolencia'. Simboliza una amabilidad que no es debilidad, sino una forma de abrir posibilidades, perdonar y sostener la esperanza.",
+    "element": "Agua",
+    "planet": "Luna",
+    "archetype": "La Portadora de Gracia",
+    "gem": "Perla",
+    "color": "Blanco nacarado"
+  },
+  "andrea": {
+    "origin": "Griego",
+    "lang": "Griego clasico",
+    "meaning": "Es la forma femenina de Andreas, asociado con andreios: 'valiente' o 'fuerte'. Representa un coraje auténtico, capaz de enfrentar desafíos con decisión sin renunciar a la sensibilidad.",
+    "element": "Fuego",
+    "planet": "Marte",
+    "archetype": "La Valiente",
+    "gem": "Cornalina",
+    "color": "Naranja rojizo"
+  },
+  "angela": {
+    "origin": "Griego",
+    "lang": "Griego clasico",
+    "meaning": "Deriva de angelos, 'mensajero'. Simboliza la capacidad de tender puentes mediante la palabra, transmitir claridad y acercar a las personas con compasión y escucha.",
+    "element": "Aire",
+    "planet": "Mercurio",
+    "archetype": "La Mensajera Celestial",
+    "gem": "Selenita",
+    "color": "Blanco luminoso"
+  },
+  "anita": {
+    "origin": "Hebreo",
+    "lang": "Hebreo antiguo",
+    "meaning": "Es un diminutivo afectivo de Ana, procedente de Hannah: 'gracia' o 'favor'. Su sentido conserva la ternura de lo cercano y recuerda que un gesto pequeño puede expresar una gran compasión.",
+    "element": "Agua",
+    "planet": "Luna",
+    "archetype": "La Gracia Cercana",
+    "gem": "Perla",
+    "color": "Blanco crema"
+  },
+  "aurora": {
+    "origin": "Latino",
+    "lang": "Latin",
+    "meaning": "Deriva de Aurora, nombre de la diosa romana del amanecer y de la palabra latina para la primera luz. Representa nuevos comienzos, esperanza activa y la fuerza de iluminar el paso siguiente aun tras la oscuridad.",
+    "element": "Luz",
+    "planet": "Sol",
+    "archetype": "La Diosa del Amanecer",
+    "gem": "Piedra sol",
+    "color": "Naranja dorado"
+  },
+  "beatriz": {
+    "origin": "Latino",
+    "lang": "Latin medieval",
+    "meaning": "Es una forma hispánica de Beatrix, nombre relacionado históricamente con viatrix, 'viajera', y por asociación popular con beata, 'feliz' o 'bendita'. Simboliza el camino que se vuelve alegría cuando se recorre con propósito y generosidad.",
+    "element": "Aire",
+    "planet": "Jupiter",
+    "archetype": "La Viajera Feliz",
+    "gem": "Turquesa",
+    "color": "Turquesa claro"
+  },
+  "belen": {
+    "origin": "Hebreo",
+    "lang": "Hebreo antiguo",
+    "meaning": "Es la forma española de Belén, procedente de Bet Lehem, 'casa del pan'. Evoca alimento, hospitalidad y la capacidad de crear un espacio donde las personas encuentren sustento material y afectivo.",
+    "element": "Tierra",
+    "planet": "Venus",
+    "archetype": "La Anfitriona Sagrada",
+    "gem": "Jaspe amarillo",
+    "color": "Amarillo trigo"
+  },
+  "berenice": {
+    "origin": "Griego",
+    "lang": "Griego clasico",
+    "meaning": "Procede de Berenike, forma macedonia de Pherenike: 'la que trae la victoria'. Representa la confianza que impulsa logros, la capacidad de convertir los desafíos en aprendizaje y avanzar con determinación.",
+    "element": "Fuego",
+    "planet": "Marte",
+    "archetype": "La Portadora de Victoria",
+    "gem": "Granate",
+    "color": "Rojo escarlata"
+  },
+  "blanca": {
+    "origin": "Germanico",
+    "lang": "Germanico antiguo",
+    "meaning": "Procede de la raíz germánica blank, 'brillante', 'claro' o 'blanco', difundida por lenguas romances. Simboliza transparencia, honestidad y la fuerza de mantener una conciencia limpia ante la incertidumbre.",
+    "element": "Luz",
+    "planet": "Luna",
+    "archetype": "La Clara de Corazón",
+    "gem": "Cuarzo transparente",
+    "color": "Blanco puro"
+  },
+  "camila": {
+    "origin": "Latino",
+    "lang": "Latin",
+    "meaning": "Deriva de Camilla, vinculada a camillus, el joven asistente de ceremonias religiosas en Roma. Simboliza servicio consciente, devoción a lo valioso y la capacidad de convertir las tareas cotidianas en actos con significado.",
+    "element": "Tierra",
+    "planet": "Venus",
+    "archetype": "La Servidora Sagrada",
+    "gem": "Esmeralda",
+    "color": "Verde jade"
+  },
+  "carolina": {
+    "origin": "Germanico",
+    "lang": "Germanico antiguo",
+    "meaning": "Es forma femenina de Carlos, derivado de Karl, 'hombre libre'. Representa autonomía, capacidad de elegir con conciencia y valentía para construir una vida fiel a los propios valores.",
+    "element": "Aire",
+    "planet": "Urano",
+    "archetype": "La Espíritu Libre",
+    "gem": "Aguamarina",
+    "color": "Azul aguamarina"
+  },
+  "catalina": {
+    "origin": "Griego",
+    "lang": "Griego clasico",
+    "meaning": "Procede de Aikaterine; tradicionalmente se ha asociado con katharos, 'pura', aunque su etimología exacta se discute. Simboliza discernimiento, honestidad interior y la búsqueda de una vida alineada con lo esencial.",
+    "element": "Agua",
+    "planet": "Luna",
+    "archetype": "La Guardiana de Pureza",
+    "gem": "Piedra luna",
+    "color": "Blanco plata"
+  },
+  "celeste": {
+    "origin": "Latino",
+    "lang": "Latin",
+    "meaning": "Deriva de caelestis, 'celestial' o 'perteneciente al cielo'. Representa la amplitud de visión, la aspiración a ideales elevados y la serenidad de quien no pierde de vista un horizonte mayor.",
+    "element": "Aire",
+    "planet": "Neptuno",
+    "archetype": "La Visionaria Celestial",
+    "gem": "Lapislazuli",
+    "color": "Azul celeste"
+  },
+  "claudia": {
+    "origin": "Latino",
+    "lang": "Latin",
+    "meaning": "Procede de Claudia, forma femenina de Claudius, antiguo nombre de familia romana. Aunque se relaciona tradicionalmente con claudus, 'cojo', su valor simbólico puede leerse como resiliencia: avanzar con dignidad aun cuando el camino exige esfuerzo.",
+    "element": "Tierra",
+    "planet": "Saturno",
+    "archetype": "La Resiliente",
+    "gem": "Hematita",
+    "color": "Gris plata"
+  },
+  "constanza": {
+    "origin": "Latino",
+    "lang": "Latin",
+    "meaning": "Deriva de Constantia, 'constancia', 'firmeza' o 'perseverancia'. Representa la estabilidad emocional y la fuerza paciente de sostener compromisos sin abandonar el crecimiento personal.",
+    "element": "Tierra",
+    "planet": "Saturno",
+    "archetype": "La Perseverante",
+    "gem": "Ónix",
+    "color": "Negro profundo"
+  },
+  "cristina": {
+    "origin": "Griego",
+    "lang": "Griego/Latin",
+    "meaning": "Deriva de Christianus y Christos, 'ungido'. Simboliza una identidad orientada por valores espirituales, la capacidad de servir con compasión y sostener convicciones con humildad.",
+    "element": "Luz",
+    "planet": "Sol",
+    "archetype": "La Consagrada",
+    "gem": "Amatista",
+    "color": "Violeta claro"
+  },
+  "daniela": {
+    "origin": "Hebreo",
+    "lang": "Hebreo antiguo",
+    "meaning": "Es la forma femenina de Daniel, compuesto por din, 'juzgar', y El, 'Dios': 'Dios es mi juez'. Representa justicia, discernimiento y la decisión de actuar desde principios, no desde la aprobación externa.",
+    "element": "Aire",
+    "planet": "Jupiter",
+    "archetype": "La Jueza Justa",
+    "gem": "Zafiro azul",
+    "color": "Azul zafiro"
+  },
+  "diana": {
+    "origin": "Latino",
+    "lang": "Latin",
+    "meaning": "Deriva de Diana, diosa romana asociada con la luna, la caza y la naturaleza; se vincula con divus, 'divina'. Simboliza independencia, intuición y la valentía de seguir la propia ruta con respeto por lo natural.",
+    "element": "Agua",
+    "planet": "Luna",
+    "archetype": "La Cazadora Lunar",
+    "gem": "Piedra luna",
+    "color": "Plata lunar"
+  },
+  "dolores": {
+    "origin": "Latino",
+    "lang": "Latin",
+    "meaning": "Procede del título mariano Nuestra Señora de los Dolores, relacionado con dolor. Simboliza compasión, fortaleza ante las pruebas y la capacidad de convertir experiencias difíciles en sensibilidad hacia los demás.",
+    "element": "Agua",
+    "planet": "Pluton",
+    "archetype": "La Compasiva Resiliente",
+    "gem": "Obsidiana",
+    "color": "Morado oscuro"
+  },
+  "elena": {
+    "origin": "Griego",
+    "lang": "Griego clasico",
+    "meaning": "Deriva de Helene, nombre cuya etimología es debatida y que suele relacionarse con antorcha, brillo o luz. Representa la claridad que atrae, la capacidad de iluminar caminos y de mantener belleza interior en medio de la complejidad.",
+    "element": "Luz",
+    "planet": "Sol",
+    "archetype": "La Antorcha Luminosa",
+    "gem": "Citrino",
+    "color": "Amarillo oro"
+  },
+  "elisa": {
+    "origin": "Hebreo",
+    "lang": "Hebreo antiguo",
+    "meaning": "Es forma de Elisheva o Elisabeth, 'mi Dios es juramento' o 'Dios es plenitud'. Simboliza fidelidad, confianza y la capacidad de sostener promesas que dan estabilidad a los vínculos importantes.",
+    "element": "Agua",
+    "planet": "Jupiter",
+    "archetype": "La Guardiana del Juramento",
+    "gem": "Zafiro azul",
+    "color": "Azul profundo"
+  },
+  "emilia": {
+    "origin": "Latino",
+    "lang": "Latin",
+    "meaning": "Deriva de Aemilia, nombre de familia romano relacionado con aemulus, 'rival' o 'quien emula'. Representa aspiración, disciplina y el impulso de crecer sin convertir la comparación en pérdida de autenticidad.",
+    "element": "Fuego",
+    "planet": "Marte",
+    "archetype": "La Aspirante",
+    "gem": "Cornalina",
+    "color": "Naranja coral"
+  },
+  "esther": {
+    "origin": "Persa",
+    "lang": "Persa antiguo",
+    "meaning": "Probablemente se relaciona con stara, 'estrella'; también se ha vinculado con la diosa Ishtar en tradiciones antiguas. Simboliza esperanza, orientación nocturna y la capacidad de preservar una luz propia en momentos inciertos.",
+    "element": "Luz",
+    "planet": "Venus",
+    "archetype": "La Estrella Guia",
+    "gem": "Zafiro estrellado",
+    "color": "Azul medianoche"
+  },
+  "estrella": {
+    "origin": "Latino",
+    "lang": "Latin",
+    "meaning": "Procede del latín stella, 'estrella'. Representa orientación, esperanza y la posibilidad de ser un punto de referencia luminoso para otros sin dejar de recorrer el propio camino.",
+    "element": "Luz",
+    "planet": "Venus",
+    "archetype": "La Guia Luminosa",
+    "gem": "Diamante",
+    "color": "Blanco estelar"
+  },
+  "eugenia": {
+    "origin": "Griego",
+    "lang": "Griego clasico",
+    "meaning": "Deriva de Eugenia, formada por eu, 'bueno', y genos, 'nacimiento' o 'linaje'. Simboliza una nobleza entendida como virtud cultivada, no solo como herencia, y el compromiso de dejar un legado benéfico.",
+    "element": "Aire",
+    "planet": "Jupiter",
+    "archetype": "La Noble Virtuosa",
+    "gem": "Topacio azul",
+    "color": "Azul real"
+  },
+  "evangelina": {
+    "origin": "Griego",
+    "lang": "Griego clasico",
+    "meaning": "Procede de euangelion, 'buena noticia' o 'buen mensaje'. Representa la palabra que consuela, la capacidad de comunicar esperanza y de abrir horizontes donde antes había desaliento.",
+    "element": "Aire",
+    "planet": "Mercurio",
+    "archetype": "La Mensajera de Esperanza",
+    "gem": "Aguamarina",
+    "color": "Azul cielo"
+  },
+  "fabiana": {
+    "origin": "Latino",
+    "lang": "Latin",
+    "meaning": "Deriva de Fabianus, relacionado con Fabius y faba, 'haba'. Simboliza fertilidad, crecimiento paciente y la sabiduría de confiar en procesos modestos que, con cuidado, producen abundancia.",
+    "element": "Tierra",
+    "planet": "Venus",
+    "archetype": "La Cultivadora",
+    "gem": "Jade",
+    "color": "Verde oliva"
+  },
+  "fernanda": {
+    "origin": "Germanico",
+    "lang": "Germanico antiguo",
+    "meaning": "Es forma femenina de Fernando, nombre cuyo origen se vincula con ideas de viaje, paz y audacia según interpretaciones etimológicas. Representa la exploración valiente y la habilidad de encontrar dirección cuando se abre un territorio nuevo.",
+    "element": "Aire",
+    "planet": "Jupiter",
+    "archetype": "La Exploradora Audaz",
+    "gem": "Lapislazuli",
+    "color": "Azul ultramar"
+  },
+  "flor": {
+    "origin": "Latino",
+    "lang": "Latin",
+    "meaning": "Procede de flos, floris, 'flor'. Simboliza belleza en expansión, creatividad y la confianza de mostrar los propios dones cuando llega el momento adecuado.",
+    "element": "Tierra",
+    "planet": "Venus",
+    "archetype": "La Flor que Brota",
+    "gem": "Rodocrosita",
+    "color": "Rosa floral"
+  },
+  "frida": {
+    "origin": "Germanico",
+    "lang": "Germanico antiguo",
+    "meaning": "Se vincula con frid, 'paz'. Representa la fuerza pacificadora, el valor de crear armonía sin negar los conflictos y la convicción de que la serenidad también es una forma de valentía.",
+    "element": "Aire",
+    "planet": "Venus",
+    "archetype": "La Pacificadora",
+    "gem": "Turquesa",
+    "color": "Turquesa suave"
+  }
+}

@@ -1,0 +1,158 @@
+Created At: 2026-08-31T18:05:23-05:00
+Completed At: 2026-08-31T18:05:24-05:00
+File Path: `file:///c:/Users/cabel/Music/mapa-de-vida/fecha.js`
+Total Lines: 206
+Total Bytes: 23812
+Showing lines 1 to 150
+The following code has been modified to include a line number before every line, in the format: <line_number>: <original_line>. Please note that any changes targeting the original code should remove the line number, colon, and leading space.
+1: (function () {
+2:   'use strict';
+3: 
+4:   var storageKey = 'your-life-data';
+5:   var month = document.getElementById('month'), day = document.getElementById('day'), year = document.getElementById('year');
+6:   var data = loadData();
+7:   var monthNames = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre'];
+8:   var zodiac = [
+9:     { name: 'Capricornio', from: [1, 1], to: [1, 19] }, { name: 'Acuario', from: [1, 20], to: [2, 18] }, { name: 'Piscis', from: [2, 19], to: [3, 20] }, { name: 'Aries', from: [3, 21], to: [4, 19] },
+10:     { name: 'Tauro', from: [4, 20], to: [5, 20] }, { name: 'Géminis', from: [5, 21], to: [6, 20] }, { name: 'Cáncer', from: [6, 21], to: [7, 22] }, { name: 'Leo', from: [7, 23], to: [8, 22] },
+11:     { name: 'Virgo', from: [8, 23], to: [9, 22] }, { name: 'Libra', from: [9, 23], to: [10, 22] }, { name: 'Escorpio', from: [10, 23], to: [11, 21] }, { name: 'Sagitario', from: [11, 22], to: [12, 21] }, { name: 'Capricornio', from: [12, 22], to: [12, 31] }
+12:   ];
+13:   var chineseAnimals = ['Rata', 'Buey', 'Tigre', 'Conejo', 'Dragón', 'Serpiente', 'Caballo', 'Cabra', 'Mono', 'Gallo', 'Perro', 'Cerdo'];
+14:   var chineseElements = ['Metal', 'Agua', 'Madera', 'Fuego', 'Tierra'];
+15:   var mayaNames = ['Imix', 'Ik', 'Akbal', 'Kan', 'Chicchan', 'Cimi', 'Manik', 'Lamat', 'Muluc', 'Oc', 'Chuen', 'Eb', 'Ben', 'Ix', 'Men', 'Cib', 'Caban', 'Eznab', 'Cauac', 'Ahau'];
+16:   var yearStories = {
+17:     1989: ['La caída del Muro de Berlín marcó un cambio histórico en Europa.', 'La World Wide Web fue propuesta por Tim Berners-Lee en el CERN.', 'La tecnología doméstica estaba entrando en la era de los discos compactos y las primeras redes digitales.'],
+18:     1990: ['El telescopio espacial Hubble fue lanzado en abril.', 'La World Wide Web comenzó a tomar forma pública en los primeros años de esta década.', 'Los videojuegos de 16 bits y los discos compactos definían buena parte del ocio tecnológico.'],
+19:     2000: ['El cambio de milenio impulsó una expansión mundial de Internet.', 'Los teléfonos móviles empezaban a pasar de herramienta profesional a objeto cotidiano.', 'El cine digital y los formatos MP3 transformaban la forma de consumir cultura.'],
+20:     2010: ['Los teléfonos inteligentes empezaron a consolidarse como la pantalla principal.', 'Las redes sociales pasaron a formar parte de la comunicación diaria.', 'La fotografía digital y el almacenamiento en la nube se volvieron cada vez más accesibles.'],
+21:     2020: ['La pandemia de COVID-19 alteró la vida cotidiana en todo el mundo.', 'El trabajo y la educación remotos se volvieron experiencias masivas.', 'La investigación de vacunas alcanzó una velocidad sin precedentes recientes.']
+22:   };
+23: 
+24:   function loadData() { try { return JSON.parse(localStorage.getItem(storageKey) || '{}'); } catch (error) { return {}; } }
+25:   function saveDOB() { var current = getDate(); if (current) { data.dob = { month: current.getMonth(), day: current.getDate(), year: current.getFullYear() }; localStorage.setItem(storageKey, JSON.stringify(data)); } }
+26:   function getDate() { var date = new Date(Number(year.value), Number(month.value), Number(day.value)); return year.value && month.value !== '' && day.value && date.getFullYear() === Number(year.value) && date.getMonth() === Number(month.value) && date.getDate() === Number(day.value) && date <= new Date() ? date : null; }
+27:   function esc(value) { return String(value).replace(/[&<>"']/g, function (character) { return ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#039;' })[character]; }); }
+28:   function fmt(date, options) { return new Intl.DateTimeFormat('es', options).format(date); }
+29:   function ageParts(birth) { var now = new Date(), years = now.getFullYear() - birth.getFullYear(), months = now.getMonth() - birth.getMonth(), days = now.getDate() - birth.getDate(); if (days < 0) { months--; days += new Date(now.getFullYear(), now.getMonth(), 0).getDate(); } if (months < 0) { years--; months += 12; } return { years: years, months: months, days: days }; }
+30:   function daysUntilBirthday(birth) { var now = new Date(), next = new Date(now.getFullYear(), birth.getMonth(), birth.getDate()); if (next < now) next.setFullYear(next.getFullYear() + 1); return Math.ceil((next - now) / 86400000); }
+31:   function reduceNumber(value) { while (value > 9 && value !== 11 && value !== 22 && value !== 33) value = String(value).split('').reduce(function (sum, digit) { return sum + Number(digit); }, 0); return value; }
+32:   function lifePath(birth) { return reduceNumber(String(birth.getFullYear()) + (birth.getMonth() + 1) + birth.getDate()); }
+33:   function westernSign(birth) { var key = [birth.getMonth() + 1, birth.getDate()]; return zodiac.find(function (sign) { return key[0] === sign.from[0] && key[1] >= sign.from[1] || key[0] === sign.to[0] && key[1] <= sign.to[1]; }).name; }
+34:   function chineseSign(birth) {
+35:     var yearText = new Intl.DateTimeFormat('zh-u-ca-chinese', { year: 'numeric' }).format(birth);
+36:     var branches = { '子': 0, '丑': 1, '寅': 2, '卯': 3, '辰': 4, '巳': 5, '午': 6, '未': 7, '申': 8, '酉': 9, '戌': 10, '亥': 11 };
+37:     var stems = { '甲': 2, '乙': 2, '丙': 3, '丁': 3, '戊': 4, '己': 4, '庚': 0, '辛': 0, '壬': 1, '癸': 1 };
+38:     var match = yearText.match(/([甲乙丙丁戊己庚辛壬癸])([子丑寅卯辰巳午未申酉戌亥])/);
+39:     if (!match) return 'No disponible';
+40:     return chineseAnimals[branches[match[2]]] + ' de ' + chineseElements[stems[match[1]]].toLowerCase();
+41:   }
+42:   function siderealSign(birth) { var dayOfYear = Math.floor((birth - new Date(birth.getFullYear(), 0, 0)) / 86400000); var tropical = (dayOfYear / 365 * 360 + 280) % 360; var sidereal = (tropical - 24 + 360) % 360; return ['Aries', 'Tauro', 'Géminis', 'Cáncer', 'Leo', 'Virgo', 'Libra', 'Escorpio', 'Sagitario', 'Capricornio', 'Acuario', 'Piscis'][Math.floor(sidereal / 30)]; }
+43:   function egyptianSign(birth) { var day = (birth.getMonth() + 1) * 100 + birth.getDate(); var ranges = [[107, 'Amun-Ra'], [121, 'Mut'], [208, 'Geb'], [319, 'Osiris'], [426, 'Isis'], [527, 'Thoth'], [629, 'Horus'], [826, 'Anubis'], [930, 'Bastet'], [1027, 'Sekhmet'], [1125, 'Neith'], [1231, 'Hapi']]; return (ranges.find(function (range) { return day <= range[0]; }) || ranges[0])[1]; }
+44:   function celticSign(birth) { var day = (birth.getMonth() + 1) * 100 + birth.getDate(); var ranges = [[120, 'Abedul'], [218, 'Serbal'], [317, 'Fresno'], [414, 'Aliso'], [513, 'Sauce'], [609, 'Espino'], [706, 'Roble'], [804, 'Acebo'], [901, 'Avellano'], [929, 'Vid'], [1028, 'Hiedra'], [1124, 'Caña'], [1223, 'Saúco'], [1231, 'Abedul']]; return (ranges.find(function (range) { return day <= range[0]; }) || ranges[0])[1]; }
+45:   function personalYear(birth) { return reduceNumber(new Date().getFullYear() + (birth.getMonth() + 1) + birth.getDate()); }
+46:   function moonPhase(birth) { var known = new Date(Date.UTC(2000, 0, 6, 18, 14)), days = (birth.getTime() - known.getTime()) / 86400000, phase = ((days % 29.530588853) + 29.530588853) % 29.530588853; if (phase < 1.85 || phase > 27.68) return 'Luna nueva'; if (phase < 7.38) return 'Creciente'; if (phase < 9.22) return 'Cuarto creciente'; if (phase < 14.76) return 'Gibosa creciente'; if (phase < 16.61) return 'Luna llena'; if (phase < 22.14) return 'Gibosa menguante'; if (phase < 23.99) return 'Cuarto menguante'; return 'Menguante'; }
+47:   function calendars(birth) {
+48:     var configs = [
+49:       { orig: 'en-u-ca-islamic', es: 'es-u-ca-islamic', title: 'Calendario islámico', desc: 'Basado en las fases de la luna. Marca los meses y festividades de la tradición musulmana.' },
+50:       { orig: 'en-u-ca-hebrew', es: 'es-u-ca-hebrew', title: 'Calendario hebreo', desc: 'Calendario lunisolar, determina las festividades judías y los años desde la creación del mundo (según la tradición).' },
+51:       { orig: 'en-u-ca-persian', es: 'es-u-ca-persian', title: 'Calendario persa', desc: 'Un calendario solar muy preciso que inicia con el equinoccio de primavera, usado en Irán y Afganistán.' },
+52:       { orig: 'en-u-ca-ethiopic', es: 'es-u-ca-ethiopic', title: 'Calendario etíope', desc: 'Calendario solar con 12 meses de 30 días y un decimotercer mes corto. Retrasado unos 7 años respecto al gregoriano.' },
+53:       { orig: 'ja-JP-u-ca-japanese', es: 'es-u-ca-japanese', title: 'Era japonesa', desc: 'Sistema tradicional que cuenta los años a partir del inicio del reinado del emperador actual.' },
+54:       { orig: 'zh-CN-u-ca-chinese', es: 'es-u-ca-chinese', title: 'Calendario chino', desc: 'Lunisolar. Combina ciclos lunares y solares, define el Año Nuevo Chino y las festividades tradicionales.' }
+55:     ];
+56:     return configs.map(function (config) { 
+57:       try { 
+58:         var origText = new Intl.DateTimeFormat(config.orig, { dateStyle: 'long' }).format(birth);
+59:         var esText = new Intl.DateTimeFormat(config.es, { dateStyle: 'long' }).format(birth);
+60:         return '<article class="info-card"><h3>' + config.title + '</h3><strong>' + esc(origText) + '</strong><span style="display:block; margin-bottom:12px; font-weight:600; color:var(--teal); font-size:0.85rem;">Traducción: ' + esc(esText) + '</span><p>' + config.desc + '</p></article>'; 
+61:       } catch (error) { return ''; } 
+62:     }).join('');
+63:   }
+64:   function milestone(birth, label, amount, unit) { var date = new Date(birth); if (unit === 'days') date.setDate(date.getDate() + amount); if (unit === 'hours') date.setTime(date.getTime() + amount * 3600000); if (unit === 'weeks') date.setDate(date.getDate() + amount * 7); if (unit === 'years') date.setFullYear(date.getFullYear() + amount); return '<article class="milestone"><strong>' + esc(label) + '</strong><span>' + fmt(date, { dateStyle: 'medium' }) + '</span></article>'; }
+65:   function render() {
+66:     var birth = getDate(); if (!birth) return;
+67:     var age = ageParts(birth), output = document.getElementById('identity-output');
+68:     output.innerHTML = '<article class="identity-card identity-main"><p class="section-kicker">EDAD EXACTA</p><strong>' + age.years + ' años, ' + age.months + ' meses y ' + age.days + ' días</strong><span>Naciste un ' + fmt(birth, { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' }) + '</span></article><article class="identity-card"><p class="section-kicker">PRÓXIMO CUMPLEAÑOS</p><strong>' + daysUntilBirthday(birth) + ' días</strong><span>hasta volver a celebrar</span></article><article class="identity-card"><p class="section-kicker">GENERACIÓN</p><strong>' + generation(birth.getFullYear()) + '</strong><span>clasificación aproximada</span></article>';
+69:     document.getElementById('calendar-output').innerHTML = calendars(birth) + card('Edad tradicional coreana', String(new Date().getFullYear() - birth.getFullYear() + 1) + ' años', 'Sistema nominal histórico; Corea del Sur usa hoy la edad internacional') + card('Edad nominal japonesa', String(new Date().getFullYear() - birth.getFullYear() + 1) + ' años', 'Conteo tradicional de la edad, no la edad legal actual');
+70:     var wSign = westernSign(birth), cSign = chineseSign(birth), sSign = siderealSign(birth), eSign = egyptianSign(birth), tSign = celticSign(birth), mPhase = moonPhase(birth), lp = lifePath(birth), may = mayaDay(birth), pYear = personalYear(birth);
+71:     document.getElementById('symbol-output').innerHTML = card('Zodiaco occidental', wSign, 'Tradición astrológica occidental', 'zodiac/zodiac-' + wSign.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "")) + card('Zodiaco chino', cSign, 'Ciclo lunisolar de doce animales', 'chinese/chinese-' + cSign.split(' ')[0].toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "")) + card('Jyotisha', sSign, 'Signo solar sideral aproximado', 'jyotisha/jyotisha-' + sSign.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "")) + card('Zodiaco egipcio', eSign, 'Sistema moderno inspirado en símbolos del Egipto antiguo', 'egyptian/egyptian-' + eSign.toLowerCase().replace(/ /g, '-').normalize("NFD").replace(/[\u0300-\u036f]/g, "")) + card('Árbol celta', tSign, 'Zodiaco arbóreo de tradición moderna', 'celtic/celtic-' + tSign.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "")) + card('Fase lunar', mPhase, 'Fase astronómica aproximada', 'moon/moon-' + mPhase.toLowerCase().replace(/ /g, '-').normalize("NFD").replace(/[\u0300-\u036f]/g, "")) + card('Numerología', 'Camino de vida ' + lp, 'Lectura simbólica basada en los dígitos de tu fecha', 'numerology/numerology-' + lp) + card('Año personal', String(pYear), 'Lectura numerológica recreativa para el año actual', 'personal-year/personal-year-' + pYear) + card('Tzolk’in maya', may, 'Conversión recreativa; existen distintas correlaciones', 'mayan/mayan-' + may.split(' ')[1].toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, ""));
+72:     document.getElementById('milestone-output').innerHTML = milestone(birth, '1.000 días', 1000, 'days') + milestone(birth, '10.000 días', 10000, 'days') + milestone(birth, '1.000 semanas', 1000, 'weeks') + milestone(birth, '1 millón de horas', 1000000, 'hours') + milestone(birth, 'Cumplir 40 años', 40, 'years');
+73:     renderHistory(birth);
+74:     var entries = (data.events || []).concat(data.goals || []).sort(function (a, b) { return a.index - b.index; }); document.getElementById('timeline-output').innerHTML = entries.length ? entries.map(function (entry) { return '<li><strong>' + esc(entry.title) + '</strong><span>Periodo ' + (entry.index + 1) + '</span></li>'; }).join('') : '<li class="muted">Aún no hay eventos ni metas. Añádelos desde uno de tus mapas.</li>';
+75:     initOracle(birth);
+76:   }
+77:   function card(title, value, description, imageId) { return '<article class="info-card">' + (imageId ? '<div class="card-image-wrap"><img src="images/' + imageId + '.jpg" alt="' + esc(value) + '" class="card-image" onerror="this.parentElement.style.display=\'none\'"></div>' : '') + '<h3>' + title + '</h3><strong>' + esc(value) + '</strong><p>' + description + '</p></article>'; }
+78:   function renderHistory(birth) {
+79:     var stories = yearStories[birth.getFullYear()] || ['Tu fecha cayó en un ' + fmt(birth, { weekday: 'long' }) + '.', 'El año ' + birth.getFullYear() + ' pertenece al siglo ' + (Math.floor((birth.getFullYear() - 1) / 100) + 1) + '.', (birth.getFullYear() % 4 === 0 ? 'Fue un año bisiesto.' : 'No fue un año bisiesto.')];
+80:     document.getElementById('history-output').innerHTML = stories.map(function (story, index) { return '<article class="history-item"><span>0' + (index + 1) + '</span><p>' + esc(story) + '</p></article>'; }).join('');
+81:   }
+82:   function generation(value) { if (value < 1946) return 'Generación silenciosa'; if (value < 1965) return 'Baby Boomer'; if (value < 1981) return 'Generación X'; if (value < 1997) return 'Millennial'; if (value < 2013) return 'Generación Z'; return 'Generación Alfa'; }
+83:   function mayaDay(birth) { var days = Math.floor((Date.UTC(birth.getFullYear(), birth.getMonth(), birth.getDate()) - Date.UTC(2012, 11, 21)) / 86400000); var tone = ((days % 13) + 13) % 13 + 1; var name = mayaNames[((days % 20) + 20) % 20]; return tone + ' ' + name; }
+84:   
+85:   function initOracle(birth) {
+86:     var algoContainer = document.getElementById('oracle-algo-output');
+87:     if (algoContainer) algoContainer.innerHTML = generateAlgorithmicOracle(birth);
+88:     var tabAlgo = document.getElementById('tab-algo'), tabAi = document.getElementById('tab-ai');
+89:     var contentAlgo = document.getElementById('oracle-algo-content'), contentAi = document.getElementById('oracle-ai-content');
+90:     if (tabAlgo && tabAi) {
+91:         tabAlgo.onclick = function() { tabAlgo.classList.add('active'); tabAi.classList.remove('active'); contentAlgo.style.display = 'block'; contentAi.style.display = 'none'; };
+92:         tabAi.onclick = function() { tabAi.classList.add('active'); tabAlgo.classList.remove('active'); contentAi.style.display = 'block'; contentAlgo.style.display = 'none'; };
+93:     }
+94:     setupAIChat(birth);
+95:   }
+96: 
+97:   function generateAlgorithmicOracle(birth) {
+98:     var today = new Date();
+99:     var seed = birth.getFullYear() * 10000 + birth.getMonth() * 100 + birth.getDate() + today.getFullYear() * 10000 + today.getMonth() * 100 + today.getDate();
+100:     var contexts = [
+101:       "Las estrellas indican una fuerte alineación cósmica en este día.",
+102:       "El Universo ha trazado un ciclo de profunda introspección para ti hoy.",
+103:       "Bajo la influencia de tu camino numerológico, este es un momento de revelación.",
+104:       "Las constelaciones sugieren un flujo de energía renovadora en tu camino.",
+105:       "El tejido astral vibra con tu fecha de nacimiento en esta jornada.",
+106:       "Los astros te invitan a observar las señales ocultas en tu entorno hoy.",
+107:       "Se abre una ventana de sincronicidad profunda según tu carta energética.",
+108:       "Tus guías cósmicos señalan un cambio sutil pero poderoso en tu aura.",
+109:       "Este día trae consigo una frecuencia de expansión para tu espíritu.",
+110:       "La energía de los ancestros resuena con fuerza en tu presente hoy."
+111:     ];
+112:     var energies = [
+113:       "Tu desafío principal será soltar aquello que ya no te sirve.",
+114:       "Una ola de creatividad está a punto de manifestarse en tu vida.",
+115:       "Es el momento perfecto para confiar en tu intuición por encima de la lógica.",
+116:       "Una conversación inesperada podría traerte la respuesta que estabas buscando.",
+117:       "Tu energía vital pide descanso y reconexión con la naturaleza.",
+118:       "Un pequeño obstáculo te enseñará una lección invaluable si mantienes la calma.",
+119:       "La abundancia fluye hacia ti, pero debes estar abierto a recibirla.",
+120:       "Tus emociones podrían estar a flor de piel; úsalas como brújula, no como ancla.",
+121:       "Un sueño o pensamiento recurrente contiene la clave de tu próximo paso.",
+122:       "Alguien de tu pasado cósmico está enviándote energía de sanación."
+123:     ];
+124:     var advices = [
+125:       "El consejo del Oráculo: Da el primer paso, el camino aparecerá bajo tus pies.",
+126:       "El consejo del Oráculo: Respira hondo y abraza la incertidumbre; ahí reside la magia.",
+127:       "El consejo del Oráculo: No busques la perfección, busca el progreso constante.",
+128:       "El consejo del Oráculo: Agradece lo que tienes y el Universo te multiplicará las bendiciones.",
+129:       "El consejo del Oráculo: Sé como el agua, fluye ante las rocas de tu camino.",
+130:       "El consejo del Oráculo: La verdadera sabiduría está en saber escuchar el silencio.",
+131:       "El consejo del Oráculo: Hoy es un buen día para perdonar y liberar peso kármico.",
+132:       "El consejo del Oráculo: Atrévete a brillar; el mundo necesita tu luz única.",
+133:       "El consejo del Oráculo: Escucha a tu corazón, es el único oráculo que nunca miente.",
+134:       "El consejo del Oráculo: Confía en el proceso; todo se está acomodando a tu favor."
+135:     ];
+136:     var mPhaseInt = Math.floor( ((birth.getTime() - new Date(Date.UTC(2000, 0, 6, 18, 14)).getTime()) / 86400000) % 29.53 );
+137:     var lp = lifePath(birth), pYear = personalYear(birth);
+138:     var idxContext = Math.abs(seed + mPhaseInt) % contexts.length;
+139:     var idxEnergy = Math.abs(seed + parseInt(lp)) % energies.length;
+140:     var idxAdvice = Math.abs(seed + parseInt(pYear)) % advices.length;
+141:     return "<p>" + contexts[idxContext] + "</p><p>" + energies[idxEnergy] + "</p><p>" + advices[idxAdvice] + "</p>";
+142:   }
+143: 
+144:   function setupAIChat(birth) {
+145:     var apiKeyInput = document.getElementById('gemini-api-key'), saveBtn = document.getElementById('save-api-key'), removeBtn = document.getElementById('remove-api-key');
+146:     var setupBox = document.getElementById('api-key-setup'), chatBox = document.getElementById('ai-chat-interface'), askBtn = document.getElementById('ask-ai-btn');
+147:     var questionInput = document.getElementById('ai-question'), historyBox = document.getElementById('chat-history');
+148:     if (!setupBox) return;
+149: 
+150:     function updateUI() {
+The above content does NOT show the entire file contents. If you need to view any lines of the file which were not shown to complete your task, call this tool again to view those lines.

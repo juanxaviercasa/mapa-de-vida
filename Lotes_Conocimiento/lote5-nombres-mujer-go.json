@@ -1,0 +1,342 @@
+{
+  "gabriela": {
+    "origin": "Hebreo",
+    "lang": "Hebreo antiguo",
+    "meaning": "Es la forma femenina de Gabriel, procedente de Gavri'el: 'Dios es mi fuerza' o 'fuerza de Dios'. Simboliza una fortaleza interior que se expresa con compasión, fe y capacidad de orientar a otros.",
+    "element": "Luz",
+    "planet": "Sol",
+    "archetype": "La Mensajera Divina",
+    "gem": "Citrino",
+    "color": "Amarillo solar"
+  },
+  "gloria": {
+    "origin": "Latino",
+    "lang": "Latin",
+    "meaning": "Deriva de gloria, voz latina asociada con fama, honor y esplendor. Representa el brillo que nace de vivir con propósito y de reconocer los méritos sin perder humildad.",
+    "element": "Luz",
+    "planet": "Sol",
+    "archetype": "La Radiante",
+    "gem": "Topacio dorado",
+    "color": "Dorado brillante"
+  },
+  "graciela": {
+    "origin": "Latino",
+    "lang": "Latin tardio",
+    "meaning": "Es una forma afectiva de Gracia, derivada de gratia: 'gracia', 'favor' o 'benevolencia'. Simboliza elegancia interior, generosidad y la capacidad de suavizar los vínculos mediante la amabilidad consciente.",
+    "element": "Agua",
+    "planet": "Venus",
+    "archetype": "La Dadora de Gracia",
+    "gem": "Cuarzo rosa",
+    "color": "Rosa suave"
+  },
+  "guadalupe": {
+    "origin": "Arabe-espanol",
+    "lang": "Arabe andalusi",
+    "meaning": "Su origen se asocia habitualmente con el topónimo árabe Wadi al-lubb, interpretado de distintas maneras, entre ellas 'río oculto' o 'río de piedras negras'; la etimología concreta sigue siendo debatida. En la tradición hispánica, el nombre quedó profundamente ligado a la advocación mariana y simboliza amparo, fe y refugio espiritual.",
+    "element": "Agua",
+    "planet": "Luna",
+    "archetype": "La Madre Protectora",
+    "gem": "Turquesa",
+    "color": "Verde turquesa"
+  },
+  "ingrid": {
+    "origin": "Nordico",
+    "lang": "Nordico antiguo",
+    "meaning": "Deriva de Ingfridr, compuesto por Ing, nombre de una divinidad germánica asociada a la fertilidad, y fridr, 'bella' o 'amada'. Representa belleza con profundidad, independencia y una fuerza que florece desde las raíces.",
+    "element": "Tierra",
+    "planet": "Venus",
+    "archetype": "La Bella Fertil",
+    "gem": "Esmeralda",
+    "color": "Verde bosque"
+  },
+  "ines": {
+    "origin": "Griego",
+    "lang": "Griego clasico",
+    "meaning": "Es la forma española de Agnes, procedente de hagnos: 'pura' o 'casta'. Simboliza claridad de intención, autenticidad y la capacidad de preservar valores esenciales aun frente a la confusión.",
+    "element": "Luz",
+    "planet": "Luna",
+    "archetype": "La Alma Transparente",
+    "gem": "Cuarzo transparente",
+    "color": "Blanco puro"
+  },
+  "irene": {
+    "origin": "Griego",
+    "lang": "Griego clasico",
+    "meaning": "Deriva de Eirene, 'paz', y fue además el nombre de la personificación griega de la paz. Representa la fuerza de conciliar, la serenidad en medio del conflicto y el valor de construir armonía duradera.",
+    "element": "Aire",
+    "planet": "Venus",
+    "archetype": "La Pacificadora",
+    "gem": "Aguamarina",
+    "color": "Azul cielo"
+  },
+  "isabel": {
+    "origin": "Hebreo",
+    "lang": "Hebreo antiguo",
+    "meaning": "Es una forma medieval occidental de Elisabeth, procedente de Elisheva: 'mi Dios es juramento' o 'Dios es plenitud'. Simboliza fidelidad, confianza y la capacidad de sostener compromisos que dan sentido a los vínculos.",
+    "element": "Agua",
+    "planet": "Jupiter",
+    "archetype": "La Guardiana del Juramento",
+    "gem": "Zafiro azul",
+    "color": "Azul zafiro"
+  },
+  "jessica": {
+    "origin": "Hebreo",
+    "lang": "Hebreo biblico",
+    "meaning": "Probablemente procede de Yiskah, nombre bíblico interpretado como 'la que contempla' o 'la que ve'. Representa intuición, visión interior y la capacidad de mirar más allá de lo evidente antes de decidir.",
+    "element": "Agua",
+    "planet": "Neptuno",
+    "archetype": "La Visionaria",
+    "gem": "Amatista",
+    "color": "Violeta profundo"
+  },
+  "jimena": {
+    "origin": "Hispanico medieval",
+    "lang": "Castellano medieval",
+    "meaning": "Su origen es incierto; se ha relacionado con el antiguo nombre Ximeno y con posibles raíces vascas o hebreas, sin consenso definitivo. Simboliza la independencia de quien construye su identidad con intuición, prudencia y determinación.",
+    "element": "Aire",
+    "planet": "Mercurio",
+    "archetype": "La Independiente",
+    "gem": "Fluorita",
+    "color": "Verde menta"
+  },
+  "josefina": {
+    "origin": "Hebreo",
+    "lang": "Hebreo antiguo",
+    "meaning": "Es forma femenina de José, procedente de Yosef: 'que Dios añada' o 'él añadirá'. Representa crecimiento, confianza en los procesos y la capacidad de aportar valor a los espacios donde participa.",
+    "element": "Agua",
+    "planet": "Jupiter",
+    "archetype": "La Proveedora",
+    "gem": "Aguamarina",
+    "color": "Azul profundo"
+  },
+  "julia": {
+    "origin": "Latino",
+    "lang": "Latin",
+    "meaning": "Deriva de Iulia, forma femenina de Iulius, antiguo nombre de familia romano asociado tradicionalmente con Júpiter o con la juventud. Simboliza vitalidad, creatividad y la fuerza de renovar los entornos con una presencia luminosa.",
+    "element": "Luz",
+    "planet": "Sol",
+    "archetype": "La Renovadora Solar",
+    "gem": "Piedra sol",
+    "color": "Naranja dorado"
+  },
+  "karen": {
+    "origin": "Griego",
+    "lang": "Griego/Latin",
+    "meaning": "Es una forma escandinava e inglesa de Katherine o Catalina, nombre cuya etimología se discute y que se asoció tradicionalmente con katharos, 'pura'. Simboliza autenticidad, discernimiento y el deseo de vivir en coherencia con la propia verdad.",
+    "element": "Agua",
+    "planet": "Luna",
+    "archetype": "La Esencia Pura",
+    "gem": "Piedra luna",
+    "color": "Blanco plata"
+  },
+  "laura": {
+    "origin": "Latino",
+    "lang": "Latin",
+    "meaning": "Deriva de laurus, 'laurel', planta asociada desde la Antigüedad con la victoria y el honor. Representa mérito, constancia y la capacidad de alcanzar logros sin olvidar el camino recorrido.",
+    "element": "Aire",
+    "planet": "Mercurio",
+    "archetype": "La Laureada",
+    "gem": "Peridoto",
+    "color": "Verde laurel"
+  },
+  "leila": {
+    "origin": "Arabe",
+    "lang": "Arabe clasico",
+    "meaning": "Deriva de layla, 'noche'. Simboliza profundidad emocional, intuición y la capacidad de encontrar belleza, calma y orientación incluso en los periodos menos iluminados.",
+    "element": "Agua",
+    "planet": "Luna",
+    "archetype": "La Dama de la Noche",
+    "gem": "Labradorita",
+    "color": "Azul medianoche"
+  },
+  "leonor": {
+    "origin": "Griego",
+    "lang": "Griego/Provenzal medieval",
+    "meaning": "Su etimología es discutida; se ha relacionado con Elena y con voces medievales vinculadas a la luz. Representa nobleza serena, presencia luminosa y la capacidad de sostener dignidad en circunstancias complejas.",
+    "element": "Luz",
+    "planet": "Sol",
+    "archetype": "La Noble Luminosa",
+    "gem": "Diamante",
+    "color": "Dorado blanco"
+  },
+  "lorena": {
+    "origin": "Latino",
+    "lang": "Latin/Frances medieval",
+    "meaning": "Deriva de Lorraine, región francesa cuyo nombre se vincula con el reino de Lotario. Simboliza pertenencia, memoria de las raíces y la capacidad de convertir la historia personal en identidad firme.",
+    "element": "Tierra",
+    "planet": "Saturno",
+    "archetype": "La Guardiana de Raices",
+    "gem": "Cuarzo ahumado",
+    "color": "Marron tierra"
+  },
+  "lucia": {
+    "origin": "Latino",
+    "lang": "Latin",
+    "meaning": "Deriva de lux, lucis: 'luz'. Representa claridad, esperanza y el impulso de iluminar con conocimiento y bondad los caminos propios y ajenos.",
+    "element": "Luz",
+    "planet": "Sol",
+    "archetype": "La Portadora de Luz",
+    "gem": "Citrino",
+    "color": "Amarillo luminoso"
+  },
+  "luisa": {
+    "origin": "Germanico",
+    "lang": "Germanico antiguo",
+    "meaning": "Es forma femenina de Luis, procedente de Hludwig, compuesto por hlud, 'fama', y wig, 'combate'. Simboliza coraje, liderazgo honorable y la voluntad de defender valores sin perder sensibilidad.",
+    "element": "Fuego",
+    "planet": "Marte",
+    "archetype": "La Guerrera Honorable",
+    "gem": "Rubíí",
+    "color": "Rojo real"
+  },
+  "lupe": {
+    "origin": "Arabe-espanol",
+    "lang": "Arabe andalusi",
+    "meaning": "Es un hipocorístico de Guadalupe, nombre asociado con un antiguo topónimo de origen árabe debatido y con la tradición mariana hispánica. Simboliza cercanía protectora, fe sencilla y la capacidad de ofrecer compañía en momentos difíciles.",
+    "element": "Agua",
+    "planet": "Luna",
+    "archetype": "La Protectora Cercana",
+    "gem": "Turquesa",
+    "color": "Verde turquesa"
+  },
+  "magdalena": {
+    "origin": "Arameo",
+    "lang": "Arameo",
+    "meaning": "Procede de Magdala, topónimo arameo relacionado con 'torre'; originalmente designaba a una mujer natural de esa localidad. Simboliza elevación, fortaleza y la capacidad de observar la vida con perspectiva antes de actuar.",
+    "element": "Tierra",
+    "planet": "Saturno",
+    "archetype": "La Torre Firme",
+    "gem": "Ónix",
+    "color": "Negro ébano"
+  },
+  "manuela": {
+    "origin": "Hebreo",
+    "lang": "Hebreo antiguo",
+    "meaning": "Es forma femenina de Manuel, derivada de Immanu'el: 'Dios está con nosotros'. Representa presencia, lealtad afectiva y la capacidad de acompañar a otras personas con empatía y constancia.",
+    "element": "Agua",
+    "planet": "Luna",
+    "archetype": "La Acompañante Fiel",
+    "gem": "Piedra luna",
+    "color": "Blanco plateado"
+  },
+  "marcela": {
+    "origin": "Latino",
+    "lang": "Latin",
+    "meaning": "Deriva de Marcella, diminutivo femenino de Marcus, nombre romano asociado con Marte. Simboliza iniciativa, energía protectora y la habilidad de convertir la decisión en acciones constructivas.",
+    "element": "Fuego",
+    "planet": "Marte",
+    "archetype": "La Iniciadora",
+    "gem": "Cornalina",
+    "color": "Naranja cobrizo"
+  },
+  "margarita": {
+    "origin": "Griego",
+    "lang": "Griego clasico",
+    "meaning": "Deriva de margarites, 'perla', palabra que llegó al griego desde lenguas orientales. Simboliza belleza nacida de la paciencia, valor interior y la capacidad de transformar las experiencias en sabiduría serena.",
+    "element": "Agua",
+    "planet": "Luna",
+    "archetype": "La Perla Sabia",
+    "gem": "Perla",
+    "color": "Blanco nacarado"
+  },
+  "maria": {
+    "origin": "Hebreo",
+    "lang": "Hebreo antiguo",
+    "meaning": "Procede de Miryam, nombre de etimología discutida, relacionado según diversas propuestas con 'amada', 'rebeldía' o 'gota de mar'. Simboliza profundidad, fortaleza afectiva y la capacidad de sostener esperanza en medio de los cambios.",
+    "element": "Agua",
+    "planet": "Luna",
+    "archetype": "La Madre Compasiva",
+    "gem": "Perla",
+    "color": "Azul marino"
+  },
+  "martina": {
+    "origin": "Latino",
+    "lang": "Latin",
+    "meaning": "Es forma femenina de Martinus, 'consagrada a Marte' o 'perteneciente a Marte'. Representa valentía, iniciativa y la capacidad de defender causas importantes con energía y convicción.",
+    "element": "Fuego",
+    "planet": "Marte",
+    "archetype": "La Guerrera Generosa",
+    "gem": "Granate",
+    "color": "Rojo profundo"
+  },
+  "maya": {
+    "origin": "Sanskrito",
+    "lang": "Sanscrito",
+    "meaning": "En sánscrito, maya puede significar 'ilusión', 'poder creativo' o 'apariencia'; el nombre también aparece en otras tradiciones culturales. Simboliza imaginación, creatividad y la capacidad de reconocer que la realidad puede transformarse mediante una visión consciente.",
+    "element": "Eter",
+    "planet": "Neptuno",
+    "archetype": "La Creadora de Mundos",
+    "gem": "Labradorita",
+    "color": "Violeta iridiscente"
+  },
+  "mercedes": {
+    "origin": "Latino",
+    "lang": "Latin",
+    "meaning": "Deriva de merces, mercedis: 'recompensa', 'favor' o 'misericordia', difundido por la advocación de Nuestra Señora de las Mercedes. Simboliza compasión, servicio liberador y el don de ayudar sin medir el valor humano por la deuda.",
+    "element": "Agua",
+    "planet": "Venus",
+    "archetype": "La Misericordiosa",
+    "gem": "Aguamarina",
+    "color": "Azul cielo"
+  },
+  "milagros": {
+    "origin": "Latino",
+    "lang": "Latin",
+    "meaning": "Procede de milagro, palabra vinculada al latín miraculum: 'prodigio' o 'hecho admirable'. Tradicionalmente se asocia con una advocación mariana y simboliza esperanza, asombro y confianza en las posibilidades de renovación.",
+    "element": "Luz",
+    "planet": "Jupiter",
+    "archetype": "La Portadora de Esperanza",
+    "gem": "Cuarzo transparente",
+    "color": "Blanco dorado"
+  },
+  "miriam": {
+    "origin": "Hebreo",
+    "lang": "Hebreo antiguo",
+    "meaning": "Es una variante de Miryam o María, nombre de etimología debatida y posible trasfondo egipcio. Simboliza profundidad emocional, memoria ancestral y la capacidad de permanecer firme al cuidar lo que se ama.",
+    "element": "Agua",
+    "planet": "Luna",
+    "archetype": "La Guardiana Ancestral",
+    "gem": "Perla",
+    "color": "Azul profundo"
+  },
+  "monica": {
+    "origin": "Griego",
+    "lang": "Griego clasico",
+    "meaning": "Su origen es incierto; se ha relacionado con monos, 'única' o 'sola', y también se ha propuesto un origen norteafricano. Simboliza singularidad, fidelidad a la propia voz y la fuerza de sostener una identidad auténtica.",
+    "element": "Aire",
+    "planet": "Mercurio",
+    "archetype": "La Unica",
+    "gem": "Fluorita",
+    "color": "Verde agua"
+  },
+  "natalia": {
+    "origin": "Latino",
+    "lang": "Latin",
+    "meaning": "Deriva de natalis, 'relativo al nacimiento', especialmente al nacimiento de Cristo en el uso cristiano antiguo. Simboliza renovación, esperanza y la facultad de abrir ciclos con una energía vital y acogedora.",
+    "element": "Luz",
+    "planet": "Sol",
+    "archetype": "La Renacida",
+    "gem": "Citrino",
+    "color": "Dorado amanecer"
+  },
+  "nora": {
+    "origin": "Irlandes",
+    "lang": "Irlandes antiguo",
+    "meaning": "Puede funcionar como forma breve de Honora, de origen latino, o de Eleonora; por ello admite más de una procedencia. Simboliza honor, luminosidad y la capacidad de mantener una presencia sencilla pero significativa.",
+    "element": "Luz",
+    "planet": "Sol",
+    "archetype": "La Honorable",
+    "gem": "Cuarzo citrino",
+    "color": "Amarillo miel"
+  },
+  "olivia": {
+    "origin": "Latino",
+    "lang": "Latin",
+    "meaning": "Deriva de oliva, nombre del árbol y fruto asociados desde la Antigüedad con la paz y la fecundidad. Representa equilibrio, conciliación y la capacidad de dar frutos sostenibles a través de la paciencia.",
+    "element": "Tierra",
+    "planet": "Venus",
+    "archetype": "La Pacificadora Fertil",
+    "gem": "Jade",
+    "color": "Verde oliva"
+  }
+}

@@ -1,0 +1,65 @@
+Created At: 2026-08-31T18:05:36-05:00
+Completed At: 2026-08-31T18:05:36-05:00
+File Path: `file:///c:/Users/cabel/Music/mapa-de-vida/fecha.js`
+Total Lines: 206
+Total Bytes: 23812
+Showing lines 150 to 206
+The following code has been modified to include a line number before every line, in the format: <line_number>: <original_line>. Please note that any changes targeting the original code should remove the line number, colon, and leading space.
+150:     function updateUI() {
+151:         if (localStorage.getItem('gemini_api_key')) { setupBox.style.display = 'none'; chatBox.style.display = 'flex'; }
+152:         else { setupBox.style.display = 'block'; chatBox.style.display = 'none'; }
+153:     }
+154:     updateUI();
+155:     saveBtn.onclick = function() {
+156:         var key = apiKeyInput.value.trim();
+157:         if (key.length > 10) { localStorage.setItem('gemini_api_key', key); updateUI(); } else { alert('Clave API inválida.'); }
+158:     };
+159:     removeBtn.onclick = function() { localStorage.removeItem('gemini_api_key'); historyBox.innerHTML = ''; updateUI(); };
+160:     askBtn.onclick = async function() {
+161:         var q = questionInput.value.trim(), key = localStorage.getItem('gemini_api_key');
+162:         if (!q || !key) return;
+163:         historyBox.innerHTML += '<div class="chat-msg user">' + esc(q) + '</div>';
+164:         questionInput.value = '';
+165:         var loadingId = 'loading-' + Date.now();
+166:         historyBox.innerHTML += '<div id="' + loadingId + '" class="chat-msg oracle">Consultando los astros...</div>';
+167:         historyBox.scrollTop = historyBox.scrollHeight;
+168:         
+169:         var sysPrompt = "Eres el Oráculo Astral de Mapa de Vida. Eres un guía místico, sabio y ancestral. El usuario nació el " + birth.toISOString().split('T')[0] + ", Signo: " + westernSign(birth) + ", Zodiaco Chino: " + chineseSign(birth) + ", Camino de vida: " + lifePath(birth) + ", Año personal: " + personalYear(birth) + ". Usa esto para darle contexto cósmico a su pregunta y no menciones su fecha si no es necesario.";
+170:         try {
+171:             var response = await fetch('https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=' + key, {
+172:                 method: 'POST', headers: { 'Content-Type': 'application/json' },
+173:                 body: JSON.stringify({ contents: [{ parts: [{ text: q }] }], systemInstruction: { parts: [{ text: sysPrompt }] }, generationConfig: { temperature: 0.9, maxOutputTokens: 250 } })
+174:             });
+175:             var data = await response.json();
+176:             var el = document.getElementById(loadingId); if (el) el.remove();
+177:             if (data.error) historyBox.innerHTML += '<div class="chat-msg oracle" style="color:red;">Error: ' + esc(data.error.message) + '</div>';
+178:             else if (data.candidates && data.candidates[0].content) {
+179:                 var text = data.candidates[0].content.parts[0].text;
+180:                 historyBox.innerHTML += '<div class="chat-msg oracle">' + esc(text).replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>') + '</div>';
+181:             }
+182:         } catch (e) {
+183:             var el2 = document.getElementById(loadingId); if (el2) el2.remove();
+184:             historyBox.innerHTML += '<div class="chat-msg oracle" style="color:red;">El oráculo está temporalmente inaccesible.</div>';
+185:         }
+186:         historyBox.scrollTop = historyBox.scrollHeight;
+187:     };
+188:     questionInput.addEventListener('keypress', function(e) { if (e.key === 'Enter') askBtn.click(); });
+189:   }
+190: 
+191:   [month, day, year].forEach(function (element) { element.addEventListener('input', function () { saveDOB(); render(); }); });
+192:   if (data.dob) { month.value = data.dob.month; day.value = data.dob.day; year.value = data.dob.year; }
+193:   render();
+194:   
+195:   // Fade-in cósmico para secciones
+196:   (function() {
+197:     var fades = document.querySelectorAll('.cosmic-fade');
+198:     if (!fades.length) return;
+199:     var observer = new IntersectionObserver(function(entries) {
+200:       entries.forEach(function(entry) { if (entry.isIntersecting) { entry.target.classList.add('visible'); observer.unobserve(entry.target); } });
+201:     }, { threshold: 0.08 });
+202:     fades.forEach(function(el) { observer.observe(el); });
+203:   })();
+204:   var guide = document.createElement('script'); guide.src = 'guide.js'; document.body.appendChild(guide);
+205: })();
+206: 
+The above content does NOT show the entire file contents. If you need to view any lines of the file which were not shown to complete your task, call this tool again to view those lines.

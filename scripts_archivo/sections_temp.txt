@@ -1,0 +1,43 @@
+<section id="identity-output" class="identity-grid cosmic-fade" aria-live="polite"></section>
+    <div class="ritual-divider">☽ ✦ ☾</div>
+    <section class="panel cosmic-fade"><div class="section-heading"><div><p class="section-kicker">02 / CALENDARIOS</p><h2>Tu fecha en otras culturas</h2></div><p class="muted">La edad no significa lo mismo en todos los sistemas.</p></div><div id="calendar-output" class="cards-grid"></div></section>
+    <div class="ritual-divider">☽ ✦ ☾</div>
+    <section class="panel cosmic-fade"><div class="section-heading"><div><p class="section-kicker">03 / CIELO Y SÍMBOLOS</p><h2>Lecturas tradicionales</h2></div><p class="muted">Contenido cultural y recreativo, no predictivo.</p></div><div id="symbol-output" class="cards-grid"></div></section>
+    <section class="panel"><div class="section-heading"><div><p class="section-kicker">04 / EL ORÁCULO</p><h2>El Mensaje del Universo</h2></div><p class="muted">Lecturas místicas sincrónicas e Inteligencia Artificial Astral.</p></div>
+      <div id="oracle-container" class="oracle-container">
+         <div class="oracle-tabs">
+            <button id="tab-algo" class="active">Oráculo del Día</button>
+            <button id="tab-ai">Consultar Oráculo (IA)</button>
+         </div>
+         <div id="oracle-algo-content" class="oracle-content active">
+            <div id="oracle-algo-output" class="oracle-message-box"></div>
+         </div>
+         <div id="oracle-ai-content" class="oracle-content" style="display:none;">
+             <div id="api-key-setup" class="api-setup-box">
+                <h3>Conectar al Oráculo Astral</h3>
+                <p>Para interactuar, necesitas una clave gratuita de Inteligencia Artificial (Gemini). Así tu navegador se conectará directamente a la IA sin servidores intermedios.</p>
+                <ol>
+                   <li>Entra a <a href="https://aistudio.google.com/app/apikey" target="_blank" rel="noopener">Google AI Studio</a> e inicia sesión con Google.</li>
+                   <li>Haz clic en "Create API key".</li>
+                   <li>Copia la clave y pégala aquí abajo:</li>
+                </ol>
+                <input type="password" id="gemini-api-key" placeholder="Pega tu API Key aquí...">
+                <button id="save-api-key" class="button">Conectar y Guardar</button>
+                <p class="privacy-note">Tu clave se guarda en tu propio navegador de forma 100% segura.</p>
+             </div>
+             <div id="ai-chat-interface" class="chat-interface" style="display:none;">
+                <div id="chat-history" class="chat-history"></div>
+                <div class="chat-input-box">
+                    <input type="text" id="ai-question" placeholder="Escribe tu pregunta al Oráculo...">
+                    <button id="ask-ai-btn" class="button">Preguntar</button>
+                </div>
+                <button id="remove-api-key" class="text-btn">Desconectar API</button>
+             </div>
+         </div>
+      </div>
+    </section>
+    <section class="panel"><div class="section-heading"><div><p class="section-kicker">05 / HITOS</p><h2>Fechas que puedes marcar</h2></div><p class="muted">Pequeños números que ayudan a hacer tangible el paso del tiempo.</p></div><div id="milestone-output" class="milestone-grid"></div></section>
+    <section class="panel"><div class="section-heading"><div><p class="section-kicker">06 / CONTEXTO</p><h2>El mundo cuando naciste</h2></div><p class="muted">Una pequeña cápsula editorial de tu año.</p></div><div id="history-output" class="history-grid"></div></section>
+    <section class="panel"><div class="section-heading"><div><p class="section-kicker">07 / LÍNEA DE VIDA</p><h2>Lo que ya elegiste recordar</h2></div><p class="muted">Se alimenta de tus eventos y metas guardados en el mapa.</p></div><ol id="timeline-output" class="timeline"></ol></section>
+    <section class="panel privacy-panel"><p class="section-kicker">NOTA DE CONTEXTO</p><p>Los calendarios y símbolos pertenecen a tradiciones distintas y no tienen el mismo significado histórico. La numerología, astrología y fase lunar aquí mostradas son interpretaciones, no diagnósticos ni predicciones.</p></section>
+    <footer><p class="privacy-note">Privado por diseño: la fecha se procesa en tu navegador.</p><a href="dashboard.html">Dashboard</a><a href="timeline.html">Línea de vida</a><a href="journal.html">Diario</a><a href="patterns.html">Patrones</a><a href="poster.html">Póster</a><a href="compare.html">Comparar</a><a href="mundo.html">El mundo ahora</a><a href="blog.html">Blog</a><a href="donaciones.html">Apoyar</a></footer>

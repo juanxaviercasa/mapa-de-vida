@@ -1,0 +1,173 @@
+{
+  "1": {
+    "best": [
+      2,
+      3,
+      5
+    ],
+    "challenging": [
+      4,
+      8
+    ],
+    "soulmate": 2,
+    "element": "Fuego",
+    "partner_description": "Busca una pareja que respete su independencia y a la vez pueda sostener un vínculo codo a codo, con admiracion mutua y capacidad de decidir juntos sin perder la propia voz.",
+    "health_advice": "Cuida la cabeza y el sistema nervioso; alterna periodos de alta exigencia con descanso real para evitar tensiones acumuladas.",
+    "money_advice": "Aprende a equilibrar la ambicion con la prudencia, evitando gastos impulsivos y construyendo reservas que sostengan tus proyectos a largo plazo.",
+    "work_advice": "Prospere en entornos donde puedas liderar, innovar y asumir responsabilidades sin que te ahogue la burocracia excesiva.",
+    "family_role": "Tiende a asumir el rol de iniciador o referente, marcando dirección y motivando a los demas a actuar.",
+    "spiritual_challenge": "Aprender a ser fuerte sin volverte rigido, integrando la humildad y la escucha como parte de tu verdadero liderazgo."
+  },
+  "2": {
+    "best": [
+      1,
+      6,
+      9
+    ],
+    "challenging": [
+      5,
+      7
+    ],
+    "soulmate": 1,
+    "element": "Agua",
+    "partner_description": "Necesita una pareja que valore la intimidad emocional, la delicadeza y la construccion de un hogar donde la confianza y el cuidado mutuo sean prioritarios.",
+    "health_advice": "Presta atención al sistema digestivo y a la gestion de las emociones; evita absorber en exceso el clima emocional de tu entorno.",
+    "money_advice": "Desarrolla confianza para tomar decisiones financieras propias, equilibrando la generosidad con limites claros.",
+    "work_advice": "Te va bien en equipos armonicos, roles de mediacion y proyectos donde la cooperación y la escucha sean claves.",
+    "family_role": "Suele actuar como conciliador, cuidando que todos se sientan oidos y atendidos en sus necesidades afectivas.",
+    "spiritual_challenge": "Aprender a poner limites sin sentir culpa, reconociendo que tu sensibilidad es un don y no una debilidad."
+  },
+  "3": {
+    "best": [
+      1,
+      5,
+      6
+    ],
+    "challenging": [
+      4,
+      7
+    ],
+    "soulmate": 5,
+    "element": "Aire",
+    "partner_description": "Busca una relación llena de dialogo, creatividad y juego, donde puedan compartir ideas, proyectos y una vida social activa sin perder la ternura.",
+    "health_advice": "Cuida la garganta y el sistema respiratorio; canaliza la ansiedad a través de la expresión creativa y el movimiento.",
+    "money_advice": "Ordena tus finanzas con un presupuesto simple que te permita disfrutar sin generar deudas por impulsos momentaneos.",
+    "work_advice": "Brillas en ambientes dinamicos, con espacio para la comunicación, la creación y la interaccion con otras personas.",
+    "family_role": "Aporta alegría, humor y capacidad de conectar a los distintos miembros mediante conversaciones y actividades compartidas.",
+    "spiritual_challenge": "Aprender a profundizar más allá de la superficie, integrando la disciplina para sostener lo que begins con entusiasmo."
+  },
+  "4": {
+    "best": [
+      2,
+      6,
+      8
+    ],
+    "challenging": [
+      3,
+      5
+    ],
+    "soulmate": 8,
+    "element": "Tierra",
+    "partner_description": "Necesita una pareja estable, leal y practica, con quien pueda construir un proyecto de vida solido, basado en confianza y metas compartidas.",
+    "health_advice": "Cuida huesos, articulaciones y espalda; combina el trabajo duro con ejercicio regular y momentos de descanso estructurado.",
+    "money_advice": "Eres bueno administrando; evita la rigidez excesiva y permite cierta flexibilidad para disfrutar sin culpa.",
+    "work_advice": "Prospere en entornos ordenados, con procesos claros y oportunidades para demostrar tu responsabilidad y constancia.",
+    "family_role": "Actua como el pilar organizador, asegurando que las rutinas, recursos y compromisos familiares se mantengan en pie.",
+    "spiritual_challenge": "Aprender a soltar el control cuando sea necesario, confiando en que la vida también se sostiene por flujos que no puedes dominar."
+  },
+  "5": {
+    "best": [
+      1,
+      3,
+      7
+    ],
+    "challenging": [
+      2,
+      4
+    ],
+    "soulmate": 3,
+    "element": "Aire",
+    "partner_description": "Busca una relación que le de libertad para explorar, viajar y crecer, pero con suficiente complicidad para no sentirse a la deriva.",
+    "health_advice": "Cuida el sistema nervioso y evita excesos; canaliza tu energía con deporte, caminatas y practicas que te anclen al presente.",
+    "money_advice": "Mezcla ingresos variables con un fondo de emergencia; evita dispersarte en demasiados proyectos a la vez.",
+    "work_advice": "Te va bien en roles con variedad, movimiento y contacto con personas, donde puedas aprender y adaptarte rapidamente.",
+    "family_role": "Aporta novedad, apertura mental y capacidad de conectar a la familia con nuevas experiencias y horizontes.",
+    "spiritual_challenge": "Aprender a comprometerse sin sentir que pierdes libertad, descubriendo que la verdadera autonomia incluye elegir vinculos profundos."
+  },
+  "6": {
+    "best": [
+      2,
+      3,
+      4
+    ],
+    "challenging": [
+      1,
+      7
+    ],
+    "soulmate": 9,
+    "element": "Tierra",
+    "partner_description": "Necesita una pareja con quien construir un hogar calido, lleno de cuidado mutuo, responsabilidad compartida y proyectos familiares o comunitarios.",
+    "health_advice": "Cuida el corazón y la circulacion; equilibra el deseo de ayudar a todos con tiempo real para tu propio descanso y recreacion.",
+    "money_advice": "Eres responsable con el dinero; evita asumir deudas ajenas y aprende a decir no cuando te pidan más de lo que puedes dar.",
+    "work_advice": "Brillas en roles de servicio, educacion, salud o gestion familiar, donde puedas cuidar, orientar y crear entornos armonicos.",
+    "family_role": "Suele ser el cuidador principal, velando por el bienestar emocional y material de todos los miembros del clan.",
+    "spiritual_challenge": "Aprender a recibir tanto como das, reconociendo que permitir que otros te cuiden también es un acto de amor."
+  },
+  "7": {
+    "best": [
+      4,
+      5,
+      9
+    ],
+    "challenging": [
+      3,
+      6
+    ],
+    "soulmate": 4,
+    "element": "Aire",
+    "partner_description": "Busca una relación con profundidad intelectual y espiritual, donde haya espacio para la introspección, el estudio y la verdad sin mascara.",
+    "health_advice": "Cuida la mente y el sistema nervioso; evita el aislamiento excesivo y alterna el estudio con actividad fisica y contacto con la naturaleza.",
+    "money_advice": "Desarrolla confianza para manejar lo material sin despreciarlo; combina tu visión con asesoria practica cuando sea necesario.",
+    "work_advice": "Prospere en investigacion, analisis, docencia o areas especializadas donde puedas profundizar y aportar conocimiento único.",
+    "family_role": "Actua como el observador sabio, ofreciendo perspectivas profundas y ayudando a la familia a ver más allá de lo evidente.",
+    "spiritual_challenge": "Aprender a confiar en el corazón y en los demas, integrando la intuición y el afecto junto a tu capacidad analitica."
+  },
+  "8": {
+    "best": [
+      2,
+      4,
+      6
+    ],
+    "challenging": [
+      1,
+      5
+    ],
+    "soulmate": 4,
+    "element": "Tierra",
+    "partner_description": "Necesita una pareja ambiciosa pero leal, con quien pueda construir seguridad material y emocional, compartiendo metas de largo plazo.",
+    "health_advice": "Cuida el sistema digestivo y maneja el estres; evita cargar solo con todo el peso economico o familiar y delega cuando sea posible.",
+    "money_advice": "Tienes talento para los negocios; equilibra la busqueda de éxito con etica, generosidad y visión de impacto social.",
+    "work_advice": "Brillas en liderazgo, gestion, finanzas o emprendimiento, donde puedas organizar recursos y dirigir equipos con claridad.",
+    "family_role": "Suele asumir el rol de proveedor o administrador, asegurando estabilidad economica y estructura para el hogar.",
+    "spiritual_challenge": "Aprender que el verdadero poder incluye compasión, y que el éxito gana sentido cuando sirve a algo más grande que tu."
+  },
+  "9": {
+    "best": [
+      2,
+      6,
+      7
+    ],
+    "challenging": [
+      4,
+      8
+    ],
+    "soulmate": 6,
+    "element": "Fuego",
+    "partner_description": "Busca una relación con sentido, donde puedan compartir ideales, servicio y una visión humanitaria sin perder la intimidad y el cuidado mutuo.",
+    "health_advice": "Cuida el sistema circulatorio y la gestion emocional; evita cargar con el dolor del mundo y aprende a soltar lo que no puedes resolver.",
+    "money_advice": "Integra tu visión idealista con una gestion practica; establece metas financieras claras que sostengan tus proyectos de servicio.",
+    "work_advice": "Prospere en educacion, arte, ayuda humanitaria o areas donde puedas inspirar, sanar y contribuir a un bien colectivo.",
+    "family_role": "Actua como el alma compasiva del clan, ofreciendo apoyo emocional, sabiduría y una mirada amplia sobre los conflictos.",
+    "spiritual_challenge": "Aprender a cerrar ciclos sin culpa, reconociendo que soltar lo que ya no sirve es parte de tu misión de renovacion."
+  }
+}

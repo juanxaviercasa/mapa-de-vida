@@ -1,0 +1,101 @@
+{
+  "1": {
+    "myth": "Prometeo, el portador del fuego",
+    "animal": "León",
+    "symbol": "El Sol naciente",
+    "mission": "Tu misión es aprender a liderar con autenticidad, iniciando proyectos que expresen tu identidad más profunda. Estaras llamado a inspirar a otros con tu ejemplo, mostrando que es posible actuar con coraje, independencia y responsabilidad sin necesidad de imponerte.",
+    "gift": "Iniciativa, coraje y autonomia",
+    "shadow": "Egoismo, impaciencia y autoritarismo",
+    "mantra": "Soy valiente, auténtico y confio en mi propio camino.",
+    "color": "Dorado solar",
+    "gem": "Rubí"
+  },
+  "2": {
+    "myth": "Hera, guardiana del vínculo",
+    "animal": "Paloma",
+    "symbol": "La Luna llena",
+    "mission": "Tu misión es tejer puentes entre personas, cultivando la paz, la cooperación y la intimidad emocional. Estaras llamado a crear espacios de confianza donde otros puedan sentirse escuchados, cuidados y comprendidos sin juicios.",
+    "gift": "Empatia, diplomacia y sensibilidad",
+    "shadow": "Dependencia, inseguridad y sumision",
+    "mantra": "Honro mis sentimientos y me expreso con calma y claridad.",
+    "color": "Blanco nacarado",
+    "gem": "Perla"
+  },
+  "3": {
+    "myth": "Hermes, el mensajero creador",
+    "animal": "Delfin",
+    "symbol": "La mascara teatral",
+    "mission": "Tu misión es expresar la belleza y la verdad a través de la palabra, el arte y la conexión social. Estaras llamado a inspirar alegría, abrir horizontes y recordar a otros que la vida puede vivirse con creatividad y ligereza consciente.",
+    "gift": "Comunicación, creatividad y optimismo",
+    "shadow": "DispersiOn, superficialidad y dramatización",
+    "mantra": "Expreso mi verdad con alegría, claridad y propósito.",
+    "color": "Amarillo brillante",
+    "gem": "Citrino"
+  },
+  "4": {
+    "myth": "Hefesto, el artesano divino",
+    "animal": "Toro",
+    "symbol": "El cuadrado perfecto",
+    "mission": "Tu misión es construir estructuras solidas en tu vida y en tu entorno, mediante el orden, la disciplina y el trabajo consciente. Estaras llamado a demostrar que la estabilidad es la base desde la cual pueden florecer los suenos.",
+    "gift": "Orden, constancia y lealtad",
+    "shadow": "Rigidez, obstinacion y miedo al cambio",
+    "mantra": "Construyo paso a paso una vida segura y con sentido.",
+    "color": "Marron tierra",
+    "gem": "Cuarzo ahumado"
+  },
+  "5": {
+    "myth": "Odin, el viajero sabio",
+    "animal": "Lobo",
+    "symbol": "La estrella de cinco puntas",
+    "mission": "Tu misión es explorar la vida en sus multiples formas, aprendiendo a través del cambio, el viaje y la experiencia directa. Estaras llamado a mostrar que la libertad se vuelve sabia cuando se combina con responsabilidad y conciencia.",
+    "gift": "Adaptabilidad, curiosidad y libertad",
+    "shadow": "Inquietud, impulsividad y evasiOn",
+    "mantra": "Abrazo el cambio con libertad y responsabilidad.",
+    "color": "Turquesa vibrante",
+    "gem": "Turquesa"
+  },
+  "6": {
+    "myth": "Demeter, la madre nutricia",
+    "animal": "Ciervo",
+    "symbol": "El circulo del hogar",
+    "mission": "Tu misión es cuidar, nutrir y crear entornos armonicos donde las personas puedan crecer y sanar. Estaras llamado a equilibrar el servicio con el autocuidado, mostrando que el amor verdadero incluye limites sanos.",
+    "gift": "Cuidado, responsabilidad y armonía",
+    "shadow": "Sobrecarga, control y victimizaciOn",
+    "mantra": "Doy y recibo amor en equilibrio y con libertad.",
+    "color": "Rosa suave",
+    "gem": "Cuarzo rosa"
+  },
+  "7": {
+    "myth": "Atenea, la sabia estratega",
+    "animal": "Buho",
+    "symbol": "El ojo interior",
+    "mission": "Tu misión es buscar la verdad más allá de las apariencias, desarrollando tu intuición, tu mente analitica y tu vida interior. Estaras llamado a compartir conocimiento profundo que ayude a otros a ver con claridad.",
+    "gift": "Intuición, analisis y sabiduría",
+    "shadow": "Aislamiento, escepticismo y frialdad",
+    "mantra": "Confio en mi intuición y en mi mente por igual.",
+    "color": "Violeta profundo",
+    "gem": "Amatista"
+  },
+  "8": {
+    "myth": "Saturno, el senor del tiempo",
+    "animal": "Aguila",
+    "symbol": "El infinito vertical",
+    "mission": "Tu misión es aprender a usar el poder, los recursos y la autoridad con etica y visión de largo plazo. Estaras llamado a construir legado, demostrando que el éxito material gana sentido cuando sirve a un propósito mayor.",
+    "gift": "Liderazgo, gestion y ambicion",
+    "shadow": "Codicia, autoritarismo y materialismo",
+    "mantra": "Uso mi poder con integridad y generosidad.",
+    "color": "Negro profundo",
+    "gem": "Ónix"
+  },
+  "9": {
+    "myth": "Prometeo y el fenix",
+    "animal": "Fenix",
+    "symbol": "El circulo completo",
+    "mission": "Tu misión es cerrar ciclos, integrar aprendizajes y servir a una visión humanitaria que trascienda tu historia personal. Estaras llamado a soltar con gracia lo que ya no sirve y a inspirar renovacion en otros.",
+    "gift": "Compasion, sabiduría y visión global",
+    "shadow": "Resentimiento, apego y victimizaciOn",
+    "mantra": "Suelto con amor y confio en la renovacion de la vida.",
+    "color": "Dorado rojizo",
+    "gem": "Granate"
+  }
+}
