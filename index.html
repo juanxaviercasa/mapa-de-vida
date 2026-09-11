@@ -27,6 +27,14 @@
     .col-left { flex: 1; max-width: 350px; display: flex; flex-direction: column; justify-content: center; position: relative; z-index: 2; }
     .col-center { flex: 0 0 420px; display: flex; align-items: center; justify-content: center; position: relative; z-index: 1; }
     .col-right { flex: 1; max-width: 520px; display: flex; flex-direction: column; justify-content: center; position: relative; z-index: 3; }
+    @media (min-width: 1025px) {
+      .page { display: grid; width: 100%; height: calc(100vh - 54px); grid-template-columns: minmax(260px, 1fr) 420px minmax(360px, 1.35fr); grid-template-rows: minmax(0, 1fr) auto; align-items: center; gap: 12px 2vw; }
+      .col-left { grid-column: 1; grid-row: 1; max-width: none; }
+      .col-center { grid-column: 2; grid-row: 1; }
+      .col-right { display: contents; }
+      .portal-wrap { grid-column: 3; grid-row: 1; width: 100%; }
+      .calm-studio { grid-column: 1 / -1; grid-row: 2; width: 100%; }
+    }
 
     /* TRANSICIONES */
     .fade-out { opacity: 0; pointer-events: none; transition: opacity 0.5s ease; }
@@ -61,6 +69,48 @@
     .cta:hover { background-position: right center; transform: translateY(-2px); box-shadow: 0 0 35px rgba(212,168,67,0.4), 0 10px 20px rgba(0,0,0,0.5); }
     .form-note { text-align: center; font-size: 0.6rem; color: rgba(238,232,213,0.3); font-family: 'DM Mono', monospace; margin-top: 4px; }
     .form-error { color: #ff8a65; font-size: 0.75rem; text-align: center; min-height: 1em; }
+    .clear-data { width: 100%; padding: 9px; background: transparent; border: 1px solid rgba(238,232,213,0.2); border-radius: 8px; color: rgba(238,232,213,0.6); font-family: 'DM Mono', monospace; font-size: 0.65rem; cursor: pointer; transition: border-color .3s, color .3s, background .3s; }
+    .clear-data:hover { border-color: rgba(255,138,101,0.75); color: #ffb09a; background: rgba(255,138,101,0.08); }
+    .calm-studio { margin-top: 14px; padding: 20px; background: rgba(5,7,18,.72); border: 1px solid rgba(212,168,67,.2); border-radius: 14px; backdrop-filter: blur(18px); box-shadow: 0 14px 30px rgba(0,0,0,.35); }
+    .calm-studio h2 { margin: 0 0 6px; color: #f5c358; font-family: 'Cinzel', serif; font-size: 1.05rem; }
+    .calm-studio p { color: rgba(238,232,213,.62); font-size: .68rem; line-height: 1.35; margin-bottom: 10px; }
+    .calm-controls { display: grid; grid-template-columns: 1.4fr .8fr .9fr; gap: 8px; }
+    .calm-controls label { display: grid; gap: 5px; color: rgba(212,168,67,.78); font: .58rem 'DM Mono', monospace; text-transform: uppercase; letter-spacing: .08em; }
+    .calm-controls select, .calm-controls input { width: 100%; min-width: 0; padding: 8px; background: rgba(255,255,255,.04); border: 1px solid rgba(212,168,67,.2); border-radius: 6px; color: #eee8d5; }
+    .calm-binaural { display: none; margin: 8px 0 0; color: rgba(238,232,213,.68); font-size: .62rem !important; }
+    .calm-binaural.is-visible { display: flex; align-items: center; gap: 8px; }
+    .calm-binaural select { width: 90px; padding: 5px; background: #11182a; color: #f5c358; border: 1px solid rgba(212,168,67,.3); border-radius: 5px; }
+    .calm-controls select option { background: #11182a; color: #f5c358; }
+    .calm-layers { display: flex; flex-wrap: wrap; gap: 7px; margin: 12px 0; }
+    .calm-layers:not(.is-open) { display: none; }
+    .calm-customize { margin: 10px 0 0; padding: 5px 8px; background: transparent; border: 1px solid rgba(212,168,67,.3); border-radius: 5px; color: rgba(245,195,88,.8); font: .58rem 'DM Mono', monospace; cursor: pointer; }
+    .calm-customize:hover { border-color: rgba(212,168,67,.7); color: #f5c358; }
+    .calm-layer { display: flex; align-items: center; gap: 5px; color: rgba(238,232,213,.68); font-size: .68rem; }
+    .calm-actions { display: grid; gap: 3px; align-items: center; }
+    .calm-actions button { width: 100%; padding: 8px 10px; border: 1px solid rgba(212,168,67,.5); border-radius: 7px; background: linear-gradient(135deg,#d4a843,#8a5c00); color: #050810; font-size: .72rem; font-weight: 700; cursor: pointer; }
+    .calm-actions button:disabled { opacity: .45; cursor: not-allowed; }
+    .calm-status { min-height: 1em; margin: 0 !important; color: #f5c358 !important; font: .62rem 'DM Mono', monospace; }
+    .calm-timer { min-height: 1.1em; margin: 5px 0 0 !important; color: #f5c358 !important; font: 500 1.35rem 'DM Mono', monospace; text-align: center; letter-spacing: .08em; }
+    .calm-disclaimer { display: none; }
+    @media (min-width: 1025px) {
+      .calm-studio { display: grid; grid-template-columns: minmax(170px, .85fr) minmax(250px, 1.45fr) minmax(180px, 1.05fr) 132px; gap: 8px 16px; align-items: center; padding: 14px 18px; }
+      .calm-studio h2 { grid-column: 1; grid-row: 1; margin: 0; }
+      .calm-studio > p:not(.calm-status):not(.calm-disclaimer) { grid-column: 1; grid-row: 2; margin: 0; }
+      .calm-controls { grid-column: 2 / 4; grid-row: 1; }
+      .calm-customize { grid-column: 2; grid-row: 2; justify-self: start; margin: 0; }
+      .calm-layers { grid-column: 2 / 4; grid-row: 3; margin: 0; }
+      .calm-actions { display: contents; }
+      .calm-actions button { grid-column: 4; grid-row: 1; }
+      .calm-status { display: none; }
+      .calm-timer { grid-column: 3 / 5; grid-row: 2; align-self: center; justify-self: end; width: 80%; }
+      .calm-disclaimer { grid-column: 2 / 4; grid-row: 4; margin: 0 !important; }
+    }
+    @media (max-width: 1024px) { .calm-studio { display: block; } }
+    @media (max-width: 1024px) { .calm-studio { width: 100%; } }
+    @media (max-width: 480px) { .calm-controls { grid-template-columns: 1fr 1fr; } .calm-controls label:first-child { grid-column: 1 / -1; } }
+    .return-map { width: 100%; padding: 11px; background: rgba(212,168,67,0.12); border: 1px solid rgba(212,168,67,0.45); border-radius: 8px; color: #f5c358; font-family: 'Cinzel', serif; font-size: 0.76rem; font-weight: 700; cursor: pointer; transition: background .3s, box-shadow .3s, opacity .3s; }
+    .return-map:not(:disabled):hover { background: rgba(212,168,67,0.24); box-shadow: 0 0 18px rgba(212,168,67,0.22); }
+    .return-map:disabled { cursor: not-allowed; opacity: .35; }
 
     /* ── DASHBOARD (Menú y Panel Inmersivos) ── */
     .dash-left { display: none; flex-direction: column; gap: 12px; opacity: 0; transition: opacity 0.8s ease; width: 100%; }
@@ -109,7 +159,8 @@
     .chakra-tooltip h5 { font-family: 'DM Mono', monospace; font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.15em; color: rgba(238,232,213,0.5); margin-bottom: 10px; }
     .chakra-tooltip p { font-family: 'Space Grotesk', sans-serif; font-size: 0.82rem; line-height: 1.5; color: rgba(238,232,213,0.85); font-weight: 300; }
     
-    .foot { position: fixed; bottom: 16px; left: 50%; transform: translateX(-50%); font-family: 'Space Grotesk', sans-serif; font-size: 0.78rem; letter-spacing: 0.05em; color: rgba(238,232,213,0.6); z-index: 10; white-space: nowrap; text-align: center; line-height: 1.8; pointer-events: auto; }
+    .foot { position: fixed; bottom: 10px; left: 50%; transform: translateX(-50%); width: min(1085px, calc(100% - 48px)); display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 24px; font-family: 'Space Grotesk', sans-serif; font-size: 0.62rem; letter-spacing: 0.035em; color: rgba(238,232,213,0.6); z-index: 10; text-align: left; line-height: 1.4; pointer-events: auto; }
+    .foot span:last-child { text-align: right; }
     .foot a { color: #f5c358; text-decoration: none; transition: all 0.3s ease; font-weight: 600; }
     .foot a:hover { color: #ffd700; text-shadow: 0 0 10px rgba(212,168,67,0.8); text-decoration: underline; }
 
@@ -131,7 +182,9 @@
       .dash-menu button.active::after { display: none; }
       
       .body-svg { max-height: 45vh; }
-      .foot { position: relative; bottom: auto; padding-top: 20px; padding-bottom: 20px; }
+      .foot { position: relative; bottom: auto; left: auto; transform: none; width: 100%; display: flex; justify-content: center; flex-wrap: wrap; padding-top: 20px; padding-bottom: 20px; text-align: center; }
+      .foot span:last-child { text-align: center; }
+      #audio-btn { position: relative; left: auto; bottom: auto; margin: 12px auto 0; }
     }
 
     /* ── ADAPTACIÓN EXTREMA (CELULARES PEQUEÑOS) ── */
@@ -182,6 +235,8 @@
       border-color: rgba(212,168,67,1);
       color: #fff;
     }
+
+    @media (min-width: 1025px) { #audio-btn { bottom: 213px; left: 3vw; } }
 
 </style>
 </head>
@@ -371,11 +426,34 @@
               </div>
             </div>
             <button type="submit" class="cta">Revelar mi Mapa →</button>
+            <button type="button" id="return-map" class="return-map" disabled>Volver a mi mapa</button>
+            <button type="button" id="clear-data" class="clear-data">Limpiar datos guardados</button>
             <p id="start-error" class="form-error" role="alert"></p>
-            <p class="form-note">🔒 Solo en tu navegador · Sin servidores</p>
           </form>
         </div>
       </div>
+      <section class="calm-studio" aria-labelledby="calm-title">
+        <h2 id="calm-title">✦ Espacio de calma</h2>
+        <p>Sonidos para respirar, meditar, enfocar o descansar.</p>
+        <div class="calm-controls">
+          <label>Modo<select id="calm-mode"><option value="calm">Calmar</option><option value="meditate">Meditar</option><option value="focus">Enfocar</option><option value="rest">Descansar</option></select></label>
+          <label>Duración<select id="calm-duration"><option value="3">3 min</option><option value="5">5 min</option><option value="10" selected>10 min</option><option value="20">20 min</option><option value="30">30 min</option></select></label>
+          <label>Volumen<input id="calm-volume" type="range" min="0" max="0.9" step="0.01" value="0.42"></label>
+        </div>
+        <button type="button" id="calm-customize" class="calm-customize" aria-expanded="false">Combinar sonidos</button>
+        <div class="calm-layers" aria-label="Capas de sonido">
+          <label class="calm-layer"><input type="checkbox" value="rain" checked> Lluvia</label>
+          <label class="calm-layer"><input type="checkbox" value="ocean"> Océano</label>
+          <label class="calm-layer"><input type="checkbox" value="pink"> Ruido rosa</label>
+          <label class="calm-layer"><input type="checkbox" value="drone" checked> Ambiente</label>
+          <label class="calm-layer"><input type="checkbox" value="breath"> Respiración</label>
+          <label class="calm-layer"><input type="checkbox" value="binaural"> Pulso binaural</label>
+        </div>
+        <label id="calm-binaural" class="calm-binaural">Pulso binaural <select id="calm-binaural-beat"><option value="4">4 Hz</option><option value="6" selected>6 Hz</option><option value="8">8 Hz</option><option value="10">10 Hz</option><option value="12">12 Hz</option></select> · combinación experimental · usa auriculares</label>
+        <div class="calm-actions"><button type="button" id="calm-play">Reproducir ambiente</button><p id="calm-timer" class="calm-timer" role="timer" aria-live="off"></p></div>
+        <p class="calm-disclaimer">Binaural experimental: usa auriculares · evidencia variable. No sustituye atención médica ni psicológica.</p>
+        <p id="calm-status" class="calm-status" role="status" aria-live="polite"></p>
+      </section>
       <!-- Panel de Contenido -->
       
       </div>
@@ -386,9 +464,149 @@
     &#128266; Sintonizar Audio
   </button>
   <script src="ambient-audio.js?v=2"></script>
+  <script src="calm-audio.js"></script>
   <script src="stars.js"></script>
   <script src="portal.js"></script>
   <script src="site-nav.js"></script>
+  <script>
+    (function () {
+      function bindCalmStudio() {
+        var mode = document.getElementById('calm-mode');
+        var duration = document.getElementById('calm-duration');
+        var volume = document.getElementById('calm-volume');
+        var play = document.getElementById('calm-play');
+        var status = document.getElementById('calm-status');
+        var binaural = document.getElementById('calm-binaural');
+        var binauralBeat = document.getElementById('calm-binaural-beat');
+        var customize = document.getElementById('calm-customize');
+        var layers = Array.from(document.querySelectorAll('.calm-layer input'));
+        if (!mode || !play || play.dataset.bound) return;
+        play.dataset.bound = 'true';
+        var preferences = {};
+        try { preferences = JSON.parse(localStorage.getItem('your-life-data') || '{}').audioPreferences || {}; } catch (error) {}
+        if (preferences.mode && mode.querySelector('option[value="' + preferences.mode + '"]')) mode.value = preferences.mode;
+        if (preferences.duration) duration.value = preferences.duration;
+        if (preferences.volume !== undefined) volume.value = preferences.volume;
+        if (preferences.binauralBeat) binauralBeat.value = preferences.binauralBeat;
+
+        function savePreferences() {
+          var data = {};
+          try { data = JSON.parse(localStorage.getItem('your-life-data') || '{}'); } catch (error) {}
+          data.audioPreferences = { mode: mode.value, duration: duration.value, volume: volume.value, binauralBeat: binauralBeat.value, layers: layers.filter(function (layer) { return layer.checked; }).map(function (layer) { return layer.value; }) };
+          localStorage.setItem('your-life-data', JSON.stringify(data));
+        }
+        function applyMode() {
+          var defaults = (window.CalmAudio.defaults[mode.value] || {}).layers || [];
+          layers.forEach(function (layer) { layer.checked = defaults.indexOf(layer.value) !== -1; });
+          if (window.CalmAudio.defaults[mode.value] && window.CalmAudio.defaults[mode.value].volume) volume.value = window.CalmAudio.defaults[mode.value].volume;
+          updateBinaural();
+          savePreferences();
+        }
+        customize.addEventListener('click', function () {
+          var isOpen = layers[0].closest('.calm-layers').classList.toggle('is-open');
+          customize.setAttribute('aria-expanded', String(isOpen));
+          customize.textContent = isOpen ? 'Ocultar combinación' : 'Combinar sonidos';
+        });
+        function updateBinaural() {
+          binaural.classList.toggle('is-visible', mode.value === 'binaural' || layers.some(function (layer) { return layer.value === 'binaural' && layer.checked; }));
+        }
+        if (preferences.layers && preferences.layers.length) layers.forEach(function (layer) { layer.checked = preferences.layers.indexOf(layer.value) !== -1; });
+        else applyMode();
+        updateBinaural();
+        mode.addEventListener('change', applyMode);
+        [duration, volume, binauralBeat].concat(layers).forEach(function (control) { control.addEventListener('change', function () { updateBinaural(); savePreferences(); }); });
+        play.addEventListener('click', function () {
+          if (window.CalmAudio.isPlaying()) { window.CalmAudio.stop(); status.textContent = ''; document.getElementById('calm-timer').textContent = ''; return; }
+          var selected = layers.filter(function (layer) { return layer.checked; }).map(function (layer) { return layer.value; });
+          if (!selected.length) { status.textContent = 'Elige al menos una capa de sonido'; return; }
+          savePreferences();
+          window.CalmAudio.start({
+            mode: mode.value,
+            duration: duration.value,
+            volume: volume.value,
+            layers: selected,
+            binauralBeat: binauralBeat.value,
+            onTick: function (seconds) {
+              var minutes = Math.floor(seconds / 60);
+              var remainingSeconds = seconds % 60;
+              document.getElementById('calm-timer').textContent = String(minutes).padStart(2, '0') + ':' + String(remainingSeconds).padStart(2, '0');
+            }
+          });
+          status.textContent = 'Sesión activa · se apagará suavemente al terminar';
+        });
+      }
+      if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', bindCalmStudio);
+      else bindCalmStudio();
+    }());
+  </script>
+  <script>
+    (function () {
+      function restorePortalData() {
+        var portal = {}, life = {};
+        try {
+          portal = JSON.parse(localStorage.getItem('portal_data') || '{}');
+          life = JSON.parse(localStorage.getItem('your-life-data') || '{}');
+        } catch (error) {}
+        var dob = portal.y ? portal : life.dob ? { d: life.dob.day, m: life.dob.month, y: life.dob.year } : null;
+        document.getElementById('start-name').value = portal.n || life.userName || '';
+        document.getElementById('start-surname').value = portal.s || life.userSurname || '';
+        if (dob) {
+          document.getElementById('day').value = dob.d || '';
+          document.getElementById('month').value = dob.m !== undefined ? dob.m : '';
+          document.getElementById('year').value = dob.y || '';
+        }
+      }
+
+      function bindPortalPersistence() {
+        var form = document.getElementById('start-form');
+        var clearButton = document.getElementById('clear-data');
+        var returnButton = document.getElementById('return-map');
+        if (!form || !clearButton || !returnButton || form.dataset.persistenceBound) return;
+        form.dataset.persistenceBound = 'true';
+        restorePortalData();
+
+        function currentSignature() {
+          return JSON.stringify([
+            document.getElementById('start-name').value.trim(),
+            document.getElementById('start-surname').value.trim(),
+            document.getElementById('day').value,
+            document.getElementById('month').value,
+            document.getElementById('year').value
+          ]);
+        }
+
+        function validDate() {
+          var day = Number(document.getElementById('day').value);
+          var month = Number(document.getElementById('month').value);
+          var year = Number(document.getElementById('year').value);
+          var date = new Date(year, month, day);
+          return Boolean(document.getElementById('start-name').value.trim() && document.getElementById('start-surname').value.trim() &&
+            day && document.getElementById('month').value !== '' && year && date.getFullYear() === year &&
+            date.getMonth() === month && date.getDate() === day && date <= new Date());
+        }
+
+        var savedSignature = currentSignature();
+        function updateReturnButton() {
+          returnButton.disabled = !validDate() || currentSignature() !== savedSignature;
+        }
+        ['input', 'change'].forEach(function (eventName) { form.addEventListener(eventName, updateReturnButton); });
+        updateReturnButton();
+        returnButton.addEventListener('click', function () { window.location.href = 'fecha.html'; });
+
+        clearButton.addEventListener('click', function () {
+          if (!window.confirm('Se borrarán tus datos y configuración guardados en este navegador. ¿Continuar?')) return;
+          ['portal_data', 'dob', 'your-life-data'].forEach(function (key) { localStorage.removeItem(key); });
+          form.reset();
+          savedSignature = '';
+          updateReturnButton();
+          document.getElementById('start-error').textContent = 'Datos borrados. Puedes introducir una nueva identidad.';
+        });
+      }
+
+      if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', bindPortalPersistence);
+      else bindPortalPersistence();
+    }());
+  </script>
   <script>
     var CHAKRA_INFO = {
       7: { name:'Sahasrara', title:'Chakra Corona', desc:'Conexión espiritual pura, sabiduría cósmica, trascendencia y la glándula pineal.' },
@@ -449,7 +667,9 @@
   </script>
 
   <footer class="foot">
-    Desarrollado por <a href="https://juan.cabellosalirrosas.com" target="_blank" rel="noopener noreferrer">Xavier Cabello</a>
+    <span>🔒 Privacidad total · Tus datos permanecen en este dispositivo</span>
+    <span>Desarrollado por <a href="https://juan.cabellosalirrosas.com" target="_blank" rel="noopener noreferrer">Xavier Cabello</a></span>
+    <span>Ambientación recreativa · No sustituye atención médica ni psicológica</span>
   </footer>
 </body>
 </html>

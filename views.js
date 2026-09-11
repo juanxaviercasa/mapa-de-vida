@@ -135,13 +135,13 @@
         if (window.__toggleSiteNavDrawer) {
           window.__toggleSiteNavDrawer();
         } else {
-          var drawer = document.getElementById('cosmic-drawer-overlay');
-          if (drawer) drawer.classList.add('is-active');
+          var drawer = document.getElementById('cosmic-drawer');
+          if (drawer) drawer.classList.add('open');
         }
       });
     });
 
-    if (!document.getElementById('cosmic-drawer-overlay') && !document.querySelector('script[src="site-nav.js"]')) {
+    if (!document.getElementById('cosmic-drawer') && !document.querySelector('script[src="site-nav.js"]')) {
       var s = document.createElement('script');
       s.src = 'site-nav.js';
       document.body.appendChild(s);
@@ -166,6 +166,74 @@
     });
   }
 
+  function hourglassHtml(progress, current, total, lifeExpectancy, lived, estimatedDays) {
+    var livedPercent = Math.min(100, Math.max(0, progress * 100));
+    var remainingPercent = 100 - livedPercent;
+    function volumeHeight(percent, chamberRatio) {
+      var fill = Math.min(1, Math.max(0, percent / 100));
+      var neckRatio = 0.18;
+      var totalArea = (1 + neckRatio) / 2;
+      var targetArea = fill * totalArea;
+      var slope = (1 - neckRatio) / 2;
+      return chamberRatio * ((-neckRatio + Math.sqrt((neckRatio * neckRatio) + 4 * slope * targetArea)) / (2 * slope)) * 100;
+    }
+    var topVolumeHeight = Math.max(1.5, volumeHeight(remainingPercent, 0.47));
+    var bottomVolumeHeight = Math.max(1.5, volumeHeight(livedPercent, 0.47));
+    var particleCount = 150;
+    var bottomCount = Math.round(particleCount * livedPercent / 100);
+    var topCount = particleCount - bottomCount;
+    function particles(count, pile) {
+      return Array.from({ length: count }, function (_, index) {
+        var left = 5 + ((index * 61 + index * index * 7 + 13) % 90);
+        var row = Math.floor(index / 10);
+        var top = pile === 'top' ? 5 + ((index * 37 + row * 11) % 90) : 95 - ((index * 31 + row * 9) % 91);
+        var size = 1 + ((index * 7) % 3);
+        var rotation = (index * 31) % 180;
+        return '<i class="grain" style="--grain-x:' + left + '%;--grain-y:' + top + '%;--grain-size:' + size + 'px;--grain-rotation:' + rotation + 'deg;--grain-delay:' + ((index % 9) * .12).toFixed(2) + 's"></i>';
+      }).join('');
+    }
+    return '<section class="panel hourglass-panel" aria-labelledby="hourglass-title">' +
+      '<div class="section-heading"><div><p class="section-kicker">✦ ALEGORÍA DEL TIEMPO ✦</p><h2 id="hourglass-title">Tu reloj de arena vital</h2></div><p class="muted">Cada grano representa una parte del tiempo estimado: lo que cae ya forma parte de tu historia.</p></div>' +
+      '<div class="hourglass-config" aria-label="Configurar expectativa de vida"><label for="hourglass-years">Expectativa de vida <input id="hourglass-years" type="number" min="1" max="150" step="1" value="' + lifeExpectancy + '"> años</label><div class="hourglass-presets"><span>Escenarios:</span><button type="button" data-life-years="60" class="' + (lifeExpectancy === 60 ? 'is-active' : '') + '">60</button><button type="button" data-life-years="70" class="' + (lifeExpectancy === 70 ? 'is-active' : '') + '">70</button><button type="button" data-life-years="80" class="' + (lifeExpectancy === 80 ? 'is-active' : '') + '">80</button><button type="button" data-life-years="90" class="' + (lifeExpectancy === 90 ? 'is-active' : '') + '">90</button><button type="button" data-life-years="100" class="' + (lifeExpectancy === 100 ? 'is-active' : '') + '">100</button></div><small class="hourglass-config-note">Son escenarios de referencia, no predicciones individuales ni edades universales.</small></div>' +
+      '<div class="hourglass-layout">' +
+        '<div class="hourglass-wrap">' +
+          '<div class="hourglass" style="--lived-pct:' + livedPercent.toFixed(2) + '%; --remaining-pct:' + remainingPercent.toFixed(2) + '%; --top-height:' + topVolumeHeight.toFixed(2) + '%; --bottom-height:' + bottomVolumeHeight.toFixed(2) + '%" aria-label="' + livedPercent.toFixed(1) + '% de una vida estimada transcurrida y ' + remainingPercent.toFixed(1) + '% restante">' +
+            '<div class="hourglass-glass"><div class="sand-pile sand-top">' + particles(topCount, 'top') + '</div><div class="sand-stream">' + '<i class="stream-grain"></i><i class="stream-grain"></i><i class="stream-grain"></i><i class="stream-grain"></i><i class="stream-grain"></i><i class="stream-grain"></i><i class="stream-grain"></i>' + '</div><div class="sand-pile sand-bottom">' + particles(bottomCount, 'bottom') + '</div></div>' +
+            '<span class="glass-cap glass-cap-top"></span><span class="glass-cap glass-cap-bottom"></span>' +
+          '</div>' +
+          '<div class="hourglass-actions"><button type="button" id="hourglass-pause" class="hourglass-button">Pausar flujo</button><button type="button" id="hourglass-flip" class="hourglass-button secondary">Girar reloj</button></div>' +
+        '</div>' +
+        '<div class="hourglass-reading"><strong>' + livedPercent.toFixed(1) + '% vivido</strong><span>' + remainingPercent.toFixed(1) + '% restante</span><p>Han transcurrido aproximadamente <b>' + lived.toLocaleString('es') + '</b> días de <b>' + Math.round(estimatedDays).toLocaleString('es') + '</b> días estimados.</p><p>Equivale a <b>' + current.toLocaleString('es') + '</b> de <b>' + total.toLocaleString('es') + '</b> ' + unitNames[unit][1] + ' del mapa actual.</p><p class="muted">La arena representa una proporción matemática: cambia al ajustar tu expectativa de vida.</p></div>' +
+      '</div></section>';
+  }
+
+  function bindHourglass() {
+    var pauseButton = document.getElementById('hourglass-pause');
+    var flipButton = document.getElementById('hourglass-flip');
+    var glass = document.querySelector('.hourglass');
+    if (pauseButton && glass) pauseButton.addEventListener('click', function () {
+      var paused = glass.classList.toggle('is-paused');
+      pauseButton.textContent = paused ? 'Reanudar flujo' : 'Pausar flujo';
+    });
+    if (flipButton && glass) flipButton.addEventListener('click', function () {
+      glass.classList.toggle('is-flipped');
+      flipButton.textContent = glass.classList.contains('is-flipped') ? 'Devolver reloj' : 'Girar reloj';
+    });
+    document.querySelectorAll('[data-life-years]').forEach(function (button) {
+      button.addEventListener('click', function () {
+        data.lifeExpectancy = Math.max(1, Number(button.dataset.lifeYears));
+        save();
+        renderDashboard();
+      });
+    });
+    var customYears = document.getElementById('hourglass-years');
+    if (customYears) customYears.addEventListener('change', function () {
+      data.lifeExpectancy = Math.max(1, Number(customYears.value) || 80);
+      save();
+      renderDashboard();
+    });
+  }
+
   function renderDashboard() {
     var a = age(),
         current = currentPeriod(),
@@ -181,7 +249,9 @@
       metric(Math.max(0, total - current).toLocaleString('es'), unitLabel(Math.max(0, total - current)) + ' restantes estimadas') +
     '</section>';
 
-    var liveHtml = '<section class="dashboard-grid">' +
+    var lifeExpectancy = Number(data.lifeExpectancy || 80), lived = livedDays(), estimatedDays = lifeExpectancy * 365.2425;
+    var liveHtml = hourglassHtml(lived / Math.max(1, estimatedDays), current, total, lifeExpectancy, lived, estimatedDays) +
+      '<section class="dashboard-grid">' +
       '<article class="panel now-card">' +
         '<p class="section-kicker">TIEMPO PRESENTE</p>' +
         '<h2>' + unitLabel(current + 1) + ' ' + (current + 1) + '</h2>' +
@@ -247,6 +317,7 @@
     '</section>';
 
     shell(headerHtml + statsHtml + liveHtml + bentoGridHtml, 'dashboard');
+    bindHourglass();
   }
 
   function renderTimeline() {

@@ -35,6 +35,41 @@
                 <small>Poder del nombre, número de vida, signos y chat con IA</small>
               </div>
             </a>
+            <a href="numerologia.html" class="drawer-link">
+              <span class="d-icon">🔢</span>
+              <div>
+                <strong>Numerología</strong>
+                <small>Camino de vida, nombre y ciclos personales</small>
+              </div>
+            </a>
+            <a href="tarot.html" class="drawer-link">
+              <span class="d-icon">🃏</span>
+              <div>
+                <strong>Tarot</strong>
+                <small>Tiradas simbólicas para contemplar tu presente</small>
+              </div>
+            </a>
+            <a href="cabala.html" class="drawer-link">
+              <span class="d-icon">🌳</span>
+              <div>
+                <strong>Árbol de la Vida</strong>
+                <small>Introducción simbólica a las diez sefirot</small>
+              </div>
+            </a>
+            <a href="secuencias.html" class="drawer-link">
+              <span class="d-icon">⌘</span>
+              <div>
+                <strong>Secuencias numéricas</strong>
+                <small>Prácticas simbólicas de enfoque y reflexión</small>
+              </div>
+            </a>
+            <a href="lecturas.html" class="drawer-link">
+              <span class="d-icon">📚</span>
+              <div>
+                <strong>Mis lecturas</strong>
+                <small>Historial privado de cartas y reflexiones</small>
+              </div>
+            </a>
           </div>
 
           <!-- Dimensión 2: Mapas de Tiempo (Imprimibles) -->
@@ -137,6 +172,11 @@
       drawer.setAttribute('aria-hidden', 'true');
       document.body.style.overflow = '';
     }
+
+    window.__toggleSiteNavDrawer = function () {
+      if (drawer.classList.contains('open')) closeDrawer();
+      else openDrawer();
+    };
 
     // Escuchar clicks en botones de menú globales
     document.addEventListener('click', function (e) {

@@ -370,10 +370,44 @@ function seleccionarSeccion() {
 }
 
 // Inicialización según la página en la que nos encontremos
-document.addEventListener('DOMContentLoaded', () => {
+function initPortalPage() {
   // SI ESTAMOS EN LA PORTADA (index.html)
   const startForm = document.getElementById('start-form');
   if (startForm) {
+    const saved = (() => {
+      try {
+        return {
+          portal: JSON.parse(localStorage.getItem('portal_data') || 'null'),
+          life: JSON.parse(localStorage.getItem('your-life-data') || '{}')
+        };
+      } catch (error) {
+        return { portal: null, life: {} };
+      }
+    })();
+    const savedPortal = saved.portal || {};
+    const savedLife = saved.life || {};
+    const savedName = savedPortal.n || savedLife.userName || '';
+    const savedSurname = savedPortal.s || savedLife.userSurname || '';
+    const savedDob = savedPortal.y ? savedPortal : savedLife.dob ? {
+      d: savedLife.dob.day,
+      m: savedLife.dob.month,
+      y: savedLife.dob.year
+    } : null;
+    document.getElementById('start-name').value = savedName;
+    document.getElementById('start-surname').value = savedSurname;
+    if (savedDob) {
+      document.getElementById('day').value = savedDob.d || '';
+      document.getElementById('month').value = savedDob.m !== undefined ? savedDob.m : '';
+      document.getElementById('year').value = savedDob.y || '';
+    }
+
+    document.getElementById('clear-data').addEventListener('click', () => {
+      if (!window.confirm('Se borrarán tus datos y configuración guardados en este navegador. ¿Continuar?')) return;
+      ['portal_data', 'dob', 'your-life-data'].forEach((key) => localStorage.removeItem(key));
+      startForm.reset();
+      document.getElementById('start-error').textContent = 'Datos borrados. Puedes introducir una nueva identidad.';
+    });
+
     startForm.addEventListener('submit', (e) => {
       e.preventDefault();
       let n = (document.getElementById('start-name') ? document.getElementById('start-name').value : '').trim();
@@ -452,4 +486,10 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   }
-});
+}
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initPortalPage);
+} else {
+  initPortalPage();
+}
