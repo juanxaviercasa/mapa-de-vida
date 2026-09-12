@@ -53,12 +53,12 @@ footer { display: flex; gap: 16px; align-items: center; flex-wrap: wrap; padding
 .tarot-grid { display: flex; flex-direction: column; gap: 24px; margin-bottom: 24px; }
 .tarot-card { display: flex; flex-direction: column; gap: 24px; min-height: 230px; padding: 24px; background: linear-gradient(145deg, color-mix(in srgb, var(--panel) 92%, var(--gold)), var(--panel)); border: 1px solid var(--gold); position: relative; }
 @media (min-width: 768px) {
-  .tarot-card { flex-direction: row; align-items: flex-start; }
+  .tarot-card { flex-direction: row; align-items: center; }
 }
-.tarot-card h2 { color: var(--accent); margin-bottom: 14px; }
+.tarot-card h2 { font-family: 'Cinzel', serif; font-size: 1.8rem; color: var(--accent); margin-bottom: 14px; letter-spacing: 1px; }
 .tarot-content-wrap { flex: 1; }
-.tarot-details h3 { font-size: 1rem; color: var(--gold); margin-top: 16px; margin-bottom: 8px; }
-.tarot-details p { color: var(--muted); margin-bottom: 16px; line-height: 1.6; }
+.tarot-details h3 { font-family: 'EB Garamond', serif; font-size: 1.3rem; color: var(--gold); margin-top: 20px; margin-bottom: 6px; font-weight: 500; font-style: italic; letter-spacing: 0.5px; }
+.tarot-details p { font-family: 'EB Garamond', serif; font-size: 1.15rem; color: #e2e8f0; margin-bottom: 18px; line-height: 1.7; font-weight: 400; }
 .tarot-card.is-reversed { border-color: var(--teal); }
 .tarot-number { color: var(--gold); font: 500 .75rem 'DM Mono', monospace; }
 .tarot-reflection { align-items: stretch; }

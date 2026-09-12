@@ -28,12 +28,12 @@
       
       var meaningHTML = '<div class="tarot-details">';
       if (card.reversed) {
-          meaningHTML += '<h3>Significado Invertido</h3><p>' + card.details.invertida + '</p>';
+          meaningHTML += '<h3>✦ La Sombra a Observar</h3><p>' + card.details.invertida + '</p>';
       } else {
-          meaningHTML += '<h3>General / Psicológico</h3><p>' + card.details.general + '</p>';
-          meaningHTML += '<h3>Amor y Relaciones</h3><p>' + card.details.amor + '</p>';
-          meaningHTML += '<h3>Trabajo y Dinero</h3><p>' + card.details.trabajo + '</p>';
-          meaningHTML += '<h3>Salud y Bienestar</h3><p>' + card.details.salud + '</p>';
+          meaningHTML += '<h3>✦ El Mensaje para Ti</h3><p>' + card.details.general + '</p>';
+          meaningHTML += '<h3>✦ Tu Corazón y Vínculos</h3><p>' + card.details.amor + '</p>';
+          meaningHTML += '<h3>✦ Tu Camino Material</h3><p>' + card.details.trabajo + '</p>';
+          meaningHTML += '<h3>✦ Tu Energía Vital</h3><p>' + card.details.salud + '</p>';
       }
       meaningHTML += '</div>';
 
