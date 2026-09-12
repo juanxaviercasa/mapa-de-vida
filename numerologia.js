@@ -11,7 +11,11 @@
     11: 'Intuición, inspiración y sensibilidad.', 22: 'Visión práctica y construcción a gran escala.', 33: 'Servicio, enseñanza y compasión.'
   };
   function escapeHtml(value) { return String(value).replace(/[&<>"']/g, function (character) { return ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#039;' })[character]; }); }
-  var guide = Object.keys(meanings).map(function (number) { return '<article class="number-guide-item"><strong>' + number + '</strong><span>' + meanings[number] + '</span></article>'; }).join('');
+  var guide = Object.keys(meanings).map(function (number) {
+    return '<article class="number-guide-item">' +
+      '<div class="card-image-wrap numerology-guide-wrap"><img src="images/numerology/numerology-' + number + '.jpg" alt="Número ' + number + '" class="card-image" onerror="this.parentElement.style.display=\'none\'"></div>' +
+      '<strong>' + number + '</strong><span>' + meanings[number] + '</span></article>';
+  }).join('');
 
   app.innerHTML = '<header class="view-header"><p class="eyebrow">✦ MAPA NUMÉRICO ✦</p><h1>Numerología</h1><p class="subtitle">Una lectura simbólica de los números presentes en tu nombre y tu fecha. Perfil actual: <strong>' + escapeHtml(displayName) + '</strong>.</p></header>' +
     '<section class="stats esoteric-stats">' +

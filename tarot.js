@@ -32,10 +32,17 @@
     return result;
   }
 
+  function cardSlug(name) {
+    return name.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "");
+  }
+
   function renderReading(reading) {
     lastReading = reading;
     document.getElementById('tarot-output').innerHTML = reading.map(function (card, index) {
-      return '<article class="tarot-card' + (card.reversed ? ' is-reversed' : '') + '" aria-label="' + positions[card.position] + ': ' + card.name + (card.reversed ? ', invertida' : '') + '"><span class="tarot-number">0' + (index + 1) + '</span><p class="section-kicker">' + positions[card.position] + (card.reversed ? ' · Invertida' : '') + '</p><h2>' + card.name + '</h2><p>' + card.meaning + '</p></article>';
+      var slug = cardSlug(card.name);
+      return '<article class="tarot-card' + (card.reversed ? ' is-reversed' : '') + '" aria-label="' + positions[card.position] + ': ' + card.name + (card.reversed ? ', invertida' : '') + '">' +
+        '<div class="card-image-wrap tarot-image-wrap"><img src="images/tarot/tarot-' + slug + '.jpg" alt="' + card.name + '" class="card-image tarot-img" onerror="this.parentElement.style.display=\'none\'"></div>' +
+        '<span class="tarot-number">0' + (index + 1) + '</span><p class="section-kicker">' + positions[card.position] + (card.reversed ? ' · Invertida' : '') + '</p><h2>' + card.name + '</h2><p>' + card.meaning + '</p></article>';
     }).join('');
     document.getElementById('tarot-save').disabled = false;
   }

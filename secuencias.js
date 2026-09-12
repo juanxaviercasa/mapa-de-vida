@@ -13,8 +13,15 @@
   var timer = null;
   var remaining = 0;
 
+  function slugify(text) {
+    return text.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "");
+  }
+
   function card(item) {
-    return '<article class="sequence-card"><p class="section-kicker">' + item.category.toUpperCase() + '</p><h2>' + item.name + '</h2><strong class="sequence-code">' + item.code + '</strong><p>' + item.description + '</p><button type="button" class="sequence-select" data-code="' + item.code + '" aria-label="Practicar ' + item.name + '">Practicar esta secuencia</button></article>';
+    var slug = slugify(item.name);
+    return '<article class="sequence-card">' +
+      '<div class="card-image-wrap sequence-image-wrap"><img src="images/secuencias/secuencia-' + slug + '.jpg" alt="' + item.name + '" class="card-image" onerror="this.parentElement.style.display=\'none\'"></div>' +
+      '<p class="section-kicker">' + item.category.toUpperCase() + '</p><h2>' + item.name + '</h2><strong class="sequence-code">' + item.code + '</strong><p>' + item.description + '</p><button type="button" class="sequence-select" data-code="' + item.code + '" aria-label="Practicar ' + item.name + '">Practicar esta secuencia</button></article>';
   }
 
   function renderList() {
