@@ -93,8 +93,8 @@
     .calm-timer { min-height: 1.1em; margin: 5px 0 0 !important; color: #f5c358 !important; font: 500 1.35rem 'DM Mono', monospace; text-align: center; letter-spacing: .08em; }
     .calm-disclaimer { display: none; }
     
-    .year-countdown { display: flex; align-items: center; gap: 12px; margin-top: 14px; background: rgba(10, 13, 26, 0.5); padding: 12px 16px; border-radius: 8px; border: 1px solid rgba(212, 168, 67, 0.2); }
-    .pulsing-heart { color: #e91e63; font-size: 1.6rem; animation: pulse-heart 1.2s infinite; text-shadow: 0 0 10px rgba(233, 30, 99, 0.6); }
+    .year-countdown { display: inline-flex; align-items: center; gap: 10px; margin-bottom: 24px; background: rgba(10, 13, 26, 0.45); padding: 8px 16px; border-radius: 30px; border: 1px solid rgba(212, 168, 67, 0.35); box-shadow: 0 4px 15px rgba(0,0,0,0.3); backdrop-filter: blur(8px); }
+    .pulsing-heart { color: #e91e63; font-size: 1.2rem; animation: pulse-heart 1.2s infinite; text-shadow: 0 0 10px rgba(233, 30, 99, 0.6); }
     @keyframes pulse-heart {
       0% { transform: scale(1); }
       15% { transform: scale(1.15); }
@@ -102,9 +102,7 @@
       45% { transform: scale(1.15); }
       100% { transform: scale(1); }
     }
-    .countdown-details { display: flex; flex-direction: column; }
-    .countdown-label { color: rgba(238, 232, 213, 0.8); font-size: 0.75rem; margin-bottom: 2px; }
-    .countdown-value { color: #f5c358; font-family: 'DM Mono', monospace; font-size: 0.95rem; font-weight: 500; }
+    .countdown-value { color: #f5c358; font-family: 'DM Mono', monospace; font-size: 0.85rem; font-weight: 500; letter-spacing: 0.05em; }
 
     @media (min-width: 1025px) {
       .calm-studio { display: grid; grid-template-columns: minmax(170px, .85fr) minmax(250px, 1.45fr) minmax(180px, 1.05fr) 132px; gap: 8px 16px; align-items: center; padding: 14px 18px; }
@@ -263,6 +261,10 @@
     <div class="col-left">
       <!-- Pantalla de Inicio -->
       <div class="hero">
+        <div class="year-countdown">
+          <div class="pulsing-heart">❤</div>
+          <strong class="countdown-value">Quedan <span id="countdown-timer"></span> del año</strong>
+        </div>
         <p class="brand">✦ Mapa de Vida · 2026 ✦</p>
         <h1>Tu vida<br>es el<br>cosmos</h1>
         <p class="tagline">Tu nombre, tu fecha<br>y las estrellas hablan<br>un mismo lenguaje.<br>El Oráculo lo descifra.</p>
@@ -465,13 +467,6 @@
         </div>
         <label id="calm-binaural" class="calm-binaural">Pulso binaural <select id="calm-binaural-beat"><option value="4">4 Hz</option><option value="6" selected>6 Hz</option><option value="8">8 Hz</option><option value="10">10 Hz</option><option value="12">12 Hz</option></select> · combinación experimental · usa auriculares</label>
         <div class="calm-actions"><button type="button" id="calm-play">Reproducir ambiente</button><p id="calm-timer" class="calm-timer" role="timer" aria-live="off"></p></div>
-        <div class="year-countdown">
-          <div class="pulsing-heart">❤</div>
-          <div class="countdown-details">
-            <span class="countdown-label">Tu tiempo es tu único recurso irrepetible.</span>
-            <strong class="countdown-value">Faltan <span id="countdown-timer"></span> para terminar el año.</strong>
-          </div>
-        </div>
         <p class="calm-disclaimer">Binaural experimental: usa auriculares ✦ evidencia variable. No sustituye atención médica ni psicológica.</p>
         <p id="calm-status" class="calm-status" role="status" aria-live="polite"></p>
       </section>
