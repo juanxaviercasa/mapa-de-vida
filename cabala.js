@@ -22,8 +22,11 @@
     '<section class="tarot-grid" aria-label="Diez sefirot">' + sefirot.map(function (item, index) {
       var slug = slugify(item.name);
       return '<article class="tarot-card">' +
-        '<div class="card-image-wrap tarot-image-wrap"><img src="images/cabala/sefira-' + slug + '.jpg" alt="' + item.name + '" class="card-image tarot-img" onerror="this.parentElement.style.display=\'none\'"></div>' +
-        '<div class="tarot-content-wrap"><span class="tarot-number">0' + (index + 1) + '</span><p class="section-kicker">' + item.title.toUpperCase() + '</p><h2>' + item.name + '</h2>' +
+        '<div class="tarot-card-left">' +
+        '<div class="tarot-card-header"><span class="tarot-number">0' + (index + 1) + '</span><p class="section-kicker">' + item.title.toUpperCase() + '</p><h2>' + item.name + '</h2></div>' +
+        '<div class="card-image-wrap tree-image-wrap"><img src="images/cabala/sefira-' + slug + '.jpg" alt="' + item.name + '" class="card-image tarot-img" onerror="this.parentElement.style.display=\'none\'"></div>' +
+        '</div>' +
+        '<div class="tarot-card-right">' +
         '<div class="tarot-details"><h3>✦ El Significado Espiritual</h3><p>' + item.details.significado + '</p><h3>✦ Aplicación Práctica</h3><p>' + item.details.aplicacion + '</p><h3>✦ La Sombra (Desequilibrio)</h3><p>' + item.details.sombra + '</p></div>' +
         '<div class="tarot-reflection"><label>Pregunta para contemplar <textarea rows="2" data-sefira="' + item.name + '" placeholder="Escribe una observación..."></textarea></label></div></div></article>';
     }).join('') + '</section>' +

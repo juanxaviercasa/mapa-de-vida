@@ -22,9 +22,11 @@
   var guide = Object.keys(meanings).map(function (number) {
     var item = meanings[number];
     return '<article class="tarot-card">' +
-      '<div class="card-image-wrap tarot-image-wrap"><img src="images/numerology/numerology-' + number + '.jpg" alt="Número ' + number + '" class="card-image tarot-img" onerror="this.parentElement.style.display=\'none\'"></div>' +
-      '<div class="tarot-content-wrap"><span class="tarot-number">0' + number + '</span><p class="section-kicker">' + item.title.toUpperCase() + '</p><h2>' + number + '</h2>' +
-      '<div class="tarot-details"><h3>✦ Tu Esencia Numérica</h3><p>' + item.esencia + '</p><h3>✦ Desafíos y Lecciones</h3><p>' + item.leccion + '</p></div></div></article>';
+      '<div class="tarot-card-left">' +
+      '<div class="tarot-card-header"><span class="tarot-number">0' + number + '</span><p class="section-kicker">' + item.title.toUpperCase() + '</p><h2>' + number + '</h2></div>' +
+      '<div class="card-image-wrap numerology-guide-wrap"><img src="images/numerology/numerology-' + number + '.jpg" alt="Número ' + number + '" class="card-image tarot-img" onerror="this.parentElement.style.display=\'none\'"></div>' +
+      '</div>' +
+      '<div class="tarot-card-right"><div class="tarot-details"><h3>✦ Tu Esencia Numérica</h3><p>' + item.esencia + '</p><h3>✦ Desafíos y Lecciones</h3><p>' + item.leccion + '</p></div></div></article>';
   }).join('');
 
   app.innerHTML = '<header class="view-header"><p class="eyebrow">✦ MAPA NUMÉRICO ✦</p><h1>Numerología</h1><p class="subtitle">Una lectura simbólica de los números presentes en tu nombre y tu fecha. Perfil actual: <strong>' + escapeHtml(displayName) + '</strong>.</p></header>' +
