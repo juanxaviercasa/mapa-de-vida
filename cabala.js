@@ -18,13 +18,13 @@
 
   var app = document.getElementById('kabbalah-app');
   app.innerHTML = '<header class="view-header"><p class="eyebrow">✦ MAPA DE SIGNIFICADOS ✦</p><h1>Árbol de la Vida</h1><p class="subtitle">Una introducción contemplativa a las diez sefirot y a sus preguntas de equilibrio.</p></header>' +
-    '<section class="panel tree-intro"><div class="card-image-wrap tree-banner-wrap"><img src="images/cabala/arbol-de-la-vida.jpg" alt="El Árbol de la Vida Cósmico" class="card-image" onerror="this.parentElement.style.display=\'none\'"></div><p class="section-kicker">DOS MARCOS QUE NO DEBEN CONFUNDIRSE</p><h2>Tradición y lectura simbólica</h2><p class="muted">La Cábala judía es una tradición religiosa e histórica con sus propios textos y prácticas. El Árbol de la Vida hermético es una interpretación esotérica posterior que relaciona sefirot, tarot, planetas y otros símbolos. Esta página ofrece una introducción cultural, no una representación completa de ninguna de las dos tradiciones.</p></section>' +
+    '<section class="panel tree-intro"><div class="card-image-wrap tree-banner-wrap"><img src="images/cabala/arbol-de-la-vida.webp" alt="El Árbol de la Vida Cósmico" class="card-image" onerror="this.parentElement.style.display=\'none\'"></div><p class="section-kicker">DOS MARCOS QUE NO DEBEN CONFUNDIRSE</p><h2>Tradición y lectura simbólica</h2><p class="muted">La Cábala judía es una tradición religiosa e histórica con sus propios textos y prácticas. El Árbol de la Vida hermético es una interpretación esotérica posterior que relaciona sefirot, tarot, planetas y otros símbolos. Esta página ofrece una introducción cultural, no una representación completa de ninguna de las dos tradiciones.</p></section>' +
     '<section class="tarot-grid" aria-label="Diez sefirot">' + sefirot.map(function (item, index) {
       var slug = slugify(item.name);
       return '<article class="tarot-card">' +
         '<div class="tarot-card-left">' +
         '<div class="tarot-card-header"><span class="tarot-number">0' + (index + 1) + '</span><p class="section-kicker">' + item.title.toUpperCase() + '</p><h2>' + item.name + '</h2></div>' +
-        '<div class="card-image-wrap tree-image-wrap"><img src="images/cabala/sefira-' + slug + '.jpg" alt="' + item.name + '" class="card-image tarot-img" onerror="this.parentElement.style.display=\'none\'"></div>' +
+        '<div class="card-image-wrap tree-image-wrap"><img src="images/cabala/sefira-' + slug + '.webp" alt="' + item.name + '" class="card-image tarot-img" onerror="this.parentElement.style.display=\'none\'"></div>' +
         '</div>' +
         '<div class="tarot-card-right">' +
         '<div class="tarot-details"><h3>✦ El Significado Espiritual</h3><p>' + item.details.significado + '</p><h3>✦ Aplicación Práctica</h3><p>' + item.details.aplicacion + '</p><h3>✦ La Sombra (Desequilibrio)</h3><p>' + item.details.sombra + '</p></div>' +

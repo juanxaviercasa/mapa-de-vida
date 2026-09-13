@@ -24,7 +24,7 @@
     return '<article class="tarot-card">' +
       '<div class="tarot-card-left">' +
       '<div class="tarot-card-header"><span class="tarot-number">0' + number + '</span><p class="section-kicker">' + item.title.toUpperCase() + '</p><h2>' + number + '</h2></div>' +
-      '<div class="card-image-wrap numerology-guide-wrap"><img src="images/numerology/numerology-' + number + '.jpg" alt="Número ' + number + '" class="card-image tarot-img" onerror="this.parentElement.style.display=\'none\'"></div>' +
+      '<div class="card-image-wrap numerology-guide-wrap"><img src="images/numerology/numerology-' + number + '.webp" alt="Número ' + number + '" class="card-image tarot-img" onerror="this.parentElement.style.display=\'none\'"></div>' +
       '</div>' +
       '<div class="tarot-card-right"><div class="tarot-details"><h3>✦ Tu Esencia Numérica</h3><p>' + item.esencia + '</p><h3>✦ Desafíos y Lecciones</h3><p>' + item.leccion + '</p></div></div></article>';
   }).join('');

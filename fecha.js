@@ -205,7 +205,7 @@
     }
     initOracle(birth);
   }
-  function card(title, value, description, imageId) { return '<article class="info-card" data-symbol="' + esc(title) + '">' + (imageId ? '<div class="card-image-wrap"><img src="images/' + imageId + '.jpg" alt="' + esc(value) + '" class="card-image" onerror="this.parentElement.style.display=\'none\'"></div>' : '') + '<h3>' + title + '</h3><strong>' + esc(value) + '</strong><p>' + description + '</p></article>'; }
+  function card(title, value, description, imageId) { return '<article class="info-card" data-symbol="' + esc(title) + '">' + (imageId ? '<div class="card-image-wrap"><img src="images/' + imageId + '.webp" alt="' + esc(value) + '" class="card-image" onerror="this.parentElement.style.display=\'none\'"></div>' : '') + '<h3>' + title + '</h3><strong>' + esc(value) + '</strong><p>' + description + '</p></article>'; }
   function renderHistory(birth) {
     var histOutput = document.getElementById('history-output');
     if (!histOutput) return;

@@ -22,7 +22,7 @@
     return '<article class="tarot-card sequence-card">' +
       '<div class="tarot-card-left">' +
       '<div class="tarot-card-header"><p class="section-kicker">' + item.category.toUpperCase() + '</p><h2>' + item.name + '</h2><strong class="sequence-code" style="color: var(--accent); font: 500 1.4rem \'DM Mono\', monospace; margin-bottom: 0; display: block;">' + item.code + '</strong></div>' +
-      '<div class="card-image-wrap sequence-image-wrap"><img src="images/secuencias/secuencia-' + slug + '.jpg" alt="' + item.name + '" class="card-image tarot-img" onerror="this.parentElement.style.display=\'none\'"></div>' +
+      '<div class="card-image-wrap sequence-image-wrap"><img src="images/secuencias/secuencia-' + slug + '.webp" alt="' + item.name + '" class="card-image tarot-img" onerror="this.parentElement.style.display=\'none\'"></div>' +
       '</div>' +
       '<div class="tarot-card-right">' +
       '<div class="tarot-details"><h3>✦ La Vibración Numérica</h3><p>' + item.details.significado + '</p><h3>✦ El Mantra</h3><p><em>' + item.details.mantra + '</em></p><h3>✦ Acción Inmediata</h3><p>' + item.details.accion + '</p></div>' +

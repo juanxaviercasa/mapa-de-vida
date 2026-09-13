@@ -117,19 +117,19 @@ function calcularZodiaco(d, m) {
   d = parseInt(d, 10) || 1;
   m = parseInt(m, 10) || 0; // 0-indexed (0=enero, 11=diciembre)
   const signos = [
-    { name: "Capricornio", img: "images/zodiac/zodiac-capricornio.jpg" },
-    { name: "Acuario", img: "images/zodiac/zodiac-acuario.jpg" },
-    { name: "Piscis", img: "images/zodiac/zodiac-piscis.jpg" },
-    { name: "Aries", img: "images/zodiac/zodiac-aries.jpg" },
-    { name: "Tauro", img: "images/zodiac/zodiac-tauro.jpg" },
-    { name: "Géminis", img: "images/zodiac/zodiac-geminis.jpg" },
-    { name: "Cáncer", img: "images/zodiac/zodiac-cancer.jpg" },
-    { name: "Leo", img: "images/zodiac/zodiac-leo.jpg" },
-    { name: "Virgo", img: "images/zodiac/zodiac-virgo.jpg" },
-    { name: "Libra", img: "images/zodiac/zodiac-libra.jpg" },
-    { name: "Escorpio", img: "images/zodiac/zodiac-escorpio.jpg" },
-    { name: "Sagitario", img: "images/zodiac/zodiac-sagitario.jpg" },
-    { name: "Capricornio", img: "images/zodiac/zodiac-capricornio.jpg" }
+    { name: "Capricornio", img: "images/zodiac/zodiac-capricornio.webp" },
+    { name: "Acuario", img: "images/zodiac/zodiac-acuario.webp" },
+    { name: "Piscis", img: "images/zodiac/zodiac-piscis.webp" },
+    { name: "Aries", img: "images/zodiac/zodiac-aries.webp" },
+    { name: "Tauro", img: "images/zodiac/zodiac-tauro.webp" },
+    { name: "Géminis", img: "images/zodiac/zodiac-geminis.webp" },
+    { name: "Cáncer", img: "images/zodiac/zodiac-cancer.webp" },
+    { name: "Leo", img: "images/zodiac/zodiac-leo.webp" },
+    { name: "Virgo", img: "images/zodiac/zodiac-virgo.webp" },
+    { name: "Libra", img: "images/zodiac/zodiac-libra.webp" },
+    { name: "Escorpio", img: "images/zodiac/zodiac-escorpio.webp" },
+    { name: "Sagitario", img: "images/zodiac/zodiac-sagitario.webp" },
+    { name: "Capricornio", img: "images/zodiac/zodiac-capricornio.webp" }
   ];
   const limites = [20, 19, 20, 20, 21, 21, 22, 23, 23, 23, 22, 22];
   return (d > limites[m]) ? signos[m + 1] : signos[m];
@@ -161,14 +161,14 @@ function calcularFaseLunar(d, m, y) {
   if (b >= 8) b = 0;
 
   const fases = [
-    { name: "Luna Nueva", img: "images/moon/moon-luna-nueva.jpg" },
-    { name: "Creciente", img: "images/moon/moon-creciente.jpg" },
-    { name: "Cuarto Creciente", img: "images/moon/moon-cuarto-creciente.jpg" },
-    { name: "Gibosa Creciente", img: "images/moon/moon-gibosa-creciente.jpg" },
-    { name: "Luna Llena", img: "images/moon/moon-luna-llena.jpg" },
-    { name: "Gibosa Menguante", img: "images/moon/moon-gibosa-menguante.jpg" },
-    { name: "Cuarto Menguante", img: "images/moon/moon-cuarto-menguante.jpg" },
-    { name: "Menguante", img: "images/moon/moon-menguante.jpg" }
+    { name: "Luna Nueva", img: "images/moon/moon-luna-nueva.webp" },
+    { name: "Creciente", img: "images/moon/moon-creciente.webp" },
+    { name: "Cuarto Creciente", img: "images/moon/moon-cuarto-creciente.webp" },
+    { name: "Gibosa Creciente", img: "images/moon/moon-gibosa-creciente.webp" },
+    { name: "Luna Llena", img: "images/moon/moon-luna-llena.webp" },
+    { name: "Gibosa Menguante", img: "images/moon/moon-gibosa-menguante.webp" },
+    { name: "Cuarto Menguante", img: "images/moon/moon-cuarto-menguante.webp" },
+    { name: "Menguante", img: "images/moon/moon-menguante.webp" }
   ];
   return fases[b];
 }
