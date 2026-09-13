@@ -2753,3 +2753,8 @@ body[data-view] .poster-grid i.filled {
 
 
 .tarot-image-wrap .tarot-img { object-fit: contain; background: #0a0d1a; }
+
+.foot { position: relative; bottom: auto; left: auto; transform: none; width: 100%; display: flex; justify-content: center; flex-wrap: wrap; padding-top: 20px; padding-bottom: 20px; text-align: center; gap: 24px; font-family: 'Space Grotesk', sans-serif; font-size: 0.62rem; letter-spacing: 0.035em; color: rgba(238,232,213,0.6); z-index: 10; line-height: 1.4; pointer-events: auto; }
+.foot span:last-child { text-align: center; }
+.foot a { color: #f5c358; text-decoration: none; transition: all 0.3s ease; font-weight: 600; }
+.foot a:hover { color: #ffd700; text-shadow: 0 0 10px rgba(212,168,67,0.8); text-decoration: underline; }
