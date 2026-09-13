@@ -2751,3 +2751,5 @@ body[data-view] .poster-grid i.filled {
 
 
 
+
+.tarot-image-wrap .tarot-img { object-fit: contain; background: #0a0d1a; }

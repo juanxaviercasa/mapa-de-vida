@@ -30,8 +30,7 @@
       '<section class="panel privacy-panel"><p class="section-kicker">PRIVACIDAD</p><p>Este historial no se sincroniza con ningún servidor. Puedes eliminar cada entrada o borrar todos los datos desde las herramientas de vida de la aplicación.</p></section>' +
       '<section class="reading-tools panel"><div><p class="section-kicker">GESTIÓN DE DATOS</p><p class="muted">Exporta una copia o elimina únicamente tus lecturas simbólicas.</p></div><div class="esoteric-actions"><button type="button" id="export-readings">Exportar JSON</button><label class="button secondary" for="import-readings">Importar JSON</label><input id="import-readings" type="file" accept="application/json" hidden><button type="button" id="clear-readings" class="danger">Borrar lecturas</button></div></section>' +
       '<section class="reading-list">' + (items.length ? items.join('') : '<div class="panel muted">Todavía no tienes lecturas guardadas. Explora Tarot o Secuencias numéricas para comenzar.</div>') + '</section>' +
-      '<section class="panel esoteric-panel"><div class="esoteric-actions"><a class="button" href="tarot.html">Abrir Tarot</a><a class="button secondary" href="secuencias.html">Secuencias numéricas</a><a class="button secondary" href="cabala.html">Árbol de la Vida</a></div></section>' +
-      '<footer><p>Privado por diseño · Mapa de Vida</p></footer>';
+      '<section class="panel esoteric-panel"><div class="esoteric-actions"><a class="button" href="tarot.html">Abrir Tarot</a><a class="button secondary" href="secuencias.html">Secuencias numéricas</a><a class="button secondary" href="cabala.html">Árbol de la Vida</a></div></section>';
     document.querySelectorAll('[data-type]').forEach(function (button) {
       button.addEventListener('click', function () {
         var collection = button.dataset.type === 'tarot' ? 'tarotReadings' : 'sequenceReflections';
